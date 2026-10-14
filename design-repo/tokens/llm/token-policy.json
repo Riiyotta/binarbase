@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "rawValueRestrictions": {
+    "color": "enforced-by-convention",
+    "gradient": "enforced-by-convention",
+    "typography": "enforced-by-convention",
+    "radius": "enforced-by-convention",
+    "spacing": "enforced-by-convention",
+    "breakpoint": "enforced-by-convention",
+    "elevation": "enforced-by-convention",
+    "iconSize": "enforced-by-convention",
+    "motion": "enforced-by-convention"
+  },
+  "rawValueNote": "Generated markup must reference catalog tokens, never raw values. This is a convention for downstream code generation: no PageSpec field carries style values, so nothing in a PageSpec can violate it.",
+  "overrides": {
+    "pageSpecTokenOverrides": "none",
+    "statement": "The PageSpec schema has NO per-instance style/token override field (additionalProperties:false everywhere). Styling is owned by section/component contracts. There is deliberately nothing to validate or mutate at the PageSpec layer for token overrides."
+  },
+  "fontPolicy": "System font stacks only. Do not load web fonts; JetBrains Mono is declared by the intro but never loaded on the real site.",
+  "pinnedAssetPolicyNote": "Compliance pins for asset/link roles live in extraction/verify_all.py PINNED_ROLES."
+}

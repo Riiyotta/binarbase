@@ -1,0 +1,178 @@
+{
+  "layout": {
+    "container": {
+      "max-width": {
+        "value": "1200px",
+        "type": "dimension",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:382",
+            "quote": ".section-container{margin:0 auto;max-width:1200px;padding:0 2rem}"
+          }
+        ]
+      },
+      "padding-x": {
+        "value": "2rem",
+        "type": "dimension",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:382",
+            "quote": ".section-container{margin:0 auto;max-width:1200px;padding:0 2rem}"
+          }
+        ],
+        "description": "1rem at <=768, .75rem at <=640."
+      },
+      "inner-width-1440": {
+        "value": "1136px",
+        "type": "dimension",
+        "evidence": [
+          {
+            "cite": "recon/measure-1440.json:423",
+            "quote": "\".section-header\": {"
+          }
+        ],
+        "description": "Measured section-header width @1440."
+      }
+    },
+    "hero": {
+      "max-width": {
+        "value": "1200px",
+        "type": "dimension",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:311",
+            "quote": ".hero{align-items:center;display:flex;flex-direction:column;margin:0 auto;max-width:1200px"
+          }
+        ],
+        "description": "1360 >=1400, 1520 >=1600 (measured 1360 @1440)."
+      },
+      "content-max-width": {
+        "value": "760px",
+        "type": "dimension",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:313",
+            "quote": ".hero-content{margin-bottom:2rem;max-width:760px"
+          }
+        ],
+        "description": "640 >=1400."
+      }
+    },
+    "stacking": {
+      "section-z": {
+        "value": 2,
+        "type": "number",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1378",
+            "quote": ".upgraded-section{padding:6rem 0;position:relative;z-index:2}"
+          }
+        ]
+      },
+      "intro-z": {
+        "value": 3,
+        "type": "number",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1",
+            "quote": ".sbi[data-v-00d3a672]{--ink:#070c1f"
+          }
+        ]
+      },
+      "nav-z": {
+        "value": 100,
+        "type": "number",
+        "evidence": [
+          {
+            "cite": "CLONE_SPEC.md:113",
+            "quote": "The intro is `.sbi` z-index 3, the nav z-index 100"
+          }
+        ]
+      },
+      "cookie-z": {
+        "value": 9999,
+        "type": "number",
+        "evidence": [
+          {
+            "cite": "recon/css/entry.qOVbJ9mW.css:8",
+            "quote": ".cookie-consent[data-v-c7cad4a5]{background:#fff"
+          }
+        ]
+      }
+    },
+    "scroll": {
+      "anchor-offset": {
+        "value": "calc(var(--header-h, 80px) + 1rem)",
+        "type": "dimension",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:228",
+            "quote": "section[id]{scroll-margin-top:calc(var(--header-h, 80px) + 1rem)}"
+          }
+        ]
+      }
+    },
+    "grids": {
+      "console": {
+        "value": "repeat(2,1fr) gap 2rem",
+        "type": "grid",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1426",
+            "quote": ".console-grid{align-items:stretch;display:grid;gap:2rem;grid-template-columns:repeat(2,1fr)}"
+          }
+        ]
+      },
+      "engine-cards": {
+        "value": "repeat(3,1fr) gap 1.5rem",
+        "type": "grid",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1420",
+            "quote": ".engine-cards{display:grid;gap:1.5rem;grid-template-columns:repeat(3,1fr);margin-top:3rem}"
+          }
+        ]
+      },
+      "superpowers": {
+        "value": "repeat(4,1fr) gap 1.5rem",
+        "type": "grid",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:597",
+            "quote": ".superpowers-row{display:grid;gap:1.5rem;grid-template-columns:repeat(4,1fr)"
+          }
+        ]
+      },
+      "footer": {
+        "value": "2fr 1fr 1.5fr gap 3rem",
+        "type": "grid",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:694",
+            "quote": ".footer-grid{display:grid;gap:3rem;grid-template-columns:2fr 1fr 1.5fr}"
+          }
+        ]
+      },
+      "dp-diagram": {
+        "value": "1fr 150px 1fr 150px 1fr",
+        "type": "grid",
+        "evidence": [
+          {
+            "cite": "CLONE_SPEC.md:567",
+            "quote": "Layout: grid `1fr 150px 1fr 150px 1fr`"
+          }
+        ]
+      },
+      "context-tree": {
+        "value": "1.2fr 1fr gap 2rem",
+        "type": "grid",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:172",
+            "quote": ".ct-layout[data-v-a6fe94b3]{align-items:center;display:grid;gap:2rem;grid-template-columns:1.2fr 1fr}"
+          }
+        ]
+      }
+    }
+  }
+}

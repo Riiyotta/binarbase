@@ -1,0 +1,32 @@
+{
+  "id": "component.app-mock-window",
+  "purpose": "Illustrative product window: traffic-light header + title, body mock UI (assetRole mock.ui-illustration).",
+  "composes": [
+    "primitive.chip"
+  ],
+  "cssClasses": [
+    "app-screen",
+    "screen-header",
+    "screen-dots",
+    "screen-content",
+    "console-mock",
+    "console-mock-bar"
+  ],
+  "tokens": [
+    "color.surface.mist",
+    "radius.xl",
+    "radius.card-lg"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:415",
+      "quote": ".screen-dots span:first-child{background:#ef4444}"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1433",
+      "quote": ".console-mock{background:var(--color-bg-secondary)"
+    }
+  ],
+  "kind": "component",
+  "contractVersion": "1.0.0"
+}

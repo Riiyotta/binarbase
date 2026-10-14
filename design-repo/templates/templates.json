@@ -1,0 +1,163 @@
+{
+  "version": "1.0.0",
+  "templates": {
+    "template.home": {
+      "id": "template.home",
+      "description": "BinarBase marketing home: shell, optional 3D intro, hero, nine numbered story sections (01-09), final CTA, footer, cookie overlay.",
+      "evidenceLevel": "measured",
+      "measuredAt": [
+        "1440x900",
+        "1280x800",
+        "768x1024",
+        "390x844"
+      ],
+      "evidence": [
+        {
+          "cite": "src/App.jsx:42-59",
+          "quote": "<div className=\"landing-page\">"
+        },
+        {
+          "cite": "recon/measure-390.json:7",
+          "quote": "\"sections\": ["
+        },
+        {
+          "cite": "CLONE_SPEC.md:131",
+          "quote": "## 2. Page order (DOM) and measured section boxes"
+        }
+      ],
+      "nodes": [
+        {
+          "section": "shell.aurora-background",
+          "variants": [
+            "default"
+          ],
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.nav",
+          "variants": [
+            "default"
+          ],
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "intro.scroll-chapters-3d",
+          "variants": [
+            "default"
+          ],
+          "required": false,
+          "repeatable": false,
+          "homeRouteOnly": true
+        },
+        {
+          "section": "hero.centered-gradient-art",
+          "variants": [
+            "default"
+          ],
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.problem-compare",
+          "variants": [
+            "default"
+          ],
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "feature.split-visual-brain",
+          "variants": [
+            "default"
+          ],
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "process.engine-flow",
+          "variants": [
+            "default"
+          ],
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "feature.dual-pane-console",
+          "variants": [
+            "default"
+          ],
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "showcase.card-carousel",
+          "variants": [
+            "default"
+          ],
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "interactive.deployment-switcher",
+          "variants": [
+            "default"
+          ],
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "proof.logos-and-stories",
+          "variants": [
+            "default"
+          ],
+          "required": false,
+          "repeatable": false,
+          "requiresRealEvidence": true
+        },
+        {
+          "section": "interactive.context-tree",
+          "variants": [
+            "default"
+          ],
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "pricing.on-request-quote",
+          "variants": [
+            "default"
+          ],
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.final-cta",
+          "variants": [
+            "default"
+          ],
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.footer",
+          "variants": [
+            "default"
+          ],
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "overlay.cookie-consent",
+          "variants": [
+            "default"
+          ],
+          "required": false,
+          "repeatable": false
+        }
+      ],
+      "notes": "Optional nodes may be omitted but the remaining order is fixed. Every node is non-repeatable on the real page (no section type occurs twice), so (section, variant) keying never collides here; the validator still keys duplicates on (section, variant)."
+    }
+  }
+}

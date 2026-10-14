@@ -1,0 +1,33 @@
+{
+  "id": "component.story-card",
+  "purpose": "Case-study card: success-story pill, title, excerpt, date · read time, \"Read the story\" link.",
+  "composes": [
+    "primitive.pill-badge",
+    "primitive.text-link-arrow"
+  ],
+  "cssClasses": [
+    "blog-card",
+    "blog-card-inner",
+    "blog-title",
+    "blog-excerpt",
+    "blog-meta",
+    "blog-link"
+  ],
+  "tokens": [
+    "radius.panel",
+    "typography.fontSize.blog-title",
+    "color.accent.green"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1285",
+      "quote": ".blog-card{background:#fff"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1286",
+      "quote": ".blog-card:hover{border-color:var(--color-primary);box-shadow:0 12px 32px #6042f926;transform:translateY(-4px)}"
+    }
+  ],
+  "kind": "component",
+  "contractVersion": "1.0.0"
+}

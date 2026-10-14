@@ -1,0 +1,129 @@
+{
+  "spacing": {
+    "container-x": {
+      "value": "2rem",
+      "type": "spacing",
+      "description": "Container side padding (32px).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:382",
+          "quote": ".section-container{margin:0 auto;max-width:1200px;padding:0 2rem}"
+        }
+      ]
+    },
+    "section-y-lg": {
+      "value": "6rem",
+      "type": "spacing",
+      "description": "upgraded/engine/console/deployment vertical padding.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1378",
+          "quote": ".upgraded-section{padding:6rem 0"
+        }
+      ]
+    },
+    "section-y-md": {
+      "value": "5rem",
+      "type": "spacing",
+      "description": "integrations/teams/pricing/final-cta (3.5rem measured under max-height:900).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:607",
+          "quote": ".integrations-section{padding:5rem 0"
+        }
+      ]
+    },
+    "section-y-sm": {
+      "value": "4rem",
+      "type": "spacing",
+      "description": "Showcase; all 6rem sections drop to 4rem at <=768.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:392",
+          "quote": ".features-section{background:var(--color-bg-secondary);overflow:hidden;padding:4rem 0"
+        }
+      ]
+    },
+    "header-gap": {
+      "value": "4rem",
+      "type": "spacing",
+      "description": "Section header bottom margin (40px @1440x900, 32px @1280x800 via height queries).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:383",
+          "quote": ".section-header{margin-bottom:4rem;text-align:center}"
+        }
+      ]
+    },
+    "gap-xs": {
+      "value": ".5rem",
+      "type": "spacing",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:350",
+          "quote": ".trust-item{align-items:center;color:var(--color-text-tertiary);display:flex;font-size:.9rem;gap:.5rem"
+        }
+      ]
+    },
+    "gap-sm": {
+      "value": ".75rem",
+      "type": "spacing",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:551",
+          "quote": ".nav-dots{display:flex;gap:.75rem}"
+        }
+      ]
+    },
+    "gap-md": {
+      "value": "1rem",
+      "type": "spacing",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1410",
+          "quote": ".engine-flow{align-items:stretch;display:flex;gap:1rem"
+        }
+      ]
+    },
+    "gap-lg": {
+      "value": "1.5rem",
+      "type": "spacing",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1420",
+          "quote": ".engine-cards{display:grid;gap:1.5rem"
+        }
+      ]
+    },
+    "gap-xl": {
+      "value": "2rem",
+      "type": "spacing",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1426",
+          "quote": ".console-grid{align-items:stretch;display:grid;gap:2rem"
+        }
+      ]
+    },
+    "gap-2xl": {
+      "value": "3rem",
+      "type": "spacing",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:694",
+          "quote": ".footer-grid{display:grid;gap:3rem"
+        }
+      ]
+    },
+    "gap-3xl": {
+      "value": "4rem",
+      "type": "spacing",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:679",
+          "quote": ".integrations-content{align-items:center;display:grid;gap:4rem"
+        }
+      ]
+    }
+  }
+}

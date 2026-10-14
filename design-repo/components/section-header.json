@@ -1,0 +1,37 @@
+{
+  "id": "component.section-header",
+  "purpose": "Centred badge + h2 (plain line + gradient line) + optional subtitle; the standard opener of numbered sections.",
+  "composes": [
+    "primitive.section-badge",
+    "primitive.gradient-text"
+  ],
+  "cssClasses": [
+    "section-header",
+    "section-title",
+    "section-subtitle",
+    "features-header",
+    "superpowers-header"
+  ],
+  "tokens": [
+    "typography.fontSize.display-section",
+    "typography.fontSize.lead",
+    "spacing.header-gap",
+    "color.ink.700"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:383",
+      "quote": ".section-header{margin-bottom:4rem;text-align:center}"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:386",
+      "quote": ".section-title{color:var(--color-text);font-size:clamp(2.5rem,5vw,3.5rem)"
+    },
+    {
+      "cite": "recon/measure-1440.json:459",
+      "quote": "\".section-title\": {"
+    }
+  ],
+  "kind": "component",
+  "contractVersion": "1.0.0"
+}

@@ -1,0 +1,429 @@
+{
+  "typography": {
+    "fontFamily": {
+      "sans": {
+        "value": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",sans-serif",
+        "type": "fontFamily",
+        "description": "System stack on .landing-page. NO web fonts are loaded (document.fonts empty).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:227",
+            "quote": ".landing-page{background:var(--color-bg);color:var(--color-text);font-family:-apple-system"
+          }
+        ]
+      },
+      "body-reset": {
+        "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif",
+        "type": "fontFamily",
+        "description": "Reset body stack (cookie banner inherits a variant of it).",
+        "evidence": [
+          {
+            "cite": "recon/css/entry.qOVbJ9mW.css:3",
+            "quote": "body{font-family:-apple-system"
+          }
+        ]
+      },
+      "mono-intro": {
+        "value": "\"JetBrains Mono\",ui-monospace,Menlo,Consolas,monospace",
+        "type": "fontFamily",
+        "description": "Intro --mono. JetBrains Mono is declared but NEVER loaded: it renders as ui-monospace/Menlo. Do not add a web font.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1",
+            "quote": ".sbi[data-v-00d3a672]{--ink:#070c1f"
+          }
+        ]
+      },
+      "code": {
+        "value": "ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace",
+        "type": "fontFamily",
+        "description": "Console definition formula.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1447",
+            "quote": ".definition-formula{"
+          }
+        ]
+      }
+    },
+    "fontSize": {
+      "eyebrow-xs": {
+        "value": ".68rem",
+        "type": "fontSize",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:113",
+            "quote": ".dp-available[data-v-a75c984f]{background:#00a67d14"
+          }
+        ]
+      },
+      "caption": {
+        "value": ".75rem",
+        "type": "fontSize",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1436",
+            "quote": ".console-mock-name{"
+          }
+        ]
+      },
+      "label": {
+        "value": ".8rem",
+        "type": "fontSize",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:269",
+            "quote": ".lang-code{font-size:.8rem;font-weight:600}"
+          }
+        ]
+      },
+      "small": {
+        "value": ".85rem",
+        "type": "fontSize",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:321",
+            "quote": ".badge-text{color:var(--color-primary);font-size:.85rem;font-weight:600}"
+          }
+        ]
+      },
+      "body-sm": {
+        "value": ".9rem",
+        "type": "fontSize",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:350",
+            "quote": ".trust-item{align-items:center;color:var(--color-text-tertiary);display:flex;font-size:.9rem"
+          }
+        ]
+      },
+      "body-card": {
+        "value": ".92rem",
+        "type": "fontSize",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1424",
+            "quote": ".engine-card p{color:var(--color-text-secondary);font-size:.92rem"
+          }
+        ]
+      },
+      "nav": {
+        "value": ".95rem",
+        "type": "fontSize",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:262",
+            "quote": ".nav-link{color:var(--color-text-secondary);font-size:.95rem"
+          }
+        ]
+      },
+      "body": {
+        "value": "1rem",
+        "type": "fontSize",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:111",
+            "quote": ".dp-caption[data-v-a75c984f]{color:var(--color-text-secondary);font-size:1rem"
+          }
+        ]
+      },
+      "lead": {
+        "value": "1.15rem",
+        "type": "fontSize",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:391",
+            "quote": ".section-subtitle{color:var(--color-text-secondary);font-size:1.15rem"
+          }
+        ]
+      },
+      "step-title": {
+        "value": "1.2rem",
+        "type": "fontSize",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1414",
+            "quote": ".engine-step-title{"
+          }
+        ]
+      },
+      "blog-title": {
+        "value": "1.25rem",
+        "type": "fontSize",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1291",
+            "quote": ".blog-title{"
+          }
+        ]
+      },
+      "pane-title": {
+        "value": "1.35rem",
+        "type": "fontSize",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1430",
+            "quote": ".console-pane-title{"
+          }
+        ]
+      },
+      "card-title": {
+        "value": "1.5rem",
+        "type": "fontSize",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:539",
+            "quote": ".card-title{"
+          }
+        ]
+      },
+      "headline": {
+        "value": "1.75rem",
+        "type": "fontSize",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:681",
+            "quote": ".integrations-headline{"
+          }
+        ]
+      },
+      "display-section": {
+        "value": "clamp(2.5rem,5vw,3.5rem)",
+        "type": "fontSize",
+        "description": "Section h2. Measured 48px @1440x900 (max-height query), 44px @1280x800, 40 @768, 32 @390.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:386",
+            "quote": ".section-title{color:var(--color-text);font-size:clamp(2.5rem,5vw,3.5rem)"
+          }
+        ]
+      },
+      "display-hero": {
+        "value": "clamp(2.5rem,4vw,3.5rem)",
+        "type": "fontSize",
+        "description": "Hero h1. Measured 43.2px @1440x900.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:323",
+            "quote": ".hero-title{color:var(--color-text);font-size:clamp(2.5rem,4vw,3.5rem)"
+          }
+        ]
+      },
+      "display-teams": {
+        "value": "clamp(2.5rem,5vw,4rem)",
+        "type": "fontSize",
+        "description": "Teams h2.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:557",
+            "quote": ".superpowers-title{color:var(--color-text);font-size:clamp(2.5rem,5vw,4rem)"
+          }
+        ]
+      },
+      "display-cta": {
+        "value": "clamp(2rem,4vw,3rem)",
+        "type": "fontSize",
+        "description": "Final CTA h2.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:676",
+            "quote": ".cta-title{color:var(--color-text);font-size:clamp(2rem,4vw,3rem)"
+          }
+        ]
+      },
+      "display-price": {
+        "value": "clamp(2.2rem,5vw,3rem)",
+        "type": "fontSize",
+        "description": "Quote price.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1463",
+            "quote": ".quote-price{"
+          }
+        ]
+      },
+      "display-intro": {
+        "value": "clamp(34px,4.4vw,76px)",
+        "type": "fontSize",
+        "description": "Intro h2. Measured 63.36px @1440.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:15",
+            "quote": ".sbi-story h2[data-v-00d3a672]{font-size:clamp(34px,4.4vw,76px)"
+          }
+        ]
+      },
+      "intro-body": {
+        "value": "clamp(16px,1.3vw,21px)",
+        "type": "fontSize",
+        "description": "Intro body.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:16",
+            "quote": ".sbi-body[data-v-00d3a672]{color:var(--muted);font-size:clamp(16px,1.3vw,21px)"
+          }
+        ]
+      }
+    },
+    "fontWeight": {
+      "regular": {
+        "value": 400,
+        "type": "fontWeight",
+        "description": "Body default (computed 400 on 104/143 measured nodes @1440).",
+        "evidence": [
+          {
+            "cite": "CLONE_SPEC.md:25",
+            "quote": "* `body` (reset)"
+          }
+        ]
+      },
+      "medium": {
+        "value": 500,
+        "type": "fontWeight",
+        "description": "Nav links, trust link.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:262",
+            "quote": ".nav-link{color:var(--color-text-secondary);font-size:.95rem;font-weight:500"
+          }
+        ]
+      },
+      "semibold": {
+        "value": 600,
+        "type": "fontWeight",
+        "description": "Buttons, badges (44 declarations, most frequent).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:331",
+            "quote": ".cta-primary{align-items:center"
+          }
+        ]
+      },
+      "bold": {
+        "value": 700,
+        "type": "fontWeight",
+        "description": "Hero title, card titles (39 declarations).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:323",
+            "quote": ".hero-title{color:var(--color-text);font-size:clamp(2.5rem,4vw,3.5rem);font-weight:700"
+          }
+        ]
+      },
+      "extrabold": {
+        "value": 800,
+        "type": "fontWeight",
+        "description": "Section titles (9 declarations).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:386",
+            "quote": ".section-title{color:var(--color-text);font-size:clamp(2.5rem,5vw,3.5rem);font-weight:800"
+          }
+        ]
+      }
+    },
+    "letterSpacing": {
+      "display": {
+        "value": "-.03em",
+        "type": "letterSpacing",
+        "description": "Section/hero/feature titles.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:386",
+            "quote": ".section-title{color:var(--color-text);font-size:clamp(2.5rem,5vw,3.5rem);font-weight:800;letter-spacing:-.03em"
+          }
+        ]
+      },
+      "intro-display": {
+        "value": "-.035em",
+        "type": "letterSpacing",
+        "description": "Intro h2.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:15",
+            "quote": ".sbi-story h2[data-v-00d3a672]{font-size:clamp(34px,4.4vw,76px);font-weight:700;letter-spacing:-.035em"
+          }
+        ]
+      },
+      "eyebrow": {
+        "value": ".08em",
+        "type": "letterSpacing",
+        "description": "Uppercase eyebrow labels.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:82",
+            "quote": ".dp-boundary-label[data-v-a75c984f]{color:var(--dp-in);font-size:.72rem;font-weight:700;left:.9rem;letter-spacing:.08em"
+          }
+        ]
+      },
+      "trusted-label": {
+        "value": ".15em",
+        "type": "letterSpacing",
+        "description": "Logo-row label.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:354",
+            "quote": ".trusted-label{"
+          }
+        ]
+      }
+    },
+    "lineHeight": {
+      "intro-display": {
+        "value": 1.02,
+        "type": "lineHeight",
+        "description": "Intro h2.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:15",
+            "quote": ".sbi-story h2[data-v-00d3a672]{font-size:clamp(34px,4.4vw,76px)"
+          }
+        ]
+      },
+      "display": {
+        "value": 1.15,
+        "type": "lineHeight",
+        "description": "Hero title.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:323",
+            "quote": ".hero-title{color:var(--color-text);font-size:clamp(2.5rem,4vw,3.5rem);font-weight:700;letter-spacing:-.03em;line-height:1.15"
+          }
+        ]
+      },
+      "body": {
+        "value": 1.7,
+        "type": "lineHeight",
+        "description": "Subtitles / long copy.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:391",
+            "quote": ".section-subtitle{color:var(--color-text-secondary);font-size:1.15rem;line-height:1.7"
+          }
+        ]
+      },
+      "card": {
+        "value": 1.65,
+        "type": "lineHeight",
+        "description": "Card body.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1424",
+            "quote": ".engine-card p{color:var(--color-text-secondary);font-size:.92rem;line-height:1.65}"
+          }
+        ]
+      },
+      "compact": {
+        "value": 1.5,
+        "type": "lineHeight",
+        "description": "Lists.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1466",
+            "quote": ".quote-features li{align-items:flex-start;color:var(--color-text-secondary);display:flex;font-size:.92rem;gap:.6rem;line-height:1.5}"
+          }
+        ]
+      }
+    }
+  }
+}

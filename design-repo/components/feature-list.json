@@ -1,0 +1,31 @@
+{
+  "id": "component.feature-list",
+  "purpose": "Vertical list of short benefit lines with a leading check/icon (quote features, integrations features, card features, tree gains).",
+  "composes": [
+    "primitive.check-mark",
+    "primitive.icon"
+  ],
+  "cssClasses": [
+    "quote-features",
+    "integrations-features",
+    "card-features",
+    "ct-detail-list"
+  ],
+  "tokens": [
+    "typography.fontSize.body-card",
+    "typography.lineHeight.compact",
+    "color.signal.success"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1465",
+      "quote": ".quote-features{display:grid;gap:.75rem 2rem;grid-template-columns:1fr 1fr"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:209",
+      "quote": ".ct-detail-list[data-v-a6fe94b3]{display:flex;flex-direction:column"
+    }
+  ],
+  "kind": "component",
+  "contractVersion": "1.0.0"
+}

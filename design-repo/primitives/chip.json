@@ -1,0 +1,38 @@
+{
+  "id": "primitive.chip",
+  "purpose": "Neutral chips/pills: console nav items, deployment system chips, agent pills, action chips.",
+  "cssClasses": [
+    "console-nav-item",
+    "dp-chips li",
+    "mcp-agent",
+    "action-chip"
+  ],
+  "variants": {
+    "neutral": "#f0f3f7 / #f6f9fc",
+    "active": "violet tint",
+    "agent": "white pill with shadow"
+  },
+  "tokens": [
+    "color.surface.cloud",
+    "color.surface.mist",
+    "color.brand.tint-10",
+    "radius.pill",
+    "radius.sm"
+  ],
+  "props": [
+    "label",
+    "active"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1400",
+      "quote": ".mcp-agent{align-items:center;background:#fff"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:90",
+      "quote": ".dp-chips li[data-v-a75c984f]{background:var(--color-bg-secondary)"
+    }
+  ],
+  "kind": "primitive",
+  "contractVersion": "1.0.0"
+}

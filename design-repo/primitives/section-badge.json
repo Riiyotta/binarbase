@@ -1,0 +1,44 @@
+{
+  "id": "primitive.section-badge",
+  "purpose": "Numbered eyebrow pill \"01 · Label\" above every numbered section title.",
+  "cssClasses": [
+    "section-badge",
+    "section-badge.emerald",
+    "section-badge.cyan",
+    "section-num"
+  ],
+  "variants": {
+    "primary": "violet tint",
+    "emerald": "green #00a67d (Connectors)",
+    "cyan": "renders identical green (Teams)"
+  },
+  "tokens": [
+    "color.brand.tint-08",
+    "color.brand.primary",
+    "color.deploy.inside",
+    "radius.pill",
+    "typography.fontSize.small"
+  ],
+  "props": [
+    "number",
+    "badge",
+    "badgeTone",
+    "badgeIcon"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:384",
+      "quote": ".section-badge{background:#6042f914"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:385",
+      "quote": ".section-badge.cyan,.section-badge.emerald{background:#00a67d14"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:352",
+      "quote": ".section-num:after{content:\"·\""
+    }
+  ],
+  "kind": "primitive",
+  "contractVersion": "1.0.0"
+}

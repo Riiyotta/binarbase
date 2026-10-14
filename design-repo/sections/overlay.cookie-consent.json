@@ -1,0 +1,163 @@
+{
+  "id": "overlay.cookie-consent",
+  "kind": "section",
+  "contractVersion": "1.0.0",
+  "category": "overlay",
+  "pageOrder": 15,
+  "purpose": "Fixed bottom consent banner with three choices. In the clone it stores bb_cookie_consent and loads NO third-party scripts (the original loads GA/GTM/PostHog on allow).",
+  "anchorId": null,
+  "surface": "white-fixed",
+  "variants": [
+    "default"
+  ],
+  "implementedBy": "src/components/CookieBanner.jsx",
+  "measuredFrom": [
+    {
+      "cite": "src/components/CookieBanner.jsx:8",
+      "quote": "const COOKIE = 'bb_cookie_consent'"
+    },
+    {
+      "cite": "src/components/CookieBanner.jsx:4",
+      "quote": "The original loads GA/GTM/PostHog on \"allow\"; the clone intentionally loads no third-party scripts."
+    },
+    {
+      "cite": "recon/css/entry.qOVbJ9mW.css:8",
+      "quote": ".cookie-consent[data-v-c7cad4a5]{background:#fff"
+    },
+    {
+      "cite": "recon/audit/state-orig-1440.json:1",
+      "quote": "\\\"cookie\\\":{\\\".cookie-consent#0\\\""
+    },
+    {
+      "file": "recon/screens/00-intro-3d-chapter1-1440.png"
+    }
+  ],
+  "constraints": {
+    "onePerPage": true,
+    "mustBeLast": true
+  },
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "title",
+      "body",
+      "policyLink",
+      "buttons",
+      "consentStorage",
+      "loadsThirdPartyScripts"
+    ],
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 5
+      },
+      "body": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 47
+      },
+      "policyLink": {
+        "$ref": "#/definitions/link"
+      },
+      "buttons": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "necessary",
+          "measurement",
+          "all"
+        ],
+        "properties": {
+          "necessary": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 4
+          },
+          "measurement": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 4
+          },
+          "all": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 4
+          }
+        }
+      },
+      "consentStorage": {
+        "const": "cookie:bb_cookie_consent"
+      },
+      "loadsThirdPartyScripts": {
+        "const": false
+      }
+    }
+  },
+  "copyBudgets": {
+    ".title": {
+      "realMaxWords": 3,
+      "maxWords": 5
+    },
+    ".body": {
+      "realMaxWords": 37,
+      "maxWords": 47
+    },
+    ".buttons.necessary": {
+      "realMaxWords": 2,
+      "maxWords": 4
+    },
+    ".buttons.measurement": {
+      "realMaxWords": 2,
+      "maxWords": 4
+    },
+    ".buttons.all": {
+      "realMaxWords": 2,
+      "maxWords": 4
+    }
+  },
+  "assetFields": {},
+  "motion": {
+    "patterns": [
+      "static-overlay"
+    ],
+    "loops": [],
+    "reducedMotionFallback": "static",
+    "fallbackGrounding": "source",
+    "fallbackNote": "Banner appears/disappears without animation."
+  },
+  "motionSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "pattern",
+      "reducedMotionFallback"
+    ],
+    "properties": {
+      "pattern": {
+        "type": "string",
+        "enum": [
+          "static-overlay"
+        ]
+      },
+      "reducedMotionFallback": {
+        "const": "static"
+      }
+    }
+  },
+  "responsive": [
+    {
+      "breakpoint": "breakpoint.max-720",
+      "target": ".cookie-consent-inner",
+      "change": "column; buttons flex:1",
+      "evidence": [
+        {
+          "cite": "recon/css/entry.qOVbJ9mW.css:19",
+          "quote": "@media(max-width:720px){.cookie-consent-inner[data-v-c7cad4a5]{align-items:stretch;flex-direction:column"
+        }
+      ]
+    }
+  ],
+  "accessibility": "role=dialog, aria-modal=false, aria-label \"We use cookies\". Must never load analytics/advertising scripts before (or, in this repo, after) consent."
+}

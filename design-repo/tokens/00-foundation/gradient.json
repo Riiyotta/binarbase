@@ -1,0 +1,140 @@
+{
+  "gradient": {
+    "brand": {
+      "value": "linear-gradient(135deg,#3f34fe,#8e64fa)",
+      "type": "gradient",
+      "description": "Brand text/button gradient (gradient-text, gradient-text-emerald, title-gradient, quote-price, engine-step-badge, connect-step-num).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:387",
+          "quote": ".gradient-text{background:linear-gradient(135deg,#3f34fe,#8e64fa)"
+        },
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:325",
+          "quote": ".title-gradient{background:linear-gradient(135deg,#3f34fe,#8e64fa)"
+        }
+      ]
+    },
+    "brand-reversed": {
+      "value": "linear-gradient(135deg,#8e64fa,#3f34fe)",
+      "type": "gradient",
+      "description": "Reversed stops (.gradient-text-cyan, Teams title).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:389",
+          "quote": ".gradient-text-cyan{background:linear-gradient(135deg,#8e64fa,#3f34fe)"
+        }
+      ]
+    },
+    "page-aurora": {
+      "value": "linear-gradient(180deg,#fff,#f8f6ff 40%,#f3f0ff)",
+      "type": "gradient",
+      "description": "Fixed page background.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:229",
+          "quote": ".aurora-bg{background:linear-gradient(180deg,#fff,#f8f6ff 40%,#f3f0ff)"
+        }
+      ]
+    },
+    "brain-core": {
+      "value": "linear-gradient(135deg,#6042f9,#8b5cf6 50%,#a78bfa)",
+      "type": "gradient",
+      "description": "Connectors brain core.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:629",
+          "quote": ".brain-core{align-items:center;animation:core-heartbeat"
+        }
+      ]
+    },
+    "deploy-orb": {
+      "value": "radial-gradient(circle at 40% 35%,#8e64fa,#3f34fe 70%)",
+      "type": "gradient",
+      "description": "Deployment orb.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:92",
+          "quote": ".dp-orb[data-v-a75c984f]{animation:dp-pulse"
+        }
+      ]
+    },
+    "footer": {
+      "value": "linear-gradient(180deg,#f8fafc,#fff)",
+      "type": "gradient",
+      "description": "Footer background.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:692",
+          "quote": ".footer{background:linear-gradient(180deg,#f8fafc,#fff)"
+        }
+      ]
+    },
+    "hero-blob-1": {
+      "value": "linear-gradient(135deg,#a960ee,#ff333d)",
+      "type": "gradient",
+      "description": "Hero art blob 1 (decorative only).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:240",
+          "quote": ".blob-1{animation-delay:0s;background:linear-gradient(135deg,#a960ee,#ff333d)"
+        }
+      ]
+    },
+    "hero-blob-2": {
+      "value": "linear-gradient(135deg,#90e0ff,#635bff)",
+      "type": "gradient",
+      "description": "Hero art blob 2.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:241",
+          "quote": ".blob-2{animation-delay:-5s;background:linear-gradient(135deg,#90e0ff,#635bff)"
+        }
+      ]
+    },
+    "hero-blob-3": {
+      "value": "linear-gradient(135deg,#ffcb57,#ff6b6b)",
+      "type": "gradient",
+      "description": "Hero art blob 3.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:242",
+          "quote": ".blob-3{animation-delay:-10s;background:linear-gradient(135deg,#ffcb57,#ff6b6b)"
+        }
+      ]
+    },
+    "hero-blob-4": {
+      "value": "linear-gradient(135deg,#00d4aa,#635bff)",
+      "type": "gradient",
+      "description": "Hero art blob 4.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:243",
+          "quote": ".blob-4{animation-delay:-15s;background:linear-gradient(135deg,#00d4aa,#635bff)"
+        }
+      ]
+    },
+    "amber-badge": {
+      "value": "linear-gradient(135deg,#f59e0b,#d97706)",
+      "type": "gradient",
+      "description": "Coming-soon badge.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:343",
+          "quote": ".coming-soon-badge{background:linear-gradient(135deg,#f59e0b,#d97706)"
+        }
+      ]
+    },
+    "agent-avatar": {
+      "value": "linear-gradient(135deg,#3b82f6,#06b6d4)",
+      "type": "gradient",
+      "description": "Showcase agent avatar / send button.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:424",
+          "quote": ".message-avatar{align-items:center;background:linear-gradient(135deg,#3b82f6,#06b6d4)"
+        }
+      ]
+    }
+  }
+}

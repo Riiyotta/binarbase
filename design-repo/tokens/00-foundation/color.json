@@ -1,0 +1,658 @@
+{
+  "$schemaNote": "Foundation colours. usage.cssHexCount = literal hex occurrences in the live (non-dead) original CSS; cssVarRefCount = var() references.",
+  "color": {
+    "brand": {
+      "primary": {
+        "value": "#6042f9",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 8,
+          "cssVarRefCount": 62
+        },
+        "description": "Primary violet (--color-primary). Most-referenced colour var in the stylesheet.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:226",
+            "quote": ":root{--color-primary:#6042f9"
+          }
+        ]
+      },
+      "primary-dark": {
+        "value": "#4d35c7",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1,
+          "cssVarRefCount": 4
+        },
+        "description": "Hover state of primary actions (--color-primary-dark).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:226",
+            "quote": ":root{--color-primary:#6042f9"
+          }
+        ]
+      },
+      "gradient-start": {
+        "value": "#3f34fe",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 6,
+          "cssVarRefCount": 3
+        },
+        "description": "Brand gradient stop 1.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:226",
+            "quote": ":root{--color-primary:#6042f9"
+          }
+        ]
+      },
+      "gradient-end": {
+        "value": "#8e64fa",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 6,
+          "cssVarRefCount": 3
+        },
+        "description": "Brand gradient stop 2.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:226",
+            "quote": ":root{--color-primary:#6042f9"
+          }
+        ]
+      },
+      "tint-04": {
+        "value": "#6042f90a",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 3
+        },
+        "description": "Active table column / setup-banner wash.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:132",
+            "quote": ".dp-cell.active[data-v-a75c984f]{background:#6042f90a}"
+          }
+        ]
+      },
+      "tint-05": {
+        "value": "#6042f90d",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 3
+        },
+        "description": "Callout wash (mismatch-callout, dp-local).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:140",
+            "quote": ".dp-local[data-v-a75c984f]{background:#6042f90d"
+          }
+        ]
+      },
+      "tint-08": {
+        "value": "#6042f914",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 5
+        },
+        "description": "Badge/pill background.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:384",
+            "quote": ".section-badge{background:#6042f914"
+          }
+        ]
+      },
+      "tint-10": {
+        "value": "#6042f91a",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 12
+        },
+        "description": "Active chip / icon box background.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:200",
+            "quote": ".ct-detail-icon[data-v-a6fe94b3]{align-items:center;background:#6042f91a"
+          }
+        ]
+      },
+      "ring-35": {
+        "value": "#6042f959",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 7
+        },
+        "description": "Primary hover glow / accent border.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:332",
+            "quote": ".cta-primary:hover{background:var(--color-primary-dark);box-shadow:0 8px 20px #6042f959"
+          }
+        ]
+      }
+    },
+    "ink": {
+      "900": {
+        "value": "#0a2540",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1,
+          "cssVarRefCount": 57
+        },
+        "description": "Primary text (--color-text).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:226",
+            "quote": ":root{--color-primary:#6042f9"
+          }
+        ]
+      },
+      "700": {
+        "value": "#425466",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1,
+          "cssVarRefCount": 49
+        },
+        "description": "Secondary text (--color-text-secondary).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:226",
+            "quote": ":root{--color-primary:#6042f9"
+          }
+        ]
+      },
+      "500": {
+        "value": "#697386",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1,
+          "cssVarRefCount": 39
+        },
+        "description": "Tertiary text / labels (--color-text-tertiary).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:226",
+            "quote": ":root{--color-primary:#6042f9"
+          }
+        ]
+      }
+    },
+    "surface": {
+      "white": {
+        "value": "#ffffff",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 61,
+          "cssVarRefCount": 1,
+          "note": "counted as the literal \"#fff\""
+        },
+        "description": "Page + card surface (--color-bg is #fff; #fff is the single most frequent hex literal).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:226",
+            "quote": ":root{--color-primary:#6042f9"
+          },
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:408",
+            "quote": ".card-inner{background:#fff"
+          }
+        ]
+      },
+      "mist": {
+        "value": "#f6f9fc",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1,
+          "cssVarRefCount": 21
+        },
+        "description": "Alternate section surface (--color-bg-secondary): engine, showcase, deployment.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:226",
+            "quote": ":root{--color-primary:#6042f9"
+          }
+        ]
+      },
+      "cloud": {
+        "value": "#f0f3f7",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1,
+          "cssVarRefCount": 2
+        },
+        "description": "Tertiary surface (--color-bg-tertiary): console nav chips.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:226",
+            "quote": ":root{--color-primary:#6042f9"
+          }
+        ]
+      },
+      "nav-glass": {
+        "value": "#fffffff2",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1
+        },
+        "description": "Nav background over light content.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:249",
+            "quote": ".nav-glass{backdrop-filter:blur(20px)"
+          }
+        ]
+      }
+    },
+    "line": {
+      "default": {
+        "value": "#e6ebf1",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1,
+          "cssVarRefCount": 57
+        },
+        "description": "Standard 1px border (--color-border).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:226",
+            "quote": ":root{--color-primary:#6042f9"
+          }
+        ]
+      }
+    },
+    "signal": {
+      "success": {
+        "value": "#00d4aa",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 2,
+          "cssVarRefCount": 6
+        },
+        "description": "Success / check icons / badge pulse (--color-success).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:226",
+            "quote": ":root{--color-primary:#6042f9"
+          }
+        ]
+      },
+      "warning": {
+        "value": "#ffbb00",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1,
+          "cssVarRefCount": 0,
+          "note": "declared as \"#fb0\"; rendered only as #ffbb0026"
+        },
+        "description": "Declared as #fb0 (--color-warning); only the alpha form #ffbb0026 is rendered (needs-review status).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:226",
+            "quote": ":root{--color-primary:#6042f9"
+          }
+        ]
+      }
+    },
+    "intro": {
+      "ink": {
+        "value": "#070c1f",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1
+        },
+        "description": "Intro (.sbi) background --ink; also nav dark state base.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1",
+            "quote": ".sbi[data-v-00d3a672]{--ink:#070c1f"
+          }
+        ]
+      },
+      "paper": {
+        "value": "#f4f2ff",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 3
+        },
+        "description": "Intro text --paper.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1",
+            "quote": ".sbi[data-v-00d3a672]{--ink:#070c1f"
+          }
+        ]
+      },
+      "muted": {
+        "value": "#bdb9de",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 2
+        },
+        "description": "Intro secondary text --muted.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1",
+            "quote": ".sbi[data-v-00d3a672]{--ink:#070c1f"
+          }
+        ]
+      },
+      "lav": {
+        "value": "#c4b8ff",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1
+        },
+        "description": "Intro accent --lav (progress fill, cue, mono line).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1",
+            "quote": ".sbi[data-v-00d3a672]{--ink:#070c1f"
+          }
+        ]
+      },
+      "nav-dark-bg": {
+        "value": "#070c1f8c",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1
+        },
+        "description": "Nav background while html.sbi-dark.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:250",
+            "quote": ".sbi-dark .nav-glass{background:#070c1f8c"
+          }
+        ]
+      },
+      "nav-dark-line": {
+        "value": "#c4b8ff24",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1
+        },
+        "description": "Nav border while html.sbi-dark.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:250",
+            "quote": ".sbi-dark .nav-glass{background:#070c1f8c"
+          }
+        ]
+      },
+      "control-bg": {
+        "value": "#0e1a3a99",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 2
+        },
+        "description": "Intro round/btn control background.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:49",
+            "quote": ".sbi-round[data-v-00d3a672]{background:#0e1a3a99"
+          }
+        ]
+      }
+    },
+    "deploy": {
+      "inside": {
+        "value": "#00a67d",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 5
+        },
+        "description": "--dp-in: data stays inside; also emerald badge text.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:72",
+            "quote": ".deploy-section[data-v-a75c984f]{--dp-in:#00a67d"
+          }
+        ]
+      },
+      "optional": {
+        "value": "#d68a00",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1
+        },
+        "description": "--dp-opt: only if you choose.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:72",
+            "quote": ".deploy-section[data-v-a75c984f]{--dp-in:#00a67d"
+          }
+        ]
+      }
+    },
+    "accent": {
+      "green": {
+        "value": "#10b981",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 12
+        },
+        "description": "Success-story pill, feature icons, card check marks.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1290",
+            "quote": ".blog-category.success-story{"
+          }
+        ]
+      },
+      "green-deep": {
+        "value": "#059669",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 5
+        },
+        "description": "Emerald pair.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:404",
+            "quote": ".card-glow.emerald{background:linear-gradient(135deg,#10b981,#059669)"
+          }
+        ]
+      },
+      "amber": {
+        "value": "#f59e0b",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 4
+        },
+        "description": "Amber accent (coming-soon badge, alerts).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:343",
+            "quote": ".coming-soon-badge{background:linear-gradient(135deg,#f59e0b,#d97706)"
+          }
+        ]
+      },
+      "amber-deep": {
+        "value": "#d97706",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 2
+        },
+        "description": "Amber gradient stop.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:343",
+            "quote": ".coming-soon-badge{background:linear-gradient(135deg,#f59e0b,#d97706)"
+          }
+        ]
+      },
+      "amber-text": {
+        "value": "#b45309",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 4
+        },
+        "description": "Alert strong text.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:436",
+            "quote": ".alert-content strong{color:#b45309"
+          }
+        ]
+      },
+      "cyan": {
+        "value": "#06b6d4",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 7
+        },
+        "description": "Cyan accent (forecast, avatar gradient).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:374",
+            "quote": ".legend-dot.actual{background:#06b6d4}"
+          }
+        ]
+      },
+      "blue": {
+        "value": "#3b82f6",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 2
+        },
+        "description": "Blue accent (agent avatar).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:424",
+            "quote": ".message-avatar{align-items:center;background:linear-gradient(135deg,#3b82f6,#06b6d4)"
+          }
+        ]
+      },
+      "violet": {
+        "value": "#8b5cf6",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 6
+        },
+        "description": "Brain core mid-stop / chart bars.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:629",
+            "quote": ".brain-core{align-items:center;animation:core-heartbeat"
+          }
+        ]
+      },
+      "violet-light": {
+        "value": "#a78bfa",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 2
+        },
+        "description": "Brain core end stop.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:629",
+            "quote": ".brain-core{align-items:center;animation:core-heartbeat"
+          }
+        ]
+      },
+      "red-mark": {
+        "value": "#e2506b",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1
+        },
+        "description": "Mismatch X mark.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1373",
+            "quote": ".mismatch-mark{"
+          }
+        ]
+      },
+      "grey-mark": {
+        "value": "#c3cad6",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1
+        },
+        "description": "Compare-table generic X mark.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1392",
+            "quote": ".mark-x{"
+          }
+        ]
+      }
+    },
+    "cookie": {
+      "title": {
+        "value": "#1a1a2e",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1
+        },
+        "description": "Cookie banner title (entry stylesheet, not the landing tokens).",
+        "evidence": [
+          {
+            "cite": "recon/css/entry.qOVbJ9mW.css:10",
+            "quote": ".cookie-consent-title[data-v-c7cad4a5]{color:#1a1a2e"
+          }
+        ]
+      },
+      "body": {
+        "value": "#4b5563",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1
+        },
+        "description": "Cookie banner body.",
+        "evidence": [
+          {
+            "cite": "recon/css/entry.qOVbJ9mW.css:11",
+            "quote": ".cookie-consent-body[data-v-c7cad4a5]{color:#4b5563"
+          }
+        ]
+      },
+      "button-text": {
+        "value": "#374151",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1
+        },
+        "description": "Secondary cookie button text.",
+        "evidence": [
+          {
+            "cite": "recon/css/entry.qOVbJ9mW.css:16",
+            "quote": ".cookie-btn-secondary[data-v-c7cad4a5]{background:#fff;border:1px solid #d1d5db;color:#374151}"
+          }
+        ]
+      },
+      "button-line": {
+        "value": "#d1d5db",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1
+        },
+        "description": "Secondary cookie button border.",
+        "evidence": [
+          {
+            "cite": "recon/css/entry.qOVbJ9mW.css:16",
+            "quote": ".cookie-btn-secondary[data-v-c7cad4a5]{background:#fff;border:1px solid #d1d5db;color:#374151}"
+          }
+        ]
+      },
+      "top-line": {
+        "value": "#e5e7eb",
+        "type": "color",
+        "usage": {
+          "cssHexCount": 1
+        },
+        "description": "Cookie banner top border.",
+        "evidence": [
+          {
+            "cite": "recon/css/entry.qOVbJ9mW.css:8",
+            "quote": ".cookie-consent[data-v-c7cad4a5]{background:#fff;border-top:1px solid #e5e7eb"
+          }
+        ]
+      }
+    }
+  }
+}

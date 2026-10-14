@@ -1,0 +1,147 @@
+{
+  "radius": {
+    "xs": {
+      "value": "4px",
+      "type": "radius",
+      "description": "Coming-soon badge.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:343",
+          "quote": ".coming-soon-badge{background:linear-gradient(135deg,#f59e0b,#d97706);border-radius:4px"
+        }
+      ]
+    },
+    "sm": {
+      "value": "8px",
+      "type": "radius",
+      "description": "Buttons, nav CTA, lang button, chips (11 decl.).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:331",
+          "quote": ".cta-primary{align-items:center;background:var(--color-primary);border-radius:8px"
+        }
+      ]
+    },
+    "md": {
+      "value": "10px",
+      "type": "radius",
+      "description": "Cookie buttons, mini widgets, definition rows (15 decl.).",
+      "evidence": [
+        {
+          "cite": "recon/css/entry.qOVbJ9mW.css:14",
+          "quote": ".cookie-btn[data-v-c7cad4a5]{border-radius:10px"
+        }
+      ]
+    },
+    "lg": {
+      "value": "12px",
+      "type": "radius",
+      "description": "Mismatch row, endpoint box (9 decl.).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1370",
+          "quote": ".mismatch-row{"
+        }
+      ]
+    },
+    "xl": {
+      "value": "14px",
+      "type": "radius",
+      "description": "Console mock, engine loop, floating icon.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1433",
+          "quote": ".console-mock{"
+        }
+      ]
+    },
+    "2xl": {
+      "value": "16px",
+      "type": "radius",
+      "description": "Cards (engine/mcp/superpower).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1405",
+          "quote": ".mcp-card{background:#fff;border:1px solid var(--color-border);border-radius:16px"
+        }
+      ]
+    },
+    "boundary": {
+      "value": "18px",
+      "type": "radius",
+      "description": "Deployment boundary box (single use).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:78",
+          "quote": ".dp-boundary[data-v-a75c984f]{align-self:stretch;background:#00a67d0d;border:2px dashed var(--dp-in);border-radius:18px"
+        }
+      ]
+    },
+    "panel": {
+      "value": "20px",
+      "type": "radius",
+      "description": "Panels, tables, blog card, console pane (8 decl.; most frequent measured radius @1440).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1367",
+          "quote": ".mismatch-panel{background:#fff;border:1px solid var(--color-border);border-radius:20px"
+        }
+      ]
+    },
+    "card-lg": {
+      "value": "24px",
+      "type": "radius",
+      "description": "Showcase card, dp-diagram, quote card.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:408",
+          "quote": ".card-inner{background:#fff;border:1px solid var(--color-border);border-radius:24px"
+        }
+      ]
+    },
+    "cta-block": {
+      "value": "32px",
+      "type": "radius",
+      "description": "Final CTA block (24px under max-height:900).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:674",
+          "quote": ".cta-content{background:#fff;border:1px solid var(--color-border);border-radius:32px"
+        }
+      ]
+    },
+    "pill": {
+      "value": "100px",
+      "type": "radius",
+      "description": "Pills (16 decl.).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:384",
+          "quote": ".section-badge{background:#6042f914;border:1px solid rgba(96,66,249,.15);border-radius:100px"
+        }
+      ]
+    },
+    "pill-alt": {
+      "value": "999px",
+      "type": "radius",
+      "description": "Scoped-component pills (6 decl.).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:73",
+          "quote": ".dp-switch[data-v-a75c984f]{background:#fff;border:1px solid var(--color-border);border-radius:999px"
+        }
+      ]
+    },
+    "round": {
+      "value": "50%",
+      "type": "radius",
+      "description": "Circles (25 decl., most frequent).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:552",
+          "quote": ".nav-dot{background:var(--color-border);border-radius:50%"
+        }
+      ]
+    }
+  }
+}

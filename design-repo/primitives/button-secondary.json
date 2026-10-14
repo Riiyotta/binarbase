@@ -1,0 +1,43 @@
+{
+  "id": "primitive.button-secondary",
+  "purpose": "Outlined neutral action; on the hero it is disabled with a COMING SOON badge.",
+  "cssClasses": [
+    "cta-secondary",
+    "cta-secondary.disabled",
+    "cta-secondary.large",
+    "coming-soon-badge"
+  ],
+  "variants": {
+    "default": "transparent, 1px #e6ebf1",
+    "disabled": "opacity .6, cursor not-allowed, badge top-right",
+    "large": "final CTA"
+  },
+  "tokens": [
+    "color.line.default",
+    "color.surface.mist",
+    "radius.sm",
+    "gradient.amber-badge"
+  ],
+  "props": [
+    "label",
+    "disabled",
+    "comingSoonLabel",
+    "variant"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:338",
+      "quote": ".cta-secondary{align-items:center;background:transparent"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:340",
+      "quote": ".cta-secondary.disabled{cursor:not-allowed;opacity:.6"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:343",
+      "quote": ".coming-soon-badge{"
+    }
+  ],
+  "kind": "primitive",
+  "contractVersion": "1.0.0"
+}

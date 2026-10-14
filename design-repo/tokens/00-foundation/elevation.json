@@ -1,0 +1,147 @@
+{
+  "elevation": {
+    "card": {
+      "value": "0 2px 8px #0000000a",
+      "type": "shadow",
+      "description": "Small cards (5 decl., most frequent).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1405",
+          "quote": ".mcp-card{background:#fff;border:1px solid var(--color-border);border-radius:16px;box-shadow:0 2px 8px #0000000a"
+        }
+      ]
+    },
+    "panel": {
+      "value": "0 4px 16px #0a25400d",
+      "type": "shadow",
+      "description": "Panels and tables.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1367",
+          "quote": ".mismatch-panel{background:#fff;border:1px solid var(--color-border);border-radius:20px;box-shadow:0 4px 16px #0a25400d"
+        }
+      ]
+    },
+    "card-hover": {
+      "value": "0 8px 20px #6042f91a",
+      "type": "shadow",
+      "description": "Card hover.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1406",
+          "quote": ".mcp-card:hover{border-color:var(--color-primary);box-shadow:0 8px 20px #6042f91a"
+        }
+      ]
+    },
+    "showcase": {
+      "value": "0 4px 24px #00000014",
+      "type": "shadow",
+      "description": "Showcase card.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:408",
+          "quote": ".card-inner{background:#fff;border:1px solid var(--color-border);border-radius:24px;box-shadow:0 4px 24px #00000014"
+        }
+      ]
+    },
+    "showcase-active": {
+      "value": "0 8px 32px #6042f926",
+      "type": "shadow",
+      "description": "Active showcase card.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:409",
+          "quote": ".showcase-card.active .card-inner{border-color:var(--color-primary);box-shadow:0 8px 32px #6042f926}"
+        }
+      ]
+    },
+    "cta-block": {
+      "value": "0 8px 32px #0000000f",
+      "type": "shadow",
+      "description": "Final CTA block.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:674",
+          "quote": ".cta-content{background:#fff;border:1px solid var(--color-border);border-radius:32px;box-shadow:0 8px 32px #0000000f"
+        }
+      ]
+    },
+    "quote": {
+      "value": "0 20px 60px #6042f924",
+      "type": "shadow",
+      "description": "Pricing quote card.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1460",
+          "quote": ".quote-card{background:#fff;border:1px solid rgba(96,66,249,.3);border-radius:24px;box-shadow:0 20px 60px #6042f924"
+        }
+      ]
+    },
+    "tree-detail": {
+      "value": "0 10px 34px #0a254012",
+      "type": "shadow",
+      "description": "Context-tree detail card.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:198",
+          "quote": ".ct-detail[data-v-a6fe94b3]{background:#fff;border:1px solid var(--color-border);border-radius:20px;box-shadow:0 10px 34px #0a254012"
+        }
+      ]
+    },
+    "button-hover": {
+      "value": "0 8px 20px #6042f959",
+      "type": "shadow",
+      "description": "Primary CTA hover.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:332",
+          "quote": ".cta-primary:hover{background:var(--color-primary-dark);box-shadow:0 8px 20px #6042f959"
+        }
+      ]
+    },
+    "cookie": {
+      "value": "0 -4px 24px #00000014",
+      "type": "shadow",
+      "description": "Cookie banner.",
+      "evidence": [
+        {
+          "cite": "recon/css/entry.qOVbJ9mW.css:8",
+          "quote": ".cookie-consent[data-v-c7cad4a5]{background:#fff;border-top:1px solid #e5e7eb;bottom:0;box-shadow:0 -4px 24px #00000014"
+        }
+      ]
+    },
+    "blur-nav": {
+      "value": "blur(20px)",
+      "type": "backdropFilter",
+      "description": "Nav glass.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:249",
+          "quote": ".nav-glass{backdrop-filter:blur(20px)"
+        }
+      ]
+    },
+    "blur-intro-card": {
+      "value": "blur(10px)",
+      "type": "backdropFilter",
+      "description": "Intro detail card.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:24",
+          "quote": ".sbi-card[data-v-00d3a672]{-webkit-backdrop-filter:blur(10px)"
+        }
+      ]
+    },
+    "blur-overlay": {
+      "value": "blur(4px)",
+      "type": "backdropFilter",
+      "description": "Mobile menu overlay.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:288",
+          "quote": ".mobile-menu-overlay{backdrop-filter:blur(4px)"
+        }
+      ]
+    }
+  }
+}

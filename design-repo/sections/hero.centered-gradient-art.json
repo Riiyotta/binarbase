@@ -1,0 +1,282 @@
+{
+  "id": "hero.centered-gradient-art",
+  "kind": "section",
+  "contractVersion": "1.0.0",
+  "category": "hero",
+  "pageOrder": 3,
+  "purpose": "Centred value proposition with gradient headline, primary trial CTA, disabled demo CTA and four trust proofs over skewed Stripe-style gradient blobs.",
+  "anchorId": null,
+  "surface": "transparent",
+  "variants": [
+    "default"
+  ],
+  "implementedBy": "src/components/Hero.jsx",
+  "measuredFrom": [
+    {
+      "cite": "src/components/Hero.jsx:14-76",
+      "quote": "<section className=\"hero\">"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:311",
+      "quote": ".hero{align-items:center;display:flex;flex-direction:column"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:323",
+      "quote": ".hero-title{color:var(--color-text);font-size:clamp(2.5rem,4vw,3.5rem)"
+    },
+    {
+      "cite": "recon/measure-1440.json:255",
+      "quote": "\".hero-title\": {"
+    },
+    {
+      "file": "recon/screens/01-hero-1440.png"
+    }
+  ],
+  "constraints": {
+    "onePerPage": true
+  },
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "badge",
+      "titleLine",
+      "titleGradient",
+      "subtitle",
+      "subtitleStrong",
+      "primaryCta",
+      "secondaryCta",
+      "trustItems",
+      "trustLink"
+    ],
+    "properties": {
+      "badge": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 5
+      },
+      "titleLine": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 5
+      },
+      "titleGradient": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 5
+      },
+      "subtitle": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 33
+      },
+      "subtitleStrong": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 7
+      },
+      "primaryCta": {
+        "$ref": "#/definitions/link"
+      },
+      "secondaryCta": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "disabled",
+          "comingSoonLabel"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 4
+          },
+          "disabled": {
+            "const": true
+          },
+          "comingSoonLabel": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 4
+          }
+        }
+      },
+      "trustItems": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "icon"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 5
+            },
+            "icon": {
+              "type": "string",
+              "enum": [
+                "check-circle",
+                "lock",
+                "server"
+              ]
+            }
+          }
+        }
+      },
+      "trustLink": {
+        "$ref": "#/definitions/link"
+      }
+    }
+  },
+  "copyBudgets": {
+    ".badge": {
+      "realMaxWords": 4,
+      "maxWords": 5
+    },
+    ".titleLine": {
+      "realMaxWords": 3,
+      "maxWords": 5
+    },
+    ".titleGradient": {
+      "realMaxWords": 3,
+      "maxWords": 5
+    },
+    ".subtitle": {
+      "realMaxWords": 26,
+      "maxWords": 33
+    },
+    ".subtitleStrong": {
+      "realMaxWords": 5,
+      "maxWords": 7
+    },
+    ".secondaryCta.label": {
+      "realMaxWords": 2,
+      "maxWords": 4
+    },
+    ".secondaryCta.comingSoonLabel": {
+      "realMaxWords": 2,
+      "maxWords": 4
+    },
+    ".trustItems[].label": {
+      "realMaxWords": 4,
+      "maxWords": 5
+    }
+  },
+  "assetFields": {},
+  "motion": {
+    "patterns": [
+      "aos-fade-up-staggered"
+    ],
+    "loops": [
+      "badge-pulse",
+      "blob-float"
+    ],
+    "aosDelaysMs": [
+      0,
+      100,
+      200,
+      300,
+      400
+    ],
+    "reducedMotionFallback": "render-final-state-no-loops",
+    "fallbackGrounding": "policy",
+    "fallbackNote": "The original does NOT honour reduced motion for [data-aos] or the blob/pulse loops; generated pages must render the final state with loops stopped."
+  },
+  "motionSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "pattern",
+      "reducedMotionFallback"
+    ],
+    "properties": {
+      "pattern": {
+        "type": "string",
+        "enum": [
+          "aos-fade-up-staggered"
+        ]
+      },
+      "reducedMotionFallback": {
+        "const": "render-final-state-no-loops"
+      },
+      "loops": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "enum": [
+            "badge-pulse",
+            "blob-float"
+          ]
+        }
+      },
+      "aosDelaysMs": {
+        "type": "array",
+        "items": {
+          "type": "integer",
+          "enum": [
+            0,
+            100,
+            200,
+            300,
+            400
+          ]
+        }
+      }
+    }
+  },
+  "responsive": [
+    {
+      "breakpoint": "breakpoint.max-1024",
+      "target": ".stripe-gradient-art",
+      "change": "width 100%, opacity .6, skewY(-8deg), blobs blur 100px",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1121",
+          "quote": ".stripe-gradient-art{opacity:.6"
+        }
+      ]
+    },
+    {
+      "breakpoint": "breakpoint.max-768",
+      "target": ".stripe-gradient-art",
+      "change": "opacity .4, blob-4 hidden",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1310",
+          "quote": "@media(max-width:768px){.stripe-gradient-art{opacity:.4}"
+        }
+      ]
+    },
+    {
+      "breakpoint": "breakpoint.short-900",
+      "target": ".hero",
+      "change": "--hero-top-gap 1.25rem (91px top padding @1440x900)",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:945",
+          "quote": "@media(max-height:900px)and (min-width:1024px){.hero{--hero-top-gap:1.25rem"
+        }
+      ]
+    },
+    {
+      "breakpoint": "breakpoint.max-640",
+      "target": ".hero-cta, .trust-row",
+      "change": "stack to a column",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1200",
+          "quote": ".hero-cta,.trust-row{flex-direction:column}"
+        }
+      ]
+    }
+  ],
+  "accessibility": "Single h1 on the page. Secondary CTA is a real disabled <button> (cursor not-allowed)."
+}

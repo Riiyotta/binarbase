@@ -1,0 +1,147 @@
+{
+  "$comment": "IA of the BinarBase homepage clone. Section order taken from src/App.jsx and CLONE_SPEC.md §2 (measured DOM order on the live site). Only the English homepage was cloned; the live site's other routes (/insights, case studies, legal pages, /cs/, /sk/) were not measured and are listed in README.md as out of scope rather than modelled as templates.",
+  "meta": {
+    "source": "https://binarbase.com/ (English homepage), cloned in this project",
+    "status": "measured-from-live-site",
+    "productionApproved": false,
+    "totalRoutes": 1,
+    "totalTemplates": 1
+  },
+  "categories": {
+    "SHELL": "Page chrome that is not content: fixed background, navigation, footer, consent overlay.",
+    "INTRO": "Full-viewport scroll-captured opening experience shown before the hero.",
+    "HERO": "Page-opening headline block with the primary calls to action.",
+    "FEATURES": "Numbered product-explanation sections (01–06) describing capabilities.",
+    "PROOF": "Customer evidence: client logos and case-study cards.",
+    "SOLUTIONS": "Audience/department-specific positioning.",
+    "CONVERSION": "Pricing and closing call-to-action blocks."
+  },
+  "sections": {
+    "shell.aurora-background": {
+      "category": "SHELL",
+      "description": "Fixed, full-page decorative backdrop: three blurred aurora colour layers, a mesh gradient and a noise overlay that show through every transparent section.",
+      "scope": "Present on the 1 cloned route, behind all content.",
+      "implementedBy": "src/components/Aurora.jsx"
+    },
+    "shell.navbar": {
+      "category": "SHELL",
+      "description": "Fixed 71px glass navigation (logo, anchor links, language dropdown, log in / sign up). Turns dark (html.sbi-dark) while the 3D intro is under it; collapses to a hamburger with a 320px slide-in drawer at ≤1024px.",
+      "scope": "Present on the 1 cloned route.",
+      "implementedBy": "src/components/Nav.jsx"
+    },
+    "intro.second-brain-3d": {
+      "category": "INTRO",
+      "description": "100svh dark (#070c1f) three.js scene of a 'second brain' with 7 story chapters; wheel/arrow/swipe input steps chapters before releasing normal page scroll, with skip and explore actions.",
+      "scope": "Homepage only, first block on the 1 cloned route.",
+      "implementedBy": "src/components/Intro/Intro.jsx"
+    },
+    "hero.headline": {
+      "category": "HERO",
+      "description": "Centred page-opening block: pulsing 'AI brain' badge, two-line headline (second line in brand gradient), subtitle, and a sign-up call to action, with skewed drifting gradient blobs behind it on the right.",
+      "scope": "Homepage only, directly after the intro.",
+      "implementedBy": "src/components/Hero.jsx"
+    },
+    "features.upgraded": {
+      "category": "FEATURES",
+      "description": "Section 01 (#upgraded): numbered header, a 'same word, three different numbers' mismatch panel (one metric defined three ways across source systems, plus a callout), then a comparison table.",
+      "scope": "Homepage only.",
+      "implementedBy": "src/components/Upgraded.jsx"
+    },
+    "features.connectors-mcp": {
+      "category": "FEATURES",
+      "description": "Section 02 (no anchor id): connectors and MCP, centred on an animated brain core with heartbeat, pulse rings and six floating integration icons, plus connector cards; clicking the core triggers a 1.2s excited state.",
+      "scope": "Homepage only.",
+      "implementedBy": "src/components/Connectors.jsx"
+    },
+    "features.engine": {
+      "category": "FEATURES",
+      "description": "Section 03 (#how-it-works) on the #f6f9fc band: a three-step Capture → Curate → Serve flow joined by arrows; the middle step is highlighted with a 'private AI' badge.",
+      "scope": "Homepage only; target of the 'How it works' nav link.",
+      "implementedBy": "src/components/Engine.jsx"
+    },
+    "features.console": {
+      "category": "FEATURES",
+      "description": "Section 04 (#console): two side-by-side panes (stacked at ≤968px) — managing context in the BinarBase console (with a mock definitions UI) versus working from your own AI tools over MCP.",
+      "scope": "Homepage only.",
+      "implementedBy": "src/components/Console.jsx"
+    },
+    "features.product-showcase": {
+      "category": "FEATURES",
+      "description": "Section 05 (#product) on the #f6f9fc band: horizontal carousel of 5 product cards with mock UIs, arrow buttons and dot pagination; no auto-advance.",
+      "scope": "Homepage only; target of the 'Product' nav link.",
+      "implementedBy": "src/components/Showcase.jsx"
+    },
+    "features.deployment-modes": {
+      "category": "FEATURES",
+      "description": "Section 06 (#deployment) on the #f6f9fc band: 3-way switch between cloud, private cloud and on-premise with an animated flow diagram and comparison table; auto-cycles every 4.5s while in view until the user picks a mode.",
+      "scope": "Homepage only.",
+      "implementedBy": "src/components/Deployment.jsx"
+    },
+    "proof.customer-stories": {
+      "category": "PROOF",
+      "description": "Section 07 (#proof): a static row of 11 real client logos (no marquee) and 3 case-study cards linking to /insights pages.",
+      "scope": "Homepage only.",
+      "implementedBy": "src/components/Proof.jsx"
+    },
+    "solutions.teams-tree": {
+      "category": "SOLUTIONS",
+      "description": "Section 08 (#teams): hover-driven department tree (Finance selected by default) that highlights a branch and swaps a detail card, followed by 4 trust cards.",
+      "scope": "Homepage only; target of the 'Solutions' nav link.",
+      "implementedBy": "src/components/Teams.jsx"
+    },
+    "conversion.pricing-quote": {
+      "category": "CONVERSION",
+      "description": "Section 09 (#pricing): header and lede, a dashed 'get started yourself or with us' setup banner, then a single on-request quote card listing 15 included features; no tiered price table.",
+      "scope": "Homepage only; target of the 'Pricing' nav link.",
+      "implementedBy": "src/components/Pricing.jsx"
+    },
+    "conversion.final-cta": {
+      "category": "CONVERSION",
+      "description": "Closing call-to-action card over a radial glow, with a 'Start Free Trial' sign-up link and a 'Schedule Demo' button that has no action (as on the original), directly before the footer.",
+      "scope": "Homepage only.",
+      "implementedBy": "src/components/FinalCta.jsx"
+    },
+    "shell.footer": {
+      "category": "SHELL",
+      "description": "Site footer: brand column (logo, tagline, 3 social icons), a Product link column, and a Contact column (email, phone, address); bottom bar with copyright and 4 legal-page links.",
+      "scope": "Present on the 1 cloned route.",
+      "implementedBy": "src/components/Footer.jsx"
+    },
+    "shell.cookie-consent": {
+      "category": "SHELL",
+      "description": "Non-modal cookie consent dialog fixed to the bottom of the viewport; stores the choice in the bb_cookie_consent cookie. The clone loads no analytics either way.",
+      "scope": "Overlay on the 1 cloned route until dismissed.",
+      "implementedBy": "src/components/CookieBanner.jsx"
+    }
+  },
+  "templates": [
+    {
+      "id": "template.home",
+      "name": "Homepage",
+      "routeCount": 1,
+      "routes": [
+        "/"
+      ],
+      "routePattern": null,
+      "chrome": "full",
+      "sections": [
+        "shell.aurora-background",
+        "shell.navbar",
+        "intro.second-brain-3d",
+        "hero.headline",
+        "features.upgraded",
+        "features.connectors-mcp",
+        "features.engine",
+        "features.console",
+        "features.product-showcase",
+        "features.deployment-modes",
+        "proof.customer-stories",
+        "solutions.teams-tree",
+        "conversion.pricing-quote",
+        "conversion.final-cta",
+        "shell.footer",
+        "shell.cookie-consent"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "$note": "Width AND height queries. The max-height:900/800 (min-width:1024) queries make 1440x900 and 1280x800 render SMALLER than taller viewports; generators must not treat breakpoints as width-only.",
+  "breakpoint": {
+    "max-1280": {
+      "value": "(max-width:1280px)",
+      "type": "breakpoint",
+      "description": "Showcase cards 420/500; hero top gap 1.5rem.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:927-944",
+          "quote": "@media(max-width:1280px)"
+        }
+      ]
+    },
+    "max-1100": {
+      "value": "(max-width:1100px)",
+      "type": "breakpoint",
+      "description": "Intro hint hidden.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:67-68",
+          "quote": "@media(max-width:1100px)"
+        }
+      ]
+    },
+    "max-1024": {
+      "value": "(max-width:1024px)",
+      "type": "breakpoint",
+      "description": "Nav collapses to hamburger; integrations 1 col; superpowers 2 col; blog 1 col; context tree stacks.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:213-219",
+          "quote": "@media(max-width:1024px)"
+        },
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1109-1144",
+          "quote": "@media(max-width:1024px)"
+        },
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1301-1309",
+          "quote": "@media(max-width:1024px)"
+        }
+      ]
+    },
+    "max-968": {
+      "value": "(max-width:968px)",
+      "type": "breakpoint",
+      "description": "Console, engine-cards, mcp-cards 1 col; engine-flow column.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:357-358",
+          "quote": "@media(max-width:968px)"
+        },
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1475-1480",
+          "quote": "@media(max-width:968px)"
+        }
+      ]
+    },
+    "max-768": {
+      "value": "(max-width:768px)",
+      "type": "breakpoint",
+      "description": "Section padding 4rem; compare table stacks; dp diagram vertical.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:144-164",
+          "quote": "@media(max-width:768px)"
+        },
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1145-1177",
+          "quote": "@media(max-width:768px)"
+        },
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1310-1325",
+          "quote": "@media(max-width:768px)"
+        },
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1481-1492",
+          "quote": "@media(max-width:768px)"
+        }
+      ]
+    },
+    "max-720": {
+      "value": "(max-width:720px)",
+      "type": "breakpoint",
+      "description": "Quote features 1 col; cookie banner column.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1471-1473",
+          "quote": "@media(max-width:720px)"
+        }
+      ]
+    },
+    "max-640": {
+      "value": "(max-width:640px)",
+      "type": "breakpoint",
+      "description": "CTAs stack; superpowers 1 col; footer 2 col; intro skip/count hidden.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:61-66",
+          "quote": "@media(max-width:640px)"
+        },
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1178-1248",
+          "quote": "@media(max-width:640px)"
+        }
+      ]
+    },
+    "max-620": {
+      "value": "(max-width:620px)",
+      "type": "breakpoint",
+      "description": "Context tree text upsizes.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:220-225",
+          "quote": "@media(max-width:620px)"
+        }
+      ]
+    },
+    "max-560": {
+      "value": "(max-width:560px)",
+      "type": "breakpoint",
+      "description": "Only dead .deck rules (recorded for completeness; no live effect).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1364-1365",
+          "quote": "@media(max-width:560px)"
+        }
+      ]
+    },
+    "max-480": {
+      "value": "(max-width:480px)",
+      "type": "breakpoint",
+      "description": "Footer 1 col.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1249-1254",
+          "quote": "@media(max-width:480px)"
+        },
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1326-1327",
+          "quote": "@media(max-width:480px)"
+        }
+      ]
+    },
+    "min-1400": {
+      "value": "(min-width:1400px)",
+      "type": "breakpoint",
+      "description": "Large desktop upsizing (hero max 1360, brain 480, cards 520/580).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:728-818",
+          "quote": "@media(min-width:1400px)"
+        }
+      ]
+    },
+    "min-1600": {
+      "value": "(min-width:1600px)",
+      "type": "breakpoint",
+      "description": "XL desktop upsizing.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:819-926",
+          "quote": "@media(min-width:1600px)"
+        }
+      ]
+    },
+    "short-900": {
+      "value": "(max-height:900px) and (min-width:1024px)",
+      "type": "breakpoint",
+      "description": "HEIGHT query: at 1440x900 many sizes are SMALLER than at 1440x1000 (section-title 48px, header gap 40px, showcase card 400px).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:945-1021",
+          "quote": "@media(max-height:900px)and (min-width:1024px)"
+        }
+      ]
+    },
+    "short-800": {
+      "value": "(max-height:800px) and (min-width:1024px)",
+      "type": "breakpoint",
+      "description": "HEIGHT query: 1280x800 compaction (section-title 44px, header gap 32px, card 380px).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1022-1108",
+          "quote": "@media(max-height:800px)and (min-width:1024px)"
+        }
+      ]
+    },
+    "portrait-intro": {
+      "value": "(max-aspect-ratio:11/10)",
+      "type": "breakpoint",
+      "description": "Intro story re-anchors bottom:96px; scrim becomes linear.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:57-60",
+          "quote": "@media(max-aspect-ratio:11/10)"
+        }
+      ]
+    },
+    "reduced-motion": {
+      "value": "(prefers-reduced-motion:reduce)",
+      "type": "breakpoint",
+      "description": "Only intro (lines 69-71) and deployment (168-170) honour it in the original CSS.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:69-71",
+          "quote": "@media(prefers-reduced-motion:reduce)"
+        },
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:168-170",
+          "quote": "@media(prefers-reduced-motion:reduce)"
+        }
+      ]
+    }
+  }
+}

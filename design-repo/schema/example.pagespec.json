@@ -1,0 +1,1403 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "purpose": "reference-reconstruction",
+  "template": "template.home",
+  "route": "/",
+  "theme": "light",
+  "meta": {
+    "title": "BinarBase — AI that actually knows your business",
+    "description": "A digital twin of your company — your definitions, your data, your way of working — so dashboards are right and any AI finally understands your business.",
+    "lang": "en",
+    "ogImage": {
+      "assetRole": "meta.og-image",
+      "assetRef": "public/assets/og/default.png"
+    },
+    "icons": [
+      {
+        "assetRole": "meta.favicon",
+        "assetRef": "public/assets/favicon.svg"
+      },
+      {
+        "assetRole": "meta.favicon",
+        "assetRef": "public/assets/favicon.png"
+      },
+      {
+        "assetRole": "meta.favicon",
+        "assetRef": "public/assets/apple-touch-icon.png"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "section": "shell.aurora-background",
+      "variant": "default",
+      "content": {},
+      "motion": {
+        "pattern": "static-fixed-background",
+        "reducedMotionFallback": "static"
+      }
+    },
+    {
+      "section": "shell.nav",
+      "variant": "default",
+      "content": {
+        "logo": {
+          "assetRole": "brand.logo",
+          "assetRef": "public/assets/logo.svg",
+          "alt": "BinarBase"
+        },
+        "links": [
+          {
+            "label": "How it works",
+            "href": "#how-it-works",
+            "linkRole": "anchor.in-page"
+          },
+          {
+            "label": "Product",
+            "href": "#product",
+            "linkRole": "anchor.in-page"
+          },
+          {
+            "label": "Solutions",
+            "href": "#teams",
+            "linkRole": "anchor.in-page"
+          },
+          {
+            "label": "Pricing",
+            "href": "#pricing",
+            "linkRole": "anchor.in-page"
+          },
+          {
+            "label": "Insights",
+            "href": "/insights",
+            "linkRole": "route.out-of-scope"
+          }
+        ],
+        "languages": [
+          "en",
+          "sk",
+          "cs"
+        ],
+        "signIn": {
+          "label": "Sign In",
+          "href": "https://app.binarbase.com/login",
+          "linkRole": "live.app-login"
+        },
+        "cta": {
+          "label": "Get Started",
+          "href": "https://app.binarbase.com/signup",
+          "linkRole": "live.app-signup"
+        }
+      },
+      "motion": {
+        "pattern": "color-transition-on-intro-overlap",
+        "reducedMotionFallback": "instant-state-change",
+        "interactions": [
+          "drawer-slide",
+          "lang-dropdown"
+        ]
+      }
+    },
+    {
+      "section": "intro.scroll-chapters-3d",
+      "variant": "default",
+      "content": {
+        "chapters": [
+          {
+            "title": "Your company's second brain.",
+            "body": "One living knowledge base that every AI you use draws from."
+          },
+          {
+            "title": "Everything your company knows, in one place.",
+            "body": "Accounting, CRM, e-shop and documents. 200+ connectors plug into the systems you already have, with no migration."
+          },
+          {
+            "title": "Data gets meaning.",
+            "body": "Definitions, knowledge, memory and access make up your Company Context. A private AI keeps it current, so nothing goes stale."
+          },
+          {
+            "title": "One MCP endpoint.",
+            "body": "Add it to your agent, sign in, and your AI reads the company brain live, with your permissions.",
+            "extra": "mcp.binarbase.com/your-company"
+          },
+          {
+            "title": "For every AI you use.",
+            "body": "Claude, ChatGPT, Cursor, Gemini, or a local model on your own servers. They all work from the same definitions, so the same question gets the same answer."
+          },
+          {
+            "title": "A brain that learns.",
+            "body": "Every question and every correction flows back. Corrections become definitions, and the knowledge base gets sharper every week."
+          },
+          {
+            "title": "See your company's second brain.",
+            "body": "Connect the systems you already use and get your first answers in minutes."
+          }
+        ],
+        "sceneLabels": [
+          {
+            "title": "Company Context",
+            "sub": "living knowledge base"
+          },
+          {
+            "title": "200+ connectors",
+            "sub": "mapped to your definitions"
+          },
+          {
+            "title": "Accounting",
+            "sub": "invoices, costs, ERP"
+          },
+          {
+            "title": "CRM",
+            "sub": "customers, deals"
+          },
+          {
+            "title": "E-shop",
+            "sub": "orders, returns"
+          },
+          {
+            "title": "Documents",
+            "sub": "SOPs, contracts, playbooks"
+          },
+          {
+            "title": "Definitions",
+            "sub": "what revenue really means"
+          },
+          {
+            "title": "Knowledge",
+            "sub": "processes and know-how"
+          },
+          {
+            "title": "Memory",
+            "sub": "decisions and corrections"
+          },
+          {
+            "title": "Access",
+            "sub": "roles and audit"
+          },
+          {
+            "title": "MCP endpoint",
+            "sub": "mcp.binarbase.com/your-company"
+          },
+          {
+            "title": "Claude, ChatGPT, Cursor, Gemini",
+            "sub": "via MCP, live"
+          },
+          {
+            "title": "Your local model",
+            "sub": "on your own servers"
+          },
+          {
+            "title": "Corrections flow back",
+            "sub": "and become definitions"
+          }
+        ],
+        "scene": {
+          "assetRole": "scene.intro-3d",
+          "assetRef": "src/components/Intro/scene.js"
+        },
+        "primaryCta": {
+          "label": "Start Free Trial",
+          "href": "https://app.binarbase.com/signup",
+          "linkRole": "live.app-signup"
+        },
+        "exploreLabel": "Explore BinarBase",
+        "hint": "Click a node for details · drag to rotate",
+        "skipLabel": "Skip intro",
+        "cueLabel": "Scroll"
+      },
+      "motion": {
+        "pattern": "chapter-stepping-wheel-lock",
+        "reducedMotionFallback": "instant-chapter-swap",
+        "loops": [
+          "scroll-cue-drip",
+          "webgl-scene-render"
+        ],
+        "interactions": [
+          "wheel-accumulate-30px-lock-650ms",
+          "swipe-45px",
+          "keyboard-arrows",
+          "node-click-card",
+          "drag-orbit"
+        ]
+      }
+    },
+    {
+      "section": "hero.centered-gradient-art",
+      "variant": "default",
+      "content": {
+        "badge": "Your company's AI brain",
+        "titleLine": "AI that actually",
+        "titleGradient": "knows your business",
+        "subtitle": "Every AI is generic until it knows you. BinarBase builds a living digital twin of your company — your definitions, your numbers, your way of working.",
+        "subtitleStrong": "One brain. Correct answers. Everywhere.",
+        "primaryCta": {
+          "label": "Start Free Trial",
+          "href": "https://app.binarbase.com/signup",
+          "linkRole": "live.app-signup"
+        },
+        "secondaryCta": {
+          "label": "Watch Demo",
+          "disabled": true,
+          "comingSoonLabel": "Coming Soon"
+        },
+        "trustItems": [
+          {
+            "label": "Grounded in your definitions",
+            "icon": "check-circle"
+          },
+          {
+            "label": "First answers in minutes",
+            "icon": "check-circle"
+          },
+          {
+            "label": "Yours in any AI",
+            "icon": "lock"
+          }
+        ],
+        "trustLink": {
+          "label": "Runs in the cloud or on your servers",
+          "href": "#deployment",
+          "linkRole": "anchor.in-page"
+        }
+      },
+      "motion": {
+        "pattern": "aos-fade-up-staggered",
+        "reducedMotionFallback": "render-final-state-no-loops",
+        "loops": [
+          "badge-pulse",
+          "blob-float"
+        ],
+        "aosDelaysMs": [
+          0,
+          100,
+          200,
+          300,
+          400
+        ]
+      }
+    },
+    {
+      "section": "content.problem-compare",
+      "variant": "default",
+      "content": {
+        "header": {
+          "number": "01",
+          "badge": "Your AI, upgraded",
+          "badgeTone": "primary",
+          "title": "Turn any AI into your",
+          "titleGradient": "most experienced employee.",
+          "subtitle": "On day one, even the smartest AI is a brilliant stranger — it doesn't know your definitions, your history, or how your team actually works. BinarBase gives it years of institutional memory."
+        },
+        "mismatchLabel": "The same word, three different numbers",
+        "mismatchRows": [
+          {
+            "source": "E-shop",
+            "definition": "revenue = all orders"
+          },
+          {
+            "source": "Accounting",
+            "definition": "revenue = invoices issued"
+          },
+          {
+            "source": "CRM",
+            "definition": "revenue = signed contracts"
+          }
+        ],
+        "callout": {
+          "strong": "Which one will your AI pick? Whichever one it likes.",
+          "body": "And it happens inside a single system too: average your margin percentages and you get a number that isn't your margin. Count your rows and you've counted order lines, not orders. Both look right. Both are wrong."
+        },
+        "compareHeads": {
+          "generic": "Any AI on day one",
+          "binarbase": "The same AI, with BinarBase"
+        },
+        "compareRows": [
+          {
+            "label": "Your definitions",
+            "generic": "Guesses what \"revenue\" means",
+            "binarbase": "Knows your confirmed definition"
+          },
+          {
+            "label": "Your history",
+            "generic": "Starts from zero every chat",
+            "binarbase": "Remembers decisions & corrections"
+          },
+          {
+            "label": "Your flows",
+            "generic": "Generic best practice",
+            "binarbase": "Follows how your team actually works"
+          },
+          {
+            "label": "When it's unsure",
+            "generic": "Answers anyway",
+            "binarbase": "Asks — like a good employee would"
+          },
+          {
+            "label": "Where numbers come from",
+            "generic": "Black box",
+            "binarbase": "Shows its work — source & definition"
+          }
+        ],
+        "closing": "The difference isn't a smarter model — it's context. And because a wrong number in a board meeting is a disaster, every answer shows its work."
+      },
+      "motion": {
+        "pattern": "aos-fade-up",
+        "reducedMotionFallback": "render-final-state",
+        "aosDelaysMs": [
+          0
+        ]
+      }
+    },
+    {
+      "section": "feature.split-visual-brain",
+      "variant": "default",
+      "content": {
+        "header": {
+          "number": "02",
+          "badge": "Connectors & MCP",
+          "badgeTone": "emerald",
+          "title": "Everything connected.",
+          "titleGradient": "One meaning.",
+          "subtitle": "200+ connectors bring your systems together and map them onto your definitions. One MCP endpoint serves the result to any agent you already use."
+        },
+        "headline": "Connecting tools is easy. Meaning is the hard part.",
+        "description": "Every vendor can connect your tools — that's table stakes. The hard part is meaning: knowing that your \"active customer\" is someone who bought in the last 90 days, that your fiscal month starts on the 1st, and that averaging your margin percentages doesn't give you your margin. BinarBase maps every connected source onto definitions your team confirmed, and keeps them in sync.",
+        "features": [
+          {
+            "title": "200+ connectors",
+            "body": "Stripe, Shopify, QuickBooks, Xero, HubSpot, Salesforce and more — connected once, kept in sync"
+          },
+          {
+            "title": "Mapped to your definitions",
+            "body": "Every field lands on a metric you confirmed, so a number means the same thing everywhere"
+          },
+          {
+            "title": "One MCP endpoint out",
+            "body": "Add BinarBase to Claude, ChatGPT or Cursor and they read your brain live, with your permissions"
+          },
+          {
+            "title": "Governed and audited",
+            "body": "Access follows your roles, every call is logged, data encrypted, GDPR ready"
+          }
+        ],
+        "cta": {
+          "label": "Connect Now",
+          "href": "https://app.binarbase.com/signup",
+          "linkRole": "live.app-signup"
+        },
+        "visual": {
+          "centerMark": {
+            "assetRole": "brand.mark",
+            "assetRef": "inline-svg:brain-center-mark"
+          },
+          "floatingIcons": [
+            {
+              "assetRole": "icon.emoji",
+              "assetRef": "📊"
+            },
+            {
+              "assetRole": "icon.emoji",
+              "assetRef": "💳"
+            },
+            {
+              "assetRole": "icon.emoji",
+              "assetRef": "📈"
+            },
+            {
+              "assetRole": "icon.emoji",
+              "assetRef": "🔗"
+            },
+            {
+              "assetRole": "icon.emoji",
+              "assetRef": "⚡"
+            },
+            {
+              "assetRole": "icon.emoji",
+              "assetRef": "🎯"
+            }
+          ]
+        }
+      },
+      "motion": {
+        "pattern": "brain-heartbeat-loop",
+        "reducedMotionFallback": "static-brain-no-loops",
+        "loops": [
+          "core-heartbeat",
+          "brain-pulse-rings",
+          "heartbeat-wave",
+          "float-icon"
+        ],
+        "interactions": [
+          "click-excite-1200ms"
+        ]
+      }
+    },
+    {
+      "section": "process.engine-flow",
+      "variant": "default",
+      "content": {
+        "header": {
+          "number": "03",
+          "badge": "How the context works",
+          "badgeTone": "primary",
+          "title": "A self-improving engine —",
+          "titleGradient": "not a database someone has to maintain.",
+          "subtitle": "Most \"AI knowledge bases\" are folders that rot: someone has to keep them current, and they go stale within months. Your BinarBase context is different — it's an engine. A private AI runs on your company's knowledge, continuously organising it, catching gaps, and turning every correction into a permanent improvement."
+        },
+        "steps": [
+          {
+            "title": "Capture",
+            "description": "Data, documents and corrections become a structured, governed model"
+          },
+          {
+            "title": "Curate",
+            "description": "An internal AI promotes corrections into definitions, spots gaps, and keeps one source of truth",
+            "badge": "private AI"
+          },
+          {
+            "title": "Serve",
+            "description": "Correct, traceable answers for dashboards, agents and your own AI"
+          }
+        ],
+        "loopNote": "Every use and every correction feeds back — the engine restructures and improves itself",
+        "cards": [
+          {
+            "title": "A private AI curates it",
+            "body": "An internal AI keeps your context consistent — it turns corrections into definitions, flags the ones that are missing, and enforces one source of truth across every team."
+          },
+          {
+            "title": "Self-improving by design",
+            "body": "Every use and correction feeds back. The engine compounds — no manual upkeep, no rot. Sharper every week, on its own."
+          },
+          {
+            "title": "Governed & private",
+            "body": "It runs on your context, with your permissions. Every change is auditable, roles are enforced, and nothing leaks out."
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "aos-fade-up-cards-snap-quirk",
+        "reducedMotionFallback": "render-final-state",
+        "aosDelaysMs": [
+          0,
+          100,
+          200
+        ]
+      }
+    },
+    {
+      "section": "feature.dual-pane-console",
+      "variant": "default",
+      "content": {
+        "header": {
+          "number": "04",
+          "badge": "Two ways to work with it",
+          "badgeTone": "primary",
+          "title": "Manage it in BinarBase —",
+          "titleGradient": "or from your own tools over MCP.",
+          "subtitle": "Run your brain whichever way suits you: a console for editing definitions and sources by hand, and an MCP endpoint so Claude, ChatGPT or Cursor can read and work with the same context directly."
+        },
+        "managePane": {
+          "label": "Manage · the BinarBase console",
+          "title": "Your context and data, in one place",
+          "description": "Edit definitions in plain language, connect sources, review what the engine learned, and set who sees what. No code.",
+          "mock": {
+            "assetRole": "mock.ui-illustration",
+            "assetRef": "mock:context-console"
+          },
+          "mockAppName": "BinarBase · Context console",
+          "mockNav": [
+            "Context",
+            "Data sources",
+            "Definitions",
+            "Corrections",
+            "Roles"
+          ],
+          "definitions": [
+            {
+              "name": "Gross margin",
+              "status": "confirmed",
+              "formula": "total profit ÷ total revenue — weighted, not an average of percentages"
+            },
+            {
+              "name": "Order count",
+              "status": "needs review",
+              "formula": "distinct orders — not order lines"
+            }
+          ],
+          "note": "Write the definition in plain language — the engine applies it everywhere"
+        },
+        "connectPane": {
+          "label": "Connect · your own tools over MCP",
+          "title": "Your context, inside the tools you already use",
+          "description": "One endpoint. Add it to Claude, ChatGPT or Cursor and they read your context live, with your permissions — no export, no rebuild.",
+          "endpointLabel": "A direct line to your company brain",
+          "endpointValue": "One brain. Every tool you use.",
+          "steps": [
+            "Add BinarBase as an MCP server in your agent",
+            "Paste your endpoint and sign in",
+            "Your agent now knows your business — live"
+          ],
+          "note": "Works with Claude, ChatGPT, Cursor and any MCP-ready agent. Access follows your roles; every call is logged."
+        },
+        "agentsLabel": "Works with the AI you already use",
+        "agents": [
+          {
+            "mark": "✦",
+            "name": "Claude"
+          },
+          {
+            "mark": "◎",
+            "name": "ChatGPT"
+          },
+          {
+            "mark": "✧",
+            "name": "Gemini"
+          },
+          {
+            "mark": "▶",
+            "name": "Cursor"
+          },
+          {
+            "mark": "◆",
+            "name": "Copilot"
+          }
+        ],
+        "agentsNote": "Works with Claude, ChatGPT, Cursor and any MCP-ready agent",
+        "cards": [
+          {
+            "title": "Yours to take",
+            "body": "Your definitions, knowledge and history are yours to export — whenever you want them"
+          },
+          {
+            "title": "One brain, every surface",
+            "body": "Dashboards, BinarBase agents and your favourite chat AI — always in sync"
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "aos-fade-up-cards-snap-quirk",
+        "reducedMotionFallback": "render-final-state",
+        "aosDelaysMs": [
+          0,
+          100
+        ]
+      }
+    },
+    {
+      "section": "showcase.card-carousel",
+      "variant": "default",
+      "content": {
+        "header": {
+          "number": "05",
+          "badge": "What your brain does for you",
+          "badgeTone": "primary",
+          "title": "One context.",
+          "titleGradient": "Every output.",
+          "subtitle": "None of this is a separate product. Each one is the same Company Context, put to work — which is why they all use your definitions, your voice and your rules without being told twice."
+        },
+        "cards": [
+          {
+            "screenTitle": "AI Agents",
+            "badge": "Always on",
+            "badgeTone": "blue",
+            "title": "Work that arrives already done",
+            "description": "Board summaries, account briefs, proposals — drafted by agents that already know your definitions, your processes and your voice. When a definition is missing they ask instead of guessing, so nothing lands on your desk quietly wrong.",
+            "features": [
+              "Board summaries in your format",
+              "Answers grounded in confirmed definitions",
+              "Asks you when a definition is missing"
+            ],
+            "mock": {
+              "assetRole": "mock.ui-illustration",
+              "assetRef": "mock:agent-chat"
+            }
+          },
+          {
+            "screenTitle": "Revenue Forecast",
+            "badge": "Your fiscal calendar",
+            "badgeTone": "cyan",
+            "title": "Forecasts you can defend",
+            "description": "Runway, cash flow and revenue projected on the metrics your team confirmed and the fiscal calendar you actually use — with the source behind every line, so the first question in the room doesn't derail the meeting.",
+            "features": [
+              "30/60/90 day projections",
+              "What-if scenarios on your own drivers",
+              "Runway on your burn definition"
+            ],
+            "mock": {
+              "assetRole": "mock.ui-illustration",
+              "assetRef": "mock:forecast-chart"
+            }
+          },
+          {
+            "screenTitle": "Reports & Dashboards",
+            "badge": "Traceable",
+            "badgeTone": "emerald",
+            "title": "The end of arguing about whose number is right",
+            "description": "Live dashboards and board-ready reports where every metric traces back to a definition your team confirmed. One number, the same everywhere, with its origin one click away.",
+            "features": [
+              "Every metric traceable to its definition",
+              "Board-ready reports in seconds",
+              "One number — the same everywhere"
+            ],
+            "mock": {
+              "assetRole": "mock.ui-illustration",
+              "assetRef": "mock:dashboard"
+            }
+          },
+          {
+            "screenTitle": "Connected Apps",
+            "badge": "200+ connectors",
+            "badgeTone": "amber",
+            "title": "Your systems, finally speaking one language",
+            "description": "Accounting, CRM, payments and e-commerce connected in minutes, then mapped onto the definitions you confirmed. Connecting tools is the easy part — this is the part that makes the data mean something.",
+            "features": [
+              "200+ native connectors",
+              "Mapped onto your confirmed metrics",
+              "Kept fresh automatically"
+            ],
+            "mock": {
+              "assetRole": "mock.ui-illustration",
+              "assetRef": "mock:connected-apps"
+            }
+          },
+          {
+            "screenTitle": "Voice Assistant",
+            "badge": "Coming soon",
+            "badgeTone": "purple",
+            "title": "And whatever you build next",
+            "description": "The context is yours to build on. Ask out loud from your phone, wire it into your own tools over MCP, or build something we haven't thought of — it all reads the same brain.",
+            "features": [
+              "Ask in plain language, anywhere",
+              "Answers on your own definitions",
+              "Your own apps over MCP"
+            ],
+            "mock": {
+              "assetRole": "mock.ui-illustration",
+              "assetRef": "mock:voice-assistant"
+            }
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "manual-carousel-smooth-scroll",
+        "reducedMotionFallback": "instant-scroll-no-loops",
+        "loops": [
+          "live-pulse",
+          "sync-pulse",
+          "orb-pulse"
+        ],
+        "interactions": [
+          "card-click",
+          "dot-click",
+          "arrow-click"
+        ]
+      }
+    },
+    {
+      "section": "interactive.deployment-switcher",
+      "variant": "default",
+      "content": {
+        "header": {
+          "number": "06",
+          "badge": "Where it runs",
+          "badgeTone": "primary",
+          "title": "One brain.",
+          "titleGradient": "Runs where you decide.",
+          "subtitle": "Your Company Context is the same everywhere: your definitions, knowledge and memory. You only choose where it runs: in our EU cloud, in your own cloud, or on your own servers with local AI models."
+        },
+        "switchLabel": "Where it runs",
+        "modes": [
+          {
+            "key": "cloud",
+            "name": "BinarBase Cloud",
+            "boundaryLabel": "Your network",
+            "location": "BinarBase EU cloud",
+            "models": "Claude · ChatGPT · Gemini",
+            "modelsSub": "leading cloud models",
+            "caption": "We host and run everything. The fastest way to start: live the same day.",
+            "boundarySpan": "1",
+            "linkStates": [
+              "out",
+              "out"
+            ],
+            "cta": {
+              "label": "Book a call",
+              "href": "mailto:info@binarbase.com?subject=BinarBase%20deployment%3A%20BinarBase%20Cloud",
+              "linkRole": "live.contact-email"
+            }
+          },
+          {
+            "key": "private",
+            "name": "Private cloud",
+            "boundaryLabel": "Your cloud account",
+            "location": "Your cloud account",
+            "models": "Cloud or private models",
+            "modelsSub": "your choice",
+            "caption": "A dedicated BinarBase instance in your own cloud account and region, under your security rules.",
+            "boundarySpan": "3",
+            "linkStates": [
+              "in",
+              "opt"
+            ],
+            "cta": {
+              "label": "Book a call",
+              "href": "mailto:info@binarbase.com?subject=BinarBase%20deployment%3A%20Private%20cloud",
+              "linkRole": "live.contact-email"
+            }
+          },
+          {
+            "key": "onprem",
+            "name": "On-premise · local AI",
+            "boundaryLabel": "Your building",
+            "location": "Your servers",
+            "models": "Local open models",
+            "modelsSub": "on your own GPUs",
+            "caption": "BinarBase and open AI models run on your own hardware. Nothing has to leave your building, and it can run fully offline.",
+            "boundarySpan": "5",
+            "linkStates": [
+              "in",
+              "in"
+            ],
+            "cta": {
+              "label": "Book a call",
+              "href": "mailto:info@binarbase.com?subject=BinarBase%20deployment%3A%20On-premise%20%C2%B7%20local%20AI",
+              "linkRole": "live.contact-email"
+            }
+          }
+        ],
+        "systems": {
+          "title": "Your systems",
+          "chips": [
+            "ERP & accounting",
+            "CRM",
+            "E-shop",
+            "Documents"
+          ]
+        },
+        "brain": {
+          "title": "Company Context",
+          "sub": "definitions · knowledge · memory"
+        },
+        "modelsTitle": "AI models",
+        "tableLabel": "The three setups side by side",
+        "availableLabel": "Available now",
+        "dataGroupTitle": "What leaves your network?",
+        "dataRows": [
+          {
+            "label": "Your data and documents",
+            "cloud": {
+              "state": "out",
+              "text": "Stored in our EU cloud"
+            },
+            "private": {
+              "state": "in",
+              "text": "Stays in your cloud account"
+            },
+            "onprem": {
+              "state": "in",
+              "text": "Stays on your servers"
+            }
+          },
+          {
+            "label": "Company Context (definitions, memory)",
+            "cloud": {
+              "state": "out",
+              "text": "Stored in our EU cloud"
+            },
+            "private": {
+              "state": "in",
+              "text": "Stays in your cloud account"
+            },
+            "onprem": {
+              "state": "in",
+              "text": "Stays on your servers"
+            }
+          },
+          {
+            "label": "Questions and answers",
+            "cloud": {
+              "state": "out",
+              "text": "Processed by our AI provider"
+            },
+            "private": {
+              "state": "opt",
+              "text": "Only if you choose a cloud model"
+            },
+            "onprem": {
+              "state": "in",
+              "text": "Stay on your servers"
+            }
+          }
+        ],
+        "runGroupTitle": "Running it",
+        "runRows": [
+          {
+            "label": "Who runs it",
+            "cloud": "BinarBase",
+            "private": "BinarBase together with your IT",
+            "onprem": "Your IT, with our support"
+          },
+          {
+            "label": "Works offline",
+            "cloud": "No",
+            "private": "No",
+            "onprem": "Yes, fully offline is possible"
+          },
+          {
+            "label": "Best for",
+            "cloud": "Most companies that want to start now",
+            "private": "Companies with their own cloud and strict security rules",
+            "onprem": "Banks, insurance, healthcare, manufacturing, public sector"
+          }
+        ],
+        "note": "Connecting an outside AI such as ChatGPT or Claude over MCP shares what it reads with that provider, in any setup. For a fully local setup, use local models. Details on our AI providers:",
+        "noteLink": {
+          "label": "Sub-processors",
+          "href": "/subprocessors",
+          "linkRole": "route.out-of-scope"
+        },
+        "local": {
+          "title": "Why a smaller local model is enough",
+          "body": "Local models are smaller than the big cloud ones. With your Company Context they don't have to guess what revenue means: they answer from your confirmed definitions and show where every number comes from."
+        }
+      },
+      "motion": {
+        "pattern": "autocycle-4500ms-in-view",
+        "reducedMotionFallback": "static-mode-no-autocycle",
+        "loops": [
+          "dp-flow",
+          "dp-pulse"
+        ],
+        "interactions": [
+          "switch-click-stops-cycle",
+          "column-head-click-stops-cycle"
+        ]
+      }
+    },
+    {
+      "section": "proof.logos-and-stories",
+      "variant": "default",
+      "content": {
+        "header": {
+          "number": "07",
+          "badge": "From our clients",
+          "badgeTone": "primary",
+          "title": "Already working",
+          "titleGradient": "in companies like yours.",
+          "subtitle": "Read how companies across Slovakia and the CEE region use BinarBase."
+        },
+        "logosLabel": "Building their company brain across Slovakia & CEE",
+        "logos": [
+          {
+            "asset": {
+              "assetRole": "customer.logo",
+              "assetRef": "public/assets/applifting.png",
+              "alt": "Applifting"
+            },
+            "tone": "default",
+            "size": "default"
+          },
+          {
+            "asset": {
+              "assetRole": "customer.logo",
+              "assetRef": "public/assets/impactHub.png",
+              "alt": "Impact Hub"
+            },
+            "tone": "default",
+            "size": "default"
+          },
+          {
+            "asset": {
+              "assetRole": "customer.logo",
+              "assetRef": "public/assets/e-consulting-logo.png",
+              "alt": "eConsulting"
+            },
+            "tone": "default",
+            "size": "default"
+          },
+          {
+            "asset": {
+              "assetRole": "customer.logo",
+              "assetRef": "public/assets/delia.png",
+              "alt": "Delia"
+            },
+            "tone": "default",
+            "size": "default"
+          },
+          {
+            "asset": {
+              "assetRole": "customer.logo",
+              "assetRef": "public/assets/jt-wine-fund.png",
+              "alt": "J&T Wine Fund"
+            },
+            "tone": "dark",
+            "size": "default"
+          },
+          {
+            "asset": {
+              "assetRole": "customer.logo",
+              "assetRef": "public/assets/highgate.png",
+              "alt": "Highgate Group"
+            },
+            "tone": "dark",
+            "size": "large"
+          },
+          {
+            "asset": {
+              "assetRole": "customer.logo",
+              "assetRef": "public/assets/wflow.png",
+              "alt": "Wflow"
+            },
+            "tone": "default",
+            "size": "default"
+          },
+          {
+            "asset": {
+              "assetRole": "customer.logo",
+              "assetRef": "public/assets/malcom.png",
+              "alt": "Malcom"
+            },
+            "tone": "default",
+            "size": "default"
+          },
+          {
+            "asset": {
+              "assetRole": "customer.logo",
+              "assetRef": "public/assets/this_one_sro_logo.jpeg",
+              "alt": "This One"
+            },
+            "tone": "default",
+            "size": "default"
+          },
+          {
+            "asset": {
+              "assetRole": "customer.logo",
+              "assetRef": "public/assets/realitni_advokati.png",
+              "alt": "Realitní Advokáti"
+            },
+            "tone": "default",
+            "size": "large"
+          },
+          {
+            "asset": {
+              "assetRole": "customer.logo",
+              "assetRef": "public/assets/bwd.png",
+              "alt": "BWD"
+            },
+            "tone": "default",
+            "size": "default"
+          }
+        ],
+        "stories": [
+          {
+            "category": "Success Story",
+            "title": "Transforming Wine Distribution: How BWD Achieved Real-Time Sales Intelligence",
+            "excerpt": "How BWD eliminated hours of daily Excel reporting and empowered their sales team with real-time analytics and inventory planning.",
+            "date": "February 2026",
+            "readTime": "5 min read",
+            "link": {
+              "label": "Read the story",
+              "href": "/insights/bwd-case-study",
+              "linkRole": "route.out-of-scope"
+            }
+          },
+          {
+            "category": "Success Story",
+            "title": "How BinarBase Enhanced Voxberg's Analytics",
+            "excerpt": "Discover how BinarBase helped Voxberg transform data chaos into strategic clarity, enabling smarter business decisions through unified analytics and real-time reporting.",
+            "date": "December 2024",
+            "readTime": "5 min read",
+            "link": {
+              "label": "Read the story",
+              "href": "/insights/voxberg-case-study",
+              "linkRole": "route.out-of-scope"
+            }
+          },
+          {
+            "category": "Success Story",
+            "title": "Automating Financial Workflows at Applifting",
+            "excerpt": "How Applifting boosted efficiency and control by automating financial processes through BinarBase, saving over 46 hours of work every month.",
+            "date": "November 2024",
+            "readTime": "4 min read",
+            "link": {
+              "label": "Read the story",
+              "href": "/insights/applifting-case-study",
+              "linkRole": "route.out-of-scope"
+            }
+          }
+        ],
+        "allLink": {
+          "label": "All stories & insights",
+          "href": "/insights",
+          "linkRole": "route.out-of-scope"
+        }
+      },
+      "motion": {
+        "pattern": "static-logo-row-hover-lift",
+        "reducedMotionFallback": "static"
+      }
+    },
+    {
+      "section": "interactive.context-tree",
+      "variant": "default",
+      "content": {
+        "header": {
+          "number": "08",
+          "badge": "For teams",
+          "badgeTone": "cyan",
+          "badgeIcon": {
+            "assetRole": "icon.emoji",
+            "assetRef": "⚡"
+          },
+          "title": "Start where it hurts most.",
+          "titleGradient": "Then let it spread.",
+          "subtitle": "Most companies start with finance, because that is where a wrong number costs the most. The same brain then serves every other department without being rebuilt — it already knows the business."
+        },
+        "rootLabel": "Your Company Context",
+        "coreNodes": [
+          "Definitions",
+          "Knowledge",
+          "Memory",
+          "Connectors"
+        ],
+        "departments": [
+          {
+            "key": "cfo",
+            "role": "Finance",
+            "tagline": "Invoices, margin and cash flow without the manual month",
+            "pain": "Thousands of supplier invoices keyed in by hand, margin visible only after the fact, and forecasts rebuilt in spreadsheets every cycle.",
+            "gains": [
+              "Supplier invoices read, matched and posted automatically",
+              "Live margin per order, product and customer",
+              "Cash flow and demand forecast on your own definitions",
+              "Month-end that doesn't depend on one person's spreadsheet",
+              "Every automation measured against real return"
+            ],
+            "leaves": [
+              "Invoice capture",
+              "Live margin",
+              "Cash flow forecast",
+              "Month-end close",
+              "ROI tracking"
+            ],
+            "isDefault": true,
+            "stage": "Start here"
+          },
+          {
+            "key": "founder",
+            "role": "Marketing",
+            "tagline": "Spend you can defend, in a funnel that actually attributes",
+            "pain": "Budget spent without measurement in place, no segmentation, and attribution that never worked for a B2B buying cycle.",
+            "gains": [
+              "RFM segmentation on your own customer history",
+              "Attribution that fits B2B, not just last click",
+              "Measurement set up properly before the spend starts",
+              "SEO and content drafted from your real product data",
+              "Campaign history the whole team can query"
+            ],
+            "leaves": [
+              "RFM segments",
+              "B2B attribution",
+              "Measurement",
+              "SEO & content",
+              "Campaign history"
+            ],
+            "isDefault": false
+          },
+          {
+            "key": "owner",
+            "role": "Sales",
+            "tagline": "Quotes in minutes instead of days — and a reason for every loss",
+            "pain": "Enquiries arrive as PDFs, e-mails and scans, then get retyped line by line while the best opportunities go cold.",
+            "gains": [
+              "Unstructured enquiries turned into priced quotes automatically",
+              "Supplier product codes matched to your own catalogue",
+              "Duplicate enquiries for the same project flagged",
+              "Every lost quote captured, with the reason why",
+              "Public tenders surfaced instead of missed"
+            ],
+            "leaves": [
+              "Enquiry → quote",
+              "Code matching",
+              "Duplicates",
+              "Loss reasons",
+              "Public tenders"
+            ],
+            "isDefault": false
+          },
+          {
+            "key": "retail",
+            "role": "Operations",
+            "tagline": "Stock, ordering and transfers that run themselves",
+            "pain": "Min–max limits maintained in Excel, a six-hour export before anyone can look at stock, and people tied up entirely by internal transfers.",
+            "gains": [
+              "Min–max stock limits maintained automatically",
+              "Stock levels on demand, not after an overnight export",
+              "Purchase orders and internal transfers proposed for approval",
+              "Supplier price lists consolidated into consistent product data",
+              "Product cards completed with the attributes that are missing"
+            ],
+            "leaves": [
+              "Min–max limits",
+              "Live stock",
+              "Order proposals",
+              "Internal transfers",
+              "Product data"
+            ],
+            "isDefault": false
+          }
+        ],
+        "todayLabel": "Today:",
+        "withLabel": "With BinarBase:",
+        "note": "Hover a department to see what it inherits from the core — and what it adds on top.",
+        "trustHeading": {
+          "title": "Trust isn't a feature.",
+          "titleGradient": "It's the whole point."
+        },
+        "trustItems": [
+          {
+            "icon": {
+              "assetRole": "icon.emoji",
+              "assetRef": "🧠"
+            },
+            "tone": "blue",
+            "title": "Every number shows its work",
+            "body": "Definition, source and period — on demand, for any figure"
+          },
+          {
+            "icon": {
+              "assetRole": "icon.emoji",
+              "assetRef": "⚡"
+            },
+            "tone": "cyan",
+            "title": "It asks instead of guessing",
+            "body": "No confirmed definition? It asks you rather than faking a confident answer"
+          },
+          {
+            "icon": {
+              "assetRole": "icon.emoji",
+              "assetRef": "🔮"
+            },
+            "tone": "emerald",
+            "title": "Role-based by design",
+            "body": "People see only what they should, and every access is logged"
+          },
+          {
+            "icon": {
+              "assetRole": "icon.emoji",
+              "assetRef": "🛡️"
+            },
+            "tone": "amber",
+            "title": "Enterprise security",
+            "body": "Data encrypted in transit and at rest, GDPR ready"
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "hover-tree-highlight",
+        "reducedMotionFallback": "instant-highlight-swap",
+        "interactions": [
+          "dept-hover",
+          "dept-focus",
+          "dept-click",
+          "dept-enter-space"
+        ],
+        "aosDelaysMs": [
+          0
+        ]
+      }
+    },
+    {
+      "section": "pricing.on-request-quote",
+      "variant": "default",
+      "content": {
+        "header": {
+          "number": "09",
+          "badge": "Pricing",
+          "badgeTone": "primary",
+          "title": "Built for you.",
+          "titleGradient": "Owned by you."
+        },
+        "lede": "Every company is a different size, runs different systems and needs different things from a brain. So we price each one individually — you get everything below, scoped to what you actually need.",
+        "setup": {
+          "label": "Get started · yourself or with us",
+          "title": "Connect your tools, confirm your definitions — live the same day.",
+          "body": "Standing up your brain takes an afternoon, not a data project: connect your sources, confirm what your metrics mean, and your first dashboards and agents go live. Do it yourself, or have us set it up with you."
+        },
+        "quote": {
+          "label": "One platform, no tiers",
+          "price": "On request",
+          "description": "One platform, nothing held back behind a higher tier. We size the engagement around your business, not around a plan name.",
+          "features": [
+            "Company Context — your confirmed definitions",
+            "Connectors to your systems — 200+ available",
+            "Custom dashboards built on your definitions",
+            "Agent library — board summaries, briefs, proposals",
+            "MCP endpoint for Claude, ChatGPT and Cursor",
+            "The learning loop — corrections become definitions",
+            "Definitions versioned and audited",
+            "Roles, permissions and full access logging",
+            "Unlimited users",
+            "We run ingestion and keep sources fresh",
+            "Custom agents built for your processes",
+            "Dedicated success manager",
+            "Priority support and SLA",
+            "Data encryption, role-based access, GDPR ready",
+            "Deploy in our EU cloud, your private cloud or on-premise"
+          ],
+          "cta": {
+            "label": "Get a quote",
+            "href": "https://app.binarbase.com/signup",
+            "linkRole": "live.app-signup"
+          },
+          "note": "We scope the price to the size of your business and the use cases you start with — no tiers to outgrow."
+        },
+        "guarantee": "Every engagement is done when your twin correctly answers the 20 questions your team actually asks. We call it the 20-Question Test."
+      },
+      "motion": {
+        "pattern": "aos-fade-up",
+        "reducedMotionFallback": "render-final-state",
+        "aosDelaysMs": [
+          0
+        ]
+      }
+    },
+    {
+      "section": "conversion.final-cta",
+      "variant": "default",
+      "content": {
+        "title": "Stop prompting a stranger.",
+        "titleGradient": "Start working with a brain that knows you.",
+        "subtitle": "Give your company an AI brain — live the same day, smarter every week.",
+        "primaryCta": {
+          "label": "Start Free Trial",
+          "href": "https://app.binarbase.com/signup",
+          "linkRole": "live.app-signup"
+        },
+        "secondaryLabel": "Schedule Demo"
+      },
+      "motion": {
+        "pattern": "static-hover-lift",
+        "reducedMotionFallback": "static"
+      }
+    },
+    {
+      "section": "shell.footer",
+      "variant": "default",
+      "content": {
+        "logo": {
+          "assetRole": "brand.logo",
+          "assetRef": "public/assets/logo.svg",
+          "alt": "BinarBase"
+        },
+        "tagline": "You built your company — you shouldn't need a data science degree to understand it. Give it a brain that knows your business, answers in plain language, and belongs to you.",
+        "social": [
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/company/binarbase",
+            "linkRole": "live.social"
+          },
+          {
+            "label": "Facebook",
+            "href": "https://www.facebook.com/binarbase",
+            "linkRole": "live.social"
+          },
+          {
+            "label": "Instagram",
+            "href": "https://www.instagram.com/binarbase",
+            "linkRole": "live.social"
+          }
+        ],
+        "productHeading": "Product",
+        "productLinks": [
+          {
+            "label": "Features",
+            "href": "#product",
+            "linkRole": "anchor.in-page"
+          },
+          {
+            "label": "Pricing",
+            "href": "#pricing",
+            "linkRole": "anchor.in-page"
+          },
+          {
+            "label": "Start Free Trial",
+            "href": "https://app.binarbase.com/signup",
+            "linkRole": "live.app-signup"
+          },
+          {
+            "label": "Blog",
+            "href": "https://www.binarbase.com/blog-en",
+            "linkRole": "live.blog-external"
+          }
+        ],
+        "contactHeading": "Contact",
+        "contact": {
+          "email": {
+            "label": "info@binarbase.com",
+            "href": "mailto:info@binarbase.com",
+            "linkRole": "live.contact-email"
+          },
+          "phone": {
+            "label": "+421 915 261 658",
+            "href": "tel:+421915261658",
+            "linkRole": "live.contact-phone"
+          },
+          "address": "Staré Grunty 18, 841 04 Bratislava"
+        },
+        "copyright": "© 2026 BinarBase, s.r.o. All rights reserved.",
+        "legalLinks": [
+          {
+            "label": "Terms & Conditions",
+            "href": "/terms-conditions",
+            "linkRole": "route.out-of-scope"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "/privacy-policy",
+            "linkRole": "route.out-of-scope"
+          },
+          {
+            "label": "Cookies Policy",
+            "href": "/cookies-policy",
+            "linkRole": "route.out-of-scope"
+          },
+          {
+            "label": "Sub-processors",
+            "href": "/subprocessors",
+            "linkRole": "route.out-of-scope"
+          }
+        ]
+      },
+      "motion": {
+        "pattern": "static-hover-lift",
+        "reducedMotionFallback": "static"
+      }
+    },
+    {
+      "section": "overlay.cookie-consent",
+      "variant": "default",
+      "content": {
+        "title": "We use cookies",
+        "body": "Strictly necessary cookies keep this site running. We would also like to measure how the site is used, and to measure our advertising. Neither happens unless you agree, and you can change your mind at any time.",
+        "policyLink": {
+          "label": "Read our Cookies Policy",
+          "href": "/cookies-policy",
+          "linkRole": "route.out-of-scope"
+        },
+        "buttons": {
+          "necessary": "Necessary only",
+          "measurement": "Allow measurement",
+          "all": "Allow all"
+        },
+        "consentStorage": "cookie:bb_cookie_consent",
+        "loadsThirdPartyScripts": false
+      },
+      "motion": {
+        "pattern": "static-overlay",
+        "reducedMotionFallback": "static"
+      }
+    }
+  ]
+}

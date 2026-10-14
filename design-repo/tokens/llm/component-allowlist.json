@@ -1,0 +1,90 @@
+{
+  "version": "1.0.0",
+  "primitives": [
+    "primitive.button-primary",
+    "primitive.button-secondary",
+    "primitive.section-badge",
+    "primitive.pill-badge",
+    "primitive.gradient-text",
+    "primitive.text-link-arrow",
+    "primitive.icon",
+    "primitive.brand-logo",
+    "primitive.client-logo",
+    "primitive.check-mark",
+    "primitive.chip",
+    "primitive.segment-progress"
+  ],
+  "components": [
+    "component.section-header",
+    "component.card-base",
+    "component.panel",
+    "component.story-card",
+    "component.app-mock-window",
+    "component.feature-list",
+    "component.callout",
+    "component.carousel-nav",
+    "component.segmented-switch"
+  ],
+  "sections": [
+    "shell.aurora-background",
+    "shell.nav",
+    "intro.scroll-chapters-3d",
+    "hero.centered-gradient-art",
+    "content.problem-compare",
+    "feature.split-visual-brain",
+    "process.engine-flow",
+    "feature.dual-pane-console",
+    "showcase.card-carousel",
+    "interactive.deployment-switcher",
+    "proof.logos-and-stories",
+    "interactive.context-tree",
+    "pricing.on-request-quote",
+    "conversion.final-cta",
+    "shell.footer",
+    "overlay.cookie-consent"
+  ],
+  "templates": [
+    "template.home"
+  ],
+  "nodeProperties": [
+    "section",
+    "variant",
+    "content",
+    "motion"
+  ],
+  "pageSpecProperties": [
+    "pageSpecVersion",
+    "purpose",
+    "template",
+    "route",
+    "theme",
+    "meta",
+    "nodes"
+  ],
+  "assetRoles": [
+    "brand.logo",
+    "brand.mark",
+    "customer.logo",
+    "meta.og-image",
+    "meta.favicon",
+    "scene.intro-3d",
+    "brand.placeholder",
+    "mock.ui-illustration",
+    "icon.emoji"
+  ],
+  "linkRoles": [
+    "anchor.in-page",
+    "route.out-of-scope",
+    "live.app-signup",
+    "live.app-login",
+    "live.contact-email",
+    "live.contact-phone",
+    "live.social",
+    "live.blog-external",
+    "placeholder.generated"
+  ],
+  "themes": [
+    "light"
+  ],
+  "note": "Closed set a generator may instantiate. Parity with contract files, schema node properties and the asset/link registries is machine-checked by extraction/verify_all.py."
+}

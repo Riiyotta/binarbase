@@ -1,0 +1,343 @@
+{
+  "id": "content.problem-compare",
+  "kind": "section",
+  "contractVersion": "1.0.0",
+  "category": "content",
+  "pageOrder": 4,
+  "purpose": "Frames the problem (one word, three numbers) and contrasts \"any AI on day one\" with \"the same AI with BinarBase\" in a check/cross table.",
+  "anchorId": "upgraded",
+  "surface": "transparent",
+  "variants": [
+    "default"
+  ],
+  "implementedBy": "src/components/Upgraded.jsx",
+  "measuredFrom": [
+    {
+      "cite": "src/components/Upgraded.jsx:19",
+      "quote": "<div className=\"mismatch-panel\" data-aos=\"fade-up\">"
+    },
+    {
+      "cite": "src/components/Upgraded.jsx:55",
+      "quote": "<div className=\"compare-table\" data-aos=\"fade-up\">"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1367",
+      "quote": ".mismatch-panel{background:#fff"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1379",
+      "quote": ".compare-table{background:#fff"
+    },
+    {
+      "file": "recon/screens/02-upgraded-1440.png"
+    }
+  ],
+  "constraints": {
+    "onePerPage": true
+  },
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "header",
+      "mismatchLabel",
+      "mismatchRows",
+      "callout",
+      "compareHeads",
+      "compareRows",
+      "closing"
+    ],
+    "properties": {
+      "header": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "number",
+          "badge",
+          "badgeTone",
+          "title",
+          "titleGradient"
+        ],
+        "properties": {
+          "number": {
+            "type": "string",
+            "pattern": "^0[1-9]$"
+          },
+          "badge": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 5
+          },
+          "badgeTone": {
+            "type": "string",
+            "enum": [
+              "primary",
+              "emerald",
+              "cyan"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 7
+          },
+          "titleGradient": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 5
+          },
+          "subtitle": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 40
+          }
+        }
+      },
+      "mismatchLabel": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 8
+      },
+      "mismatchRows": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "source",
+            "definition"
+          ],
+          "properties": {
+            "source": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 3
+            },
+            "definition": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 5
+            }
+          }
+        }
+      },
+      "callout": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "strong",
+          "body"
+        ],
+        "properties": {
+          "strong": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 13
+          },
+          "body": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 47
+          }
+        }
+      },
+      "compareHeads": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "generic",
+          "binarbase"
+        ],
+        "properties": {
+          "generic": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 7
+          },
+          "binarbase": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 7
+          }
+        }
+      },
+      "compareRows": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "generic",
+            "binarbase"
+          ],
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 5
+            },
+            "generic": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 7
+            },
+            "binarbase": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 9
+            }
+          }
+        }
+      },
+      "closing": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 33
+      }
+    }
+  },
+  "copyBudgets": {
+    ".header.badge": {
+      "realMaxWords": 3,
+      "maxWords": 5
+    },
+    ".header.title": {
+      "realMaxWords": 5,
+      "maxWords": 7
+    },
+    ".header.titleGradient": {
+      "realMaxWords": 3,
+      "maxWords": 5
+    },
+    ".header.subtitle": {
+      "realMaxWords": 32,
+      "maxWords": 40
+    },
+    ".mismatchLabel": {
+      "realMaxWords": 6,
+      "maxWords": 8
+    },
+    ".mismatchRows[].source": {
+      "realMaxWords": 1,
+      "maxWords": 3
+    },
+    ".mismatchRows[].definition": {
+      "realMaxWords": 4,
+      "maxWords": 5
+    },
+    ".callout.strong": {
+      "realMaxWords": 10,
+      "maxWords": 13
+    },
+    ".callout.body": {
+      "realMaxWords": 37,
+      "maxWords": 47
+    },
+    ".compareHeads.generic": {
+      "realMaxWords": 5,
+      "maxWords": 7
+    },
+    ".compareHeads.binarbase": {
+      "realMaxWords": 5,
+      "maxWords": 7
+    },
+    ".compareRows[].label": {
+      "realMaxWords": 4,
+      "maxWords": 5
+    },
+    ".compareRows[].generic": {
+      "realMaxWords": 5,
+      "maxWords": 7
+    },
+    ".compareRows[].binarbase": {
+      "realMaxWords": 7,
+      "maxWords": 9
+    },
+    ".closing": {
+      "realMaxWords": 26,
+      "maxWords": 33
+    }
+  },
+  "assetFields": {},
+  "motion": {
+    "patterns": [
+      "aos-fade-up"
+    ],
+    "loops": [],
+    "aosDelaysMs": [
+      0
+    ],
+    "reducedMotionFallback": "render-final-state",
+    "fallbackGrounding": "policy",
+    "fallbackNote": "[data-aos] has no reduced-motion rule in the original."
+  },
+  "motionSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "pattern",
+      "reducedMotionFallback"
+    ],
+    "properties": {
+      "pattern": {
+        "type": "string",
+        "enum": [
+          "aos-fade-up"
+        ]
+      },
+      "reducedMotionFallback": {
+        "const": "render-final-state"
+      },
+      "aosDelaysMs": {
+        "type": "array",
+        "items": {
+          "type": "integer",
+          "enum": [
+            0
+          ]
+        }
+      }
+    }
+  },
+  "responsive": [
+    {
+      "breakpoint": "breakpoint.max-768",
+      "target": ".compare-table",
+      "change": "head hidden; each row becomes a stacked block with an uppercase label",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1488",
+          "quote": ".compare-row{display:block;padding:1.1rem 1.25rem}"
+        }
+      ]
+    },
+    {
+      "breakpoint": "breakpoint.max-768",
+      "target": ".mismatch-row",
+      "change": "grid areas \"source mark\" / \"definition definition\"",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1483",
+          "quote": ".mismatch-row{gap:.35rem .75rem;grid-template-areas"
+        }
+      ]
+    },
+    {
+      "breakpoint": "breakpoint.max-768",
+      "target": ".upgraded-section",
+      "change": "padding 4rem 0",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1481",
+          "quote": "@media(max-width:768px){.console-section,.engine-section,.upgraded-section{padding:4rem 0}"
+        }
+      ]
+    }
+  ],
+  "accessibility": "Marks are aria-hidden SVGs; the table is div-based (no table semantics in the original)."
+}

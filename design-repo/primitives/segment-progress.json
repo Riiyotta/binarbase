@@ -1,0 +1,35 @@
+{
+  "id": "primitive.segment-progress",
+  "purpose": "Intro chapter progress segments and showcase nav dots (active dot becomes a 32px pill).",
+  "cssClasses": [
+    "sbi-seg",
+    "nav-dot",
+    "nav-dot.active"
+  ],
+  "variants": {
+    "intro": "4px track, lav fill .5s",
+    "carousel": "10px dots, active 32x10"
+  },
+  "tokens": [
+    "color.intro.lav",
+    "color.brand.primary",
+    "color.line.default",
+    "motion.duration.progress"
+  ],
+  "props": [
+    "count",
+    "active"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:41",
+      "quote": ".sbi-seg i[data-v-00d3a672]{background:var(--lav);transition:width .5s ease"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:553",
+      "quote": ".nav-dot.active{background:var(--color-primary);border-radius:100px;width:32px}"
+    }
+  ],
+  "kind": "primitive",
+  "contractVersion": "1.0.0"
+}

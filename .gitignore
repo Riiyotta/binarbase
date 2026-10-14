@@ -1,0 +1,6 @@
+node_modules/
+dist/
+design-repo.zip
+.DS_Store
+__pycache__/
+*.pyc

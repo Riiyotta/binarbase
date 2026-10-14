@@ -1,0 +1,101 @@
+{
+  "$note": "Semantic intent -> foundation path. Resolution order: foundation -> theme -> semantic -> component -> (no per-instance overrides).",
+  "semantic": {
+    "text.primary": {
+      "ref": "{color.ink.900}"
+    },
+    "text.secondary": {
+      "ref": "{color.ink.700}"
+    },
+    "text.tertiary": {
+      "ref": "{color.ink.500}"
+    },
+    "text.brand": {
+      "ref": "{color.brand.primary}"
+    },
+    "text.on-brand": {
+      "ref": "{color.surface.white}"
+    },
+    "text.success": {
+      "ref": "{color.accent.green}"
+    },
+    "surface.page": {
+      "ref": "{color.surface.white}"
+    },
+    "surface.section-alt": {
+      "ref": "{color.surface.mist}"
+    },
+    "surface.card": {
+      "ref": "{color.surface.white}"
+    },
+    "surface.chip": {
+      "ref": "{color.surface.cloud}"
+    },
+    "surface.nav": {
+      "ref": "{color.surface.nav-glass}"
+    },
+    "surface.badge": {
+      "ref": "{color.brand.tint-08}"
+    },
+    "surface.callout": {
+      "ref": "{color.brand.tint-05}"
+    },
+    "surface.active-column": {
+      "ref": "{color.brand.tint-04}"
+    },
+    "border.default": {
+      "ref": "{color.line.default}"
+    },
+    "border.accent": {
+      "ref": "{color.brand.ring-35}"
+    },
+    "action.primary.bg": {
+      "ref": "{color.brand.primary}"
+    },
+    "action.primary.bg-hover": {
+      "ref": "{color.brand.primary-dark}"
+    },
+    "action.primary.text": {
+      "ref": "{color.surface.white}"
+    },
+    "feedback.success": {
+      "ref": "{color.signal.success}"
+    },
+    "feedback.error-mark": {
+      "ref": "{color.accent.red-mark}"
+    },
+    "feedback.neutral-mark": {
+      "ref": "{color.accent.grey-mark}"
+    },
+    "deploy.inside": {
+      "ref": "{color.deploy.inside}"
+    },
+    "deploy.outside": {
+      "ref": "{color.brand.primary}"
+    },
+    "deploy.optional": {
+      "ref": "{color.deploy.optional}"
+    },
+    "intro.surface": {
+      "ref": "{color.intro.ink}"
+    },
+    "intro.text": {
+      "ref": "{color.intro.paper}"
+    },
+    "intro.text-muted": {
+      "ref": "{color.intro.muted}"
+    },
+    "intro.accent": {
+      "ref": "{color.intro.lav}"
+    },
+    "intro.control": {
+      "ref": "{color.intro.control-bg}"
+    },
+    "gradient.brand": {
+      "ref": "{gradient.brand}"
+    },
+    "gradient.page": {
+      "ref": "{gradient.page-aurora}"
+    }
+  }
+}

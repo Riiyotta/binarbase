@@ -1,0 +1,34 @@
+{
+  "id": "primitive.client-logo",
+  "purpose": "Greyscale customer logo (30px; 45px large; opacity .5/.34 dark). assetRole customer.logo — real companies, never fabricate.",
+  "cssClasses": [
+    "client-logo",
+    "client-logo.logo-dark",
+    "client-logo.logo-large"
+  ],
+  "variants": {
+    "default": "30px",
+    "dark": "opacity .34",
+    "large": "45px"
+  },
+  "tokens": [],
+  "props": [
+    "assetRole",
+    "assetRef",
+    "alt",
+    "tone",
+    "size"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1267",
+      "quote": ".client-logo{"
+    },
+    {
+      "cite": "src/components/Proof.jsx:23",
+      "quote": "<img src=\"/assets/applifting.png\" alt=\"Applifting\""
+    }
+  ],
+  "kind": "primitive",
+  "contractVersion": "1.0.0"
+}

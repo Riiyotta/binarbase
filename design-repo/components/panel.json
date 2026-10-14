@@ -1,0 +1,37 @@
+{
+  "id": "component.panel",
+  "purpose": "Large white radius-20/24 container with panel shadow (mismatch panel, compare table, console pane, dp diagram/table, quote card, tree detail).",
+  "composes": [],
+  "cssClasses": [
+    "mismatch-panel",
+    "compare-table",
+    "console-pane",
+    "dp-diagram",
+    "dp-table",
+    "quote-card",
+    "ct-detail"
+  ],
+  "tokens": [
+    "radius.panel",
+    "radius.card-lg",
+    "elevation.panel",
+    "elevation.quote",
+    "elevation.tree-detail"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1367",
+      "quote": ".mismatch-panel{background:#fff"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1427",
+      "quote": ".console-pane{background:#fff"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1460",
+      "quote": ".quote-card{background:#fff"
+    }
+  ],
+  "kind": "component",
+  "contractVersion": "1.0.0"
+}

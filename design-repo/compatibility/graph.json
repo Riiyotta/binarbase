@@ -1,0 +1,285 @@
+{
+  "version": "1.0.0",
+  "rules": [
+    {
+      "id": "TEMPLATE_DECLARED",
+      "severity": "error",
+      "description": "PageSpec.template must name a template in templates.json.",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"TEMPLATE_DECLARED\"]"
+    },
+    {
+      "id": "TEMPLATE_SEQUENCE",
+      "severity": "error",
+      "description": "Nodes must appear in the declared template's node order; no section outside that template's node list.",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"TEMPLATE_SEQUENCE\"]"
+    },
+    {
+      "id": "TEMPLATE_REQUIRED_NODES",
+      "severity": "error",
+      "description": "Every node with required:true in the declared template must be present.",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"TEMPLATE_REQUIRED_NODES\"]"
+    },
+    {
+      "id": "VARIANT_ALLOWED",
+      "severity": "error",
+      "description": "node.variant must be one of the template node's variants.",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"VARIANT_ALLOWED\"]"
+    },
+    {
+      "id": "NO_DUPLICATE_SECTION_VARIANT",
+      "severity": "error",
+      "description": "A (section, variant) pair may appear once unless the template node is repeatable.",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"NO_DUPLICATE_SECTION_VARIANT\"]"
+    },
+    {
+      "id": "ONE_PER_PAGE",
+      "severity": "error",
+      "description": "Sections whose contract has constraints.onePerPage appear at most once regardless of variant.",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"ONE_PER_PAGE\"]"
+    },
+    {
+      "id": "SHELL_POSITION",
+      "severity": "error",
+      "description": "Contract position constraints: aurora mustBeFirst, nav mustFollow aurora, cookie overlay mustBeLast, footer mustBeLastContent (only overlay-category nodes after it), final CTA mustPrecede footer, intro mustFollow nav and mustPrecede hero.",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"SHELL_POSITION\"]"
+    },
+    {
+      "id": "HOME_ROUTE_ONLY",
+      "severity": "error",
+      "description": "Sections with constraints.homeRouteOnly (the 3D intro) only on route \"/\".",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"HOME_ROUTE_ONLY\"]"
+    },
+    {
+      "id": "ONE_HERO",
+      "severity": "error",
+      "description": "Exactly one node of category \"hero\".",
+      "exceptions": [
+        "intro.scroll-chapters-3d has category \"intro\" (it is a story stage before the hero) and is not counted."
+      ],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"ONE_HERO\"]",
+      "params": {
+        "countCategories": [
+          "hero"
+        ],
+        "exemptSections": [
+          "intro.scroll-chapters-3d"
+        ],
+        "expected": 1
+      }
+    },
+    {
+      "id": "NUMBERED_BADGES_ASCENDING",
+      "severity": "error",
+      "description": "header.number values must strictly increase in page order.",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"NUMBERED_BADGES_ASCENDING\"]"
+    },
+    {
+      "id": "NUMBERED_BADGES_CONTIGUOUS",
+      "severity": "warn",
+      "description": "header.number values should run 01,02,... without gaps (omitting an optional numbered section leaves a gap).",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"NUMBERED_BADGES_CONTIGUOUS\"]",
+      "params": {
+        "start": 1
+      }
+    },
+    {
+      "id": "IN_PAGE_ANCHORS_RESOLVE",
+      "severity": "error",
+      "description": "Every anchor.in-page href (#id) must match the anchorId of a section present on the page.",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"IN_PAGE_ANCHORS_RESOLVE\"]"
+    },
+    {
+      "id": "OUT_OF_SCOPE_ROUTE_LINK",
+      "severity": "warn",
+      "description": "Links whose role is route.out-of-scope point at live pages this repo does not contain.",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"OUT_OF_SCOPE_ROUTE_LINK\"]"
+    },
+    {
+      "id": "LINK_ROLE_HREF_MATCH",
+      "severity": "error",
+      "description": "href must be consistent with its linkRole (anchor pattern, registered out-of-scope route, exact live endpoint, placeholder pattern).",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"LINK_ROLE_HREF_MATCH\"]"
+    },
+    {
+      "id": "ASSET_ROLE_FIELD_MATCH",
+      "severity": "error",
+      "description": "An assetRef's assetRole must be one of the roles the section contract allows at that content path.",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"ASSET_ROLE_FIELD_MATCH\"]"
+    },
+    {
+      "id": "ASSET_REF_REGISTERED",
+      "severity": "error",
+      "description": "For roles with registered files/refs, assetRef must be one of them (no invented logo files).",
+      "exceptions": [
+        "icon.emoji accepts any single emoji grapheme."
+      ],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"ASSET_REF_REGISTERED\"]"
+    },
+    {
+      "id": "GENERATED_NO_LIVE_ENDPOINTS",
+      "severity": "error",
+      "description": "purpose=generated may not use any live.* link role.",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"GENERATED_NO_LIVE_ENDPOINTS\"]"
+    },
+    {
+      "id": "GENERATED_NO_PROTECTED_ASSETS",
+      "severity": "error",
+      "description": "purpose=generated may only use asset roles whose generationPolicy is may-generate-new.",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"GENERATED_NO_PROTECTED_ASSETS\"]"
+    },
+    {
+      "id": "GENERATED_NO_PROTECTED_NAMES",
+      "severity": "error",
+      "description": "purpose=generated copy may not contain registry protectedNames (real company, customers, case studies, contact data).",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"GENERATED_NO_PROTECTED_NAMES\"]"
+    },
+    {
+      "id": "GENERATED_NO_FABRICATED_PROOF",
+      "severity": "error",
+      "description": "purpose=generated may not include sections whose contract has constraints.requiresRealEvidence (proof.logos-and-stories): case studies / customer logos cannot be generated, only supplied by a human from real, licensed evidence.",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"GENERATED_NO_FABRICATED_PROOF\"]"
+    },
+    {
+      "id": "REFERENCE_RECONSTRUCTION_HOME_ONLY",
+      "severity": "error",
+      "description": "purpose=reference-reconstruction is only valid for template.home at route \"/\".",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"REFERENCE_RECONSTRUCTION_HOME_ONLY\"]"
+    },
+    {
+      "id": "NO_ADJACENT_SECTION_ALT",
+      "severity": "warn",
+      "description": "Two adjacent nodes on the opaque #f6f9fc \"section-alt\" surface merge visually.",
+      "exceptions": [
+        "showcase.card-carousel -> interactive.deployment-switcher: real adjacency on the measured home page (both #f6f9fc)."
+      ],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"NO_ADJACENT_SECTION_ALT\"]",
+      "params": {
+        "surface": "section-alt",
+        "exceptionPairs": [
+          [
+            "showcase.card-carousel",
+            "interactive.deployment-switcher"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "MOTION_LOOP_BUDGET",
+      "severity": "warn",
+      "description": "At most 5 nodes may declare infinite loops (the real page has 5: intro, hero, connectors, showcase, deployment).",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"MOTION_LOOP_BUDGET\"]",
+      "params": {
+        "maxLoopNodes": 5
+      }
+    },
+    {
+      "id": "REDUCED_MOTION_FALLBACK_PRESENT",
+      "severity": "error",
+      "description": "Every node.motion carries its section's const reducedMotionFallback (also schema-enforced).",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"REDUCED_MOTION_FALLBACK_PRESENT\"]"
+    },
+    {
+      "id": "MAX_WORDS",
+      "severity": "error",
+      "description": "Every text field respects its x-maxWords budget (whitespace-split word count).",
+      "exceptions": [],
+      "enforcedBy": "schema/semantic_validate.py::RULES[\"MAX_WORDS\"]"
+    }
+  ],
+  "adjacency": {
+    "pageOrder": [
+      "shell.aurora-background",
+      "shell.nav",
+      "intro.scroll-chapters-3d",
+      "hero.centered-gradient-art",
+      "content.problem-compare",
+      "feature.split-visual-brain",
+      "process.engine-flow",
+      "feature.dual-pane-console",
+      "showcase.card-carousel",
+      "interactive.deployment-switcher",
+      "proof.logos-and-stories",
+      "interactive.context-tree",
+      "pricing.on-request-quote",
+      "conversion.final-cta",
+      "shell.footer",
+      "overlay.cookie-consent"
+    ],
+    "surfaces": {
+      "shell.aurora-background": "fixed-gradient",
+      "shell.nav": "glass",
+      "intro.scroll-chapters-3d": "intro-dark",
+      "hero.centered-gradient-art": "transparent",
+      "content.problem-compare": "transparent",
+      "feature.split-visual-brain": "transparent",
+      "process.engine-flow": "section-alt",
+      "feature.dual-pane-console": "transparent",
+      "showcase.card-carousel": "section-alt",
+      "interactive.deployment-switcher": "section-alt",
+      "proof.logos-and-stories": "transparent",
+      "interactive.context-tree": "transparent",
+      "pricing.on-request-quote": "transparent",
+      "conversion.final-cta": "transparent",
+      "shell.footer": "footer-gradient",
+      "overlay.cookie-consent": "white-fixed"
+    },
+    "recommendedAfter": {
+      "shell.nav": "shell.aurora-background",
+      "intro.scroll-chapters-3d": "shell.nav",
+      "hero.centered-gradient-art": "intro.scroll-chapters-3d",
+      "content.problem-compare": "hero.centered-gradient-art",
+      "feature.split-visual-brain": "content.problem-compare",
+      "process.engine-flow": "feature.split-visual-brain",
+      "feature.dual-pane-console": "process.engine-flow",
+      "showcase.card-carousel": "feature.dual-pane-console",
+      "interactive.deployment-switcher": "showcase.card-carousel",
+      "proof.logos-and-stories": "interactive.deployment-switcher",
+      "interactive.context-tree": "proof.logos-and-stories",
+      "pricing.on-request-quote": "interactive.context-tree",
+      "conversion.final-cta": "pricing.on-request-quote",
+      "shell.footer": "conversion.final-cta",
+      "overlay.cookie-consent": "shell.footer"
+    }
+  },
+  "anchors": {
+    "content.problem-compare": "upgraded",
+    "process.engine-flow": "how-it-works",
+    "feature.dual-pane-console": "console",
+    "showcase.card-carousel": "product",
+    "interactive.deployment-switcher": "deployment",
+    "proof.logos-and-stories": "proof",
+    "interactive.context-tree": "teams",
+    "pricing.on-request-quote": "pricing"
+  },
+  "evidence": [
+    {
+      "cite": "src/App.jsx:43-58",
+      "quote": "<Aurora />"
+    },
+    {
+      "cite": "CLONE_SPEC.md:152",
+      "quote": "Backgrounds:"
+    }
+  ]
+}

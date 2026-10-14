@@ -1,0 +1,143 @@
+{
+  "id": "conversion.final-cta",
+  "kind": "section",
+  "contractVersion": "1.0.0",
+  "category": "conversion",
+  "pageOrder": 13,
+  "purpose": "Closing conversion block: two-line gradient headline, one-line promise, trial CTA and a (non-functional) Schedule Demo button.",
+  "anchorId": null,
+  "surface": "transparent",
+  "variants": [
+    "default"
+  ],
+  "implementedBy": "src/components/FinalCta.jsx",
+  "measuredFrom": [
+    {
+      "cite": "src/components/FinalCta.jsx:5-31",
+      "quote": "<section className=\"final-cta\">"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:674",
+      "quote": ".cta-content{background:#fff;border:1px solid var(--color-border);border-radius:32px"
+    },
+    {
+      "cite": "recon/dom-1440-clean.html:1",
+      "quote": "class=\"cta-primary large\""
+    },
+    {
+      "file": "recon/screens/11-final-cta-1440.png"
+    }
+  ],
+  "constraints": {
+    "onePerPage": true,
+    "mustPrecede": "shell.footer"
+  },
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "title",
+      "titleGradient",
+      "subtitle",
+      "primaryCta",
+      "secondaryLabel"
+    ],
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 5
+      },
+      "titleGradient": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 10
+      },
+      "subtitle": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 18
+      },
+      "primaryCta": {
+        "$ref": "#/definitions/link"
+      },
+      "secondaryLabel": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 4
+      }
+    }
+  },
+  "copyBudgets": {
+    ".title": {
+      "realMaxWords": 4,
+      "maxWords": 5
+    },
+    ".titleGradient": {
+      "realMaxWords": 8,
+      "maxWords": 10
+    },
+    ".subtitle": {
+      "realMaxWords": 14,
+      "maxWords": 18
+    },
+    ".secondaryLabel": {
+      "realMaxWords": 2,
+      "maxWords": 4
+    }
+  },
+  "assetFields": {},
+  "motion": {
+    "patterns": [
+      "static-hover-lift"
+    ],
+    "loops": [],
+    "reducedMotionFallback": "static",
+    "fallbackGrounding": "source",
+    "fallbackNote": "No scroll/loop animation in the original; only hover nudges."
+  },
+  "motionSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "pattern",
+      "reducedMotionFallback"
+    ],
+    "properties": {
+      "pattern": {
+        "type": "string",
+        "enum": [
+          "static-hover-lift"
+        ]
+      },
+      "reducedMotionFallback": {
+        "const": "static"
+      }
+    }
+  },
+  "responsive": [
+    {
+      "breakpoint": "breakpoint.short-900",
+      "target": ".cta-content",
+      "change": "padding 2.5rem (measured 40px), radius 24px",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:985",
+          "quote": ".cta-content{border-radius:24px;padding:2.5rem}"
+        }
+      ]
+    },
+    {
+      "breakpoint": "breakpoint.max-640",
+      "target": ".cta-actions",
+      "change": "stack to a column",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1242",
+          "quote": ".cta-actions{flex-direction:column}"
+        }
+      ]
+    }
+  ],
+  "accessibility": "\"Schedule Demo\" is a plain <button> with no action in the original — generated pages must wire it or omit it."
+}

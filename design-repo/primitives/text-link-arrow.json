@@ -1,0 +1,35 @@
+{
+  "id": "primitive.text-link-arrow",
+  "purpose": "Inline violet text link, optionally with a sliding arrow (Read the story, Book a call, trust link, All stories).",
+  "cssClasses": [
+    "blog-link",
+    "dp-cta",
+    "trust-link",
+    "blog-all-link"
+  ],
+  "variants": {
+    "inline": "underline on hover offset 3px",
+    "pill": "blog-all-link white pill"
+  },
+  "tokens": [
+    "color.brand.primary",
+    "typography.fontWeight.semibold"
+  ],
+  "props": [
+    "label",
+    "href",
+    "linkRole"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:359",
+      "quote": ".trust-link{color:var(--color-primary);font-weight:500"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:115",
+      "quote": ".dp-cta[data-v-a75c984f]{align-items:center;color:var(--color-primary)"
+    }
+  ],
+  "kind": "primitive",
+  "contractVersion": "1.0.0"
+}

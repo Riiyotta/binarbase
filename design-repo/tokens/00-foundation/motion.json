@@ -1,0 +1,362 @@
+{
+  "motion": {
+    "duration": {
+      "fast": {
+        "value": ".2s",
+        "type": "duration",
+        "description": "Hover colour/transform (most frequent transition duration).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:262",
+            "quote": ".nav-link{color:var(--color-text-secondary);font-size:.95rem;font-weight:500;transition:color .2s}"
+          }
+        ]
+      },
+      "tree": {
+        "value": ".25s",
+        "type": "duration",
+        "description": "Context tree dim/highlight, deployment switch.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:181",
+            "quote": ".ct-node[data-v-a6fe94b3]{transition:opacity .25s ease}"
+          }
+        ]
+      },
+      "drawer": {
+        "value": ".3s",
+        "type": "duration",
+        "description": "Mobile drawer, hamburger.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:282",
+            "quote": ".hamburger-line{background:var(--color-text);border-radius:2px;display:block;height:2px;transition:all .3s ease"
+          }
+        ]
+      },
+      "nav-theme": {
+        "value": ".35s",
+        "type": "duration",
+        "description": "Nav light/dark background transition; dp-fade.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:249",
+            "quote": ".nav-glass{backdrop-filter:blur(20px)"
+          }
+        ]
+      },
+      "carousel": {
+        "value": ".4s",
+        "type": "duration",
+        "description": "Showcase card scale/opacity.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:399",
+            "quote": ".showcase-card{cursor:pointer;flex:0 0 auto;min-height:540px;position:relative;scroll-snap-align:center;transition:transform .4s"
+          }
+        ]
+      },
+      "intro-story": {
+        "value": ".45s",
+        "type": "duration",
+        "description": "Intro story out/in.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:11",
+            "quote": ".sbi-story[data-v-00d3a672]{bottom:clamp(100px,13vh,160px);left:var(--pad);transition:opacity .45s ease"
+          }
+        ]
+      },
+      "progress": {
+        "value": ".5s",
+        "type": "duration",
+        "description": "Intro progress fill.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:41",
+            "quote": ".sbi-seg i[data-v-00d3a672]{background:var(--lav);transition:width .5s ease"
+          }
+        ]
+      },
+      "reveal": {
+        "value": ".6s",
+        "type": "duration",
+        "description": "AOS fade-up.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:722",
+            "quote": "[data-aos]{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}"
+          }
+        ]
+      }
+    },
+    "loop": {
+      "flow-dots": {
+        "value": ".9s",
+        "type": "duration",
+        "description": "Deployment dotted flow.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:103",
+            "quote": ".dp-link i[data-v-a75c984f]{animation:dp-flow-a75c984f .9s linear infinite"
+          }
+        ]
+      },
+      "sync": {
+        "value": "1.5s",
+        "type": "duration",
+        "description": "Showcase sync rings.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:500",
+            "quote": "@keyframes sync-pulse"
+          }
+        ]
+      },
+      "drip": {
+        "value": "1.8s",
+        "type": "duration",
+        "description": "Intro scroll cue.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:30",
+            "quote": ".sbi-cue i[data-v-00d3a672]{animation:sbi-drip-00d3a672 1.8s ease-in-out infinite"
+          }
+        ]
+      },
+      "heartbeat": {
+        "value": "2s",
+        "type": "duration",
+        "description": "Brain core, badge pulse, live pulse.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:629",
+            "quote": ".brain-core{align-items:center;animation:core-heartbeat 2s ease-in-out infinite"
+          }
+        ]
+      },
+      "orb": {
+        "value": "2.6s",
+        "type": "duration",
+        "description": "Deployment orb ring.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:92",
+            "quote": ".dp-orb[data-v-a75c984f]{animation:dp-pulse-a75c984f 2.6s ease-out infinite"
+          }
+        ]
+      },
+      "float": {
+        "value": "4s",
+        "type": "duration",
+        "description": "Floating emoji tiles.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:657",
+            "quote": ".floating-icon{"
+          }
+        ]
+      },
+      "blob": {
+        "value": "20s",
+        "type": "duration",
+        "description": "Hero blobs.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:239",
+            "quote": ".gradient-blob{animation:blob-float 20s ease-in-out infinite"
+          }
+        ]
+      }
+    },
+    "easing": {
+      "standard": {
+        "value": "ease",
+        "type": "easing",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:722",
+            "quote": "[data-aos]{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}"
+          }
+        ]
+      },
+      "in-out": {
+        "value": "ease-in-out",
+        "type": "easing",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:239",
+            "quote": ".gradient-blob{animation:blob-float 20s ease-in-out infinite"
+          }
+        ]
+      },
+      "out": {
+        "value": "ease-out",
+        "type": "easing",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:92",
+            "quote": ".dp-orb[data-v-a75c984f]{animation:dp-pulse-a75c984f 2.6s ease-out infinite"
+          }
+        ]
+      },
+      "linear": {
+        "value": "linear",
+        "type": "easing",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:103",
+            "quote": ".dp-link i[data-v-a75c984f]{animation:dp-flow-a75c984f .9s linear infinite"
+          }
+        ]
+      }
+    },
+    "distance": {
+      "reveal": {
+        "value": "30px",
+        "type": "distance",
+        "description": "AOS start offset.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:722",
+            "quote": "[data-aos]{opacity:0;transform:translateY(30px)"
+          }
+        ]
+      },
+      "intro-out": {
+        "value": "12px",
+        "type": "distance",
+        "description": "Intro story exit offset.",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:14",
+            "quote": ".sbi-story.out[data-v-00d3a672]{opacity:0;transform:translateY(12px)}"
+          }
+        ]
+      },
+      "hover-lift": {
+        "value": "-2px",
+        "type": "distance",
+        "description": "Card hover lift (buttons -1px, blog card -4px).",
+        "evidence": [
+          {
+            "cite": "recon/css/index.AtHXy8dp.css:1406",
+            "quote": ".mcp-card:hover{border-color:var(--color-primary);box-shadow:0 8px 20px #6042f91a;transform:translateY(-2px)}"
+          }
+        ]
+      }
+    },
+    "behaviour": {
+      "aos-threshold": {
+        "value": 0.1,
+        "type": "number",
+        "description": "Scroll reveal IntersectionObserver threshold (rootMargin 0px 0px -50px 0px, once).",
+        "evidence": [
+          {
+            "cite": "src/App.jsx:32",
+            "quote": "{ threshold: 0.1, rootMargin: '0px 0px -50px 0px' }"
+          }
+        ]
+      },
+      "deploy-autocycle-ms": {
+        "value": 4500,
+        "type": "number",
+        "description": "Deployment mode auto-cycle interval.",
+        "evidence": [
+          {
+            "cite": "src/components/Deployment.jsx:145",
+            "quote": "}, 4500)"
+          }
+        ]
+      },
+      "deploy-io-threshold": {
+        "value": 0.35,
+        "type": "number",
+        "description": "Auto-cycle runs while the SECTION ROOT is >=35% visible.",
+        "evidence": [
+          {
+            "cite": "src/components/Deployment.jsx:147",
+            "quote": "{ threshold: 0.35 }"
+          }
+        ]
+      },
+      "intro-wheel-step-px": {
+        "value": 30,
+        "type": "number",
+        "description": "Wheel accumulator threshold per chapter step.",
+        "evidence": [
+          {
+            "cite": "src/components/Intro/Intro.jsx:7",
+            "quote": "const WHEEL_STEP_PX = 30"
+          }
+        ]
+      },
+      "intro-step-lock-ms": {
+        "value": 650,
+        "type": "number",
+        "description": "Lock after a chapter step.",
+        "evidence": [
+          {
+            "cite": "src/components/Intro/Intro.jsx:8",
+            "quote": "const STEP_LOCK_MS = 650"
+          }
+        ]
+      },
+      "intro-wheel-gap-ms": {
+        "value": 180,
+        "type": "number",
+        "description": "Accumulator reset gap.",
+        "evidence": [
+          {
+            "cite": "src/components/Intro/Intro.jsx:6",
+            "quote": "const WHEEL_GAP_MS = 180"
+          }
+        ]
+      },
+      "intro-inertia-ms": {
+        "value": 900,
+        "type": "number",
+        "description": "Residual inertia swallowed.",
+        "evidence": [
+          {
+            "cite": "src/components/Intro/Intro.jsx:9",
+            "quote": "const INERTIA_MS = 900"
+          }
+        ]
+      },
+      "intro-swipe-px": {
+        "value": 45,
+        "type": "number",
+        "description": "Touch swipe threshold.",
+        "evidence": [
+          {
+            "cite": "src/components/Intro/Intro.jsx:10",
+            "quote": "const SWIPE_PX = 45"
+          }
+        ]
+      },
+      "intro-swap-ms": {
+        "value": 420,
+        "type": "number",
+        "description": "Text swap delay (1600 on first load, 0 with reduced motion).",
+        "evidence": [
+          {
+            "cite": "src/components/Intro/Intro.jsx:57",
+            "quote": "const delay = reduceRef.current ? 0 : initial ? 1600 : 420"
+          }
+        ]
+      },
+      "brain-excite-ms": {
+        "value": 1200,
+        "type": "number",
+        "description": "Brain click excitement duration.",
+        "evidence": [
+          {
+            "cite": "src/components/Connectors.jsx:12",
+            "quote": "setTimeout(() => setExcited(false), 1200)"
+          }
+        ]
+      }
+    }
+  }
+}

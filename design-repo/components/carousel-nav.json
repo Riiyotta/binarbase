@@ -1,0 +1,29 @@
+{
+  "id": "component.carousel-nav",
+  "purpose": "Prev/next round arrows + dots under the showcase track.",
+  "composes": [
+    "primitive.segment-progress"
+  ],
+  "cssClasses": [
+    "showcase-nav",
+    "nav-arrow",
+    "nav-dots"
+  ],
+  "tokens": [
+    "radius.round",
+    "color.line.default",
+    "color.brand.primary"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:544",
+      "quote": ".showcase-nav{gap:2rem;margin-top:2rem}"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:551",
+      "quote": ".nav-dots{display:flex;gap:.75rem}"
+    }
+  ],
+  "kind": "component",
+  "contractVersion": "1.0.0"
+}

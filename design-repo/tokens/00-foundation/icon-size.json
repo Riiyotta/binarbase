@@ -1,0 +1,81 @@
+{
+  "iconSize": {
+    "chevron": {
+      "value": "14px",
+      "type": "size",
+      "description": "Lang chevron.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:270",
+          "quote": ".lang-chevron{height:14px"
+        }
+      ]
+    },
+    "social": {
+      "value": "16px",
+      "type": "size",
+      "description": "Footer social glyph.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:702",
+          "quote": ".footer-social svg{height:16px;width:16px}"
+        }
+      ]
+    },
+    "inline": {
+      "value": "18px",
+      "type": "size",
+      "description": "CTA arrow, trust icon, check marks.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:335",
+          "quote": ".cta-arrow{height:18px;transition:transform .2s;width:18px}"
+        }
+      ]
+    },
+    "mark": {
+      "value": "20px",
+      "type": "size",
+      "description": "Deployment cell mark.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:133",
+          "quote": ".dp-mark[data-v-a75c984f]{border-radius:50%;display:grid;flex:none;height:20px"
+        }
+      ]
+    },
+    "close": {
+      "value": "24px",
+      "type": "size",
+      "description": "Drawer close.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:295",
+          "quote": ".mobile-menu-close svg{height:24px;width:24px}"
+        }
+      ]
+    },
+    "feature-box": {
+      "value": "40px",
+      "type": "size",
+      "description": "Integrations feature icon box (36 under max-height:900).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:685",
+          "quote": ".feature-icon{"
+        }
+      ]
+    },
+    "emoji-tile": {
+      "value": "48px",
+      "type": "size",
+      "description": "Floating emoji tile / superpower icon box.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:657",
+          "quote": ".floating-icon{"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "id": "shell.footer",
+  "kind": "section",
+  "contractVersion": "1.0.0",
+  "category": "shell",
+  "pageOrder": 14,
+  "purpose": "Brand column (logo, tagline, socials), product links, contact details, legal bar.",
+  "anchorId": null,
+  "surface": "footer-gradient",
+  "variants": [
+    "default"
+  ],
+  "implementedBy": "src/components/Footer.jsx",
+  "measuredFrom": [
+    {
+      "cite": "src/components/Footer.jsx:5-90",
+      "quote": "<footer className=\"footer\">"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:694",
+      "quote": ".footer-grid{display:grid;gap:3rem;grid-template-columns:2fr 1fr 1.5fr}"
+    },
+    {
+      "file": "recon/screens/12-footer-1440.png"
+    }
+  ],
+  "constraints": {
+    "onePerPage": true,
+    "mustBeLastContent": true
+  },
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "logo",
+      "tagline",
+      "social",
+      "productHeading",
+      "productLinks",
+      "contactHeading",
+      "contact",
+      "copyright",
+      "legalLinks"
+    ],
+    "properties": {
+      "logo": {
+        "$ref": "#/definitions/assetRef"
+      },
+      "tagline": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 39
+      },
+      "social": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 3,
+        "items": {
+          "$ref": "#/definitions/link"
+        }
+      },
+      "productHeading": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 3
+      },
+      "productLinks": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 4,
+        "items": {
+          "$ref": "#/definitions/link"
+        }
+      },
+      "contactHeading": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 3
+      },
+      "contact": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "email",
+          "phone",
+          "address"
+        ],
+        "properties": {
+          "email": {
+            "$ref": "#/definitions/link"
+          },
+          "phone": {
+            "$ref": "#/definitions/link"
+          },
+          "address": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 8
+          }
+        }
+      },
+      "copyright": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 9
+      },
+      "legalLinks": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 4,
+        "items": {
+          "$ref": "#/definitions/link"
+        }
+      }
+    }
+  },
+  "copyBudgets": {
+    ".tagline": {
+      "realMaxWords": 31,
+      "maxWords": 39
+    },
+    ".productHeading": {
+      "realMaxWords": 1,
+      "maxWords": 3
+    },
+    ".contactHeading": {
+      "realMaxWords": 1,
+      "maxWords": 3
+    },
+    ".contact.address": {
+      "realMaxWords": 6,
+      "maxWords": 8
+    },
+    ".copyright": {
+      "realMaxWords": 7,
+      "maxWords": 9
+    }
+  },
+  "assetFields": {
+    ".logo": [
+      "brand.logo",
+      "brand.placeholder"
+    ]
+  },
+  "motion": {
+    "patterns": [
+      "static-hover-lift"
+    ],
+    "loops": [],
+    "reducedMotionFallback": "static",
+    "fallbackGrounding": "source",
+    "fallbackNote": "Only social-icon hover lift (-2px)."
+  },
+  "motionSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "pattern",
+      "reducedMotionFallback"
+    ],
+    "properties": {
+      "pattern": {
+        "type": "string",
+        "enum": [
+          "static-hover-lift"
+        ]
+      },
+      "reducedMotionFallback": {
+        "const": "static"
+      }
+    }
+  },
+  "responsive": [
+    {
+      "breakpoint": "breakpoint.max-640",
+      "target": ".footer-grid",
+      "change": "2 columns, brand spans + centred",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1243",
+          "quote": ".footer-grid{gap:2rem;grid-template-columns:1fr 1fr}"
+        }
+      ]
+    },
+    {
+      "breakpoint": "breakpoint.max-480",
+      "target": ".footer-grid",
+      "change": "1 column, centred",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1249",
+          "quote": ".footer-grid{grid-template-columns:1fr;text-align:center}"
+        }
+      ]
+    }
+  ],
+  "accessibility": "Social links have aria-labels; --color-surface is referenced but undefined (renders transparent) - keep."
+}

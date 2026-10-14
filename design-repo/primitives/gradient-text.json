@@ -1,0 +1,34 @@
+{
+  "id": "primitive.gradient-text",
+  "purpose": "Brand-gradient clipped text for the second line / emphasis of headings and the quote price.",
+  "cssClasses": [
+    "gradient-text",
+    "gradient-text-emerald",
+    "gradient-text-cyan",
+    "title-gradient",
+    "quote-price"
+  ],
+  "variants": {
+    "brand": "135deg #3f34fe→#8e64fa",
+    "reversed": ".gradient-text-cyan (stops reversed)"
+  },
+  "tokens": [
+    "gradient.brand",
+    "gradient.brand-reversed"
+  ],
+  "props": [
+    "text"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:387",
+      "quote": ".gradient-text{background:linear-gradient(135deg,#3f34fe,#8e64fa)"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:389",
+      "quote": ".gradient-text-cyan{background:linear-gradient(135deg,#8e64fa,#3f34fe)"
+    }
+  ],
+  "kind": "primitive",
+  "contractVersion": "1.0.0"
+}

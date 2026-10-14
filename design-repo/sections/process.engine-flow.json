@@ -1,0 +1,284 @@
+{
+  "id": "process.engine-flow",
+  "kind": "section",
+  "contractVersion": "1.0.0",
+  "category": "process",
+  "pageOrder": 6,
+  "purpose": "Explains how the context engine works: Capture → Curate (private AI) → Serve flow, a dashed feedback-loop note, and three supporting cards.",
+  "anchorId": "how-it-works",
+  "surface": "section-alt",
+  "variants": [
+    "default"
+  ],
+  "implementedBy": "src/components/Engine.jsx",
+  "measuredFrom": [
+    {
+      "cite": "src/components/Engine.jsx:5-63",
+      "quote": "<section id=\"how-it-works\" className=\"engine-section\">"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1409",
+      "quote": ".engine-section{background:var(--color-bg-secondary);padding:6rem 0"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1421",
+      "quote": ".engine-card{background:#fff;border:1px solid var(--color-border);border-radius:16px;box-shadow:0 2px 8px #0000000a;padding:1.75rem;transition:transform .2s"
+    },
+    {
+      "file": "recon/screens/04-engine-1440.png"
+    }
+  ],
+  "constraints": {
+    "onePerPage": true
+  },
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "header",
+      "steps",
+      "loopNote",
+      "cards"
+    ],
+    "properties": {
+      "header": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "number",
+          "badge",
+          "badgeTone",
+          "title",
+          "titleGradient"
+        ],
+        "properties": {
+          "number": {
+            "type": "string",
+            "pattern": "^0[1-9]$"
+          },
+          "badge": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 5
+          },
+          "badgeTone": {
+            "type": "string",
+            "enum": [
+              "primary",
+              "emerald",
+              "cyan"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 5
+          },
+          "titleGradient": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 9
+          },
+          "subtitle": {
+            "type": "string",
+            "minLength": 1,
+            "x-maxWords": 63
+          }
+        }
+      },
+      "steps": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "description"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 3
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 19
+            },
+            "badge": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 4
+            }
+          }
+        }
+      },
+      "loopNote": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 18
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "body"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 7
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 35
+            }
+          }
+        }
+      }
+    }
+  },
+  "copyBudgets": {
+    ".header.badge": {
+      "realMaxWords": 4,
+      "maxWords": 5
+    },
+    ".header.title": {
+      "realMaxWords": 4,
+      "maxWords": 5
+    },
+    ".header.titleGradient": {
+      "realMaxWords": 7,
+      "maxWords": 9
+    },
+    ".header.subtitle": {
+      "realMaxWords": 50,
+      "maxWords": 63
+    },
+    ".steps[].title": {
+      "realMaxWords": 1,
+      "maxWords": 3
+    },
+    ".steps[].description": {
+      "realMaxWords": 15,
+      "maxWords": 19
+    },
+    ".steps[].badge": {
+      "realMaxWords": 2,
+      "maxWords": 4
+    },
+    ".loopNote": {
+      "realMaxWords": 14,
+      "maxWords": 18
+    },
+    ".cards[].title": {
+      "realMaxWords": 5,
+      "maxWords": 7
+    },
+    ".cards[].body": {
+      "realMaxWords": 28,
+      "maxWords": 35
+    }
+  },
+  "assetFields": {},
+  "motion": {
+    "patterns": [
+      "aos-fade-up-cards-snap-quirk"
+    ],
+    "loops": [],
+    "aosDelaysMs": [
+      0,
+      100,
+      200
+    ],
+    "reducedMotionFallback": "render-final-state",
+    "fallbackGrounding": "policy",
+    "fallbackNote": "Quirk: .engine-card declares transition:transform .2s,border-color .2s,box-shadow .2s AFTER [data-aos] at equal specificity, so card opacity snaps, translateY eases .2s and data-aos-delay is ignored. Reproduce by rule order, not by inventing timings.",
+    "quirkEvidence": [
+      {
+        "cite": "recon/css/index.AtHXy8dp.css:722",
+        "quote": "[data-aos]{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}"
+      },
+      {
+        "cite": "recon/css/index.AtHXy8dp.css:1421",
+        "quote": ".engine-card{background:#fff;border:1px solid var(--color-border);border-radius:16px;box-shadow:0 2px 8px #0000000a;padding:1.75rem;transition:transform .2s"
+      }
+    ]
+  },
+  "motionSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "pattern",
+      "reducedMotionFallback"
+    ],
+    "properties": {
+      "pattern": {
+        "type": "string",
+        "enum": [
+          "aos-fade-up-cards-snap-quirk"
+        ]
+      },
+      "reducedMotionFallback": {
+        "const": "render-final-state"
+      },
+      "aosDelaysMs": {
+        "type": "array",
+        "items": {
+          "type": "integer",
+          "enum": [
+            0,
+            100,
+            200
+          ]
+        }
+      }
+    }
+  },
+  "responsive": [
+    {
+      "breakpoint": "breakpoint.max-968",
+      "target": ".engine-flow",
+      "change": "column; arrows rotated 90deg; step badge at left 1.5rem",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1476",
+          "quote": ".engine-flow{align-items:stretch;flex-direction:column}"
+        }
+      ]
+    },
+    {
+      "breakpoint": "breakpoint.max-968",
+      "target": ".engine-cards",
+      "change": "1 column",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1475",
+          "quote": "@media(max-width:968px){.console-grid,.engine-cards,.mcp-cards{grid-template-columns:1fr}"
+        }
+      ]
+    },
+    {
+      "breakpoint": "breakpoint.max-768",
+      "target": ".engine-section",
+      "change": "padding 4rem 0",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1481",
+          "quote": "@media(max-width:768px){.console-section,.engine-section,.upgraded-section{padding:4rem 0}"
+        }
+      ]
+    }
+  ],
+  "accessibility": "Arrows are aria-hidden. Step titles are h4 under the h2 (heading level skip exists in the original)."
+}

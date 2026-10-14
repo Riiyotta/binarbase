@@ -1,0 +1,827 @@
+- generic [active] [ref=f8e1]:
+  - generic [ref=f8e3]:
+    - navigation [ref=f8e10]:
+      - generic [ref=f8e11]:
+        - img "BinarBase" [ref=f8e13]
+        - generic [ref=f8e14]:
+          - link "How it works" [ref=f8e15] [cursor=pointer]:
+            - /url: "#how-it-works"
+          - link "Product" [ref=f8e16] [cursor=pointer]:
+            - /url: "#product"
+          - link "Solutions" [ref=f8e17] [cursor=pointer]:
+            - /url: "#teams"
+          - link "Pricing" [ref=f8e18] [cursor=pointer]:
+            - /url: "#pricing"
+          - link "Insights" [ref=f8e19] [cursor=pointer]:
+            - /url: /insights
+        - generic [ref=f8e20]:
+          - button "🇬🇧 EN" [ref=f8e22] [cursor=pointer]:
+            - generic [ref=f8e23]: 🇬🇧
+            - generic [ref=f8e24]: EN
+          - link "Sign In" [ref=f8e27] [cursor=pointer]:
+            - /url: https://app.binarbase.com/login
+          - link "Get Started" [ref=f8e28] [cursor=pointer]:
+            - /url: https://app.binarbase.com/signup
+    - region "Your company's second brain." [ref=f8e29]:
+      - 'img "3D visualisation: data from your company systems flows into the BinarBase knowledge base and, through one MCP endpoint, into Claude, ChatGPT, Cursor and Gemini." [ref=f8e30]'
+      - generic:
+        - heading "Your company's second brain." [level=2]
+        - paragraph: One living knowledge base that every AI you use draws from.
+      - generic [ref=f8e31]:
+        - navigation "Intro chapters" [ref=f8e32]:
+          - 'button "1: Your company''s second brain." [ref=f8e33] [cursor=pointer]'
+          - 'button "2: Everything your company knows, in one place." [ref=f8e35] [cursor=pointer]'
+          - 'button "3: Data gets meaning." [ref=f8e36] [cursor=pointer]'
+          - 'button "4: One MCP endpoint." [ref=f8e37] [cursor=pointer]'
+          - 'button "5: For every AI you use." [ref=f8e38] [cursor=pointer]'
+          - 'button "6: A brain that learns." [ref=f8e39] [cursor=pointer]'
+          - 'button "7: See your company''s second brain." [ref=f8e40] [cursor=pointer]'
+          - generic [ref=f8e41]: 1 / 7
+        - generic [ref=f8e42]:
+          - paragraph [ref=f8e43]: Click a node for details · drag to rotate
+          - button "Skip intro" [ref=f8e44] [cursor=pointer]
+          - button "Previous chapter" [disabled] [ref=f8e45]
+          - button "Next chapter" [ref=f8e48] [cursor=pointer]
+    - generic [ref=f8e52]:
+      - generic [ref=f8e53]:
+        - generic [ref=f8e54]: Your company's AI brain
+        - heading "AI that actually knows your business" [level=1] [ref=f8e57]:
+          - generic [ref=f8e58]: AI that actually
+          - generic [ref=f8e59]: knows your business
+        - paragraph [ref=f8e60]:
+          - text: Every AI is generic until it knows you. BinarBase builds a living digital twin of your company — your definitions, your numbers, your way of working.
+          - strong [ref=f8e61]: One brain. Correct answers. Everywhere.
+      - generic [ref=f8e62]:
+        - generic [ref=f8e63]:
+          - link "Start Free Trial" [ref=f8e64] [cursor=pointer]:
+            - /url: https://app.binarbase.com/signup
+          - button "Watch Demo Coming Soon" [disabled] [ref=f8e68]:
+            - generic [ref=f8e72]: Watch Demo
+            - generic [ref=f8e73]: Coming Soon
+        - generic [ref=f8e74]:
+          - generic [ref=f8e75]: Grounded in your definitions
+          - generic [ref=f8e79]: First answers in minutes
+          - generic [ref=f8e83]: Yours in any AI
+          - link "Runs in the cloud or on your servers" [ref=f8e87] [cursor=pointer]:
+            - /url: "#deployment"
+    - generic [ref=f8e92]:
+      - generic [ref=f8e93]:
+        - generic [ref=f8e94]:
+          - generic [ref=f8e95]: 01·
+          - generic [ref=f8e96]: Your AI, upgraded
+        - heading "Turn any AI into your most experienced employee." [level=2] [ref=f8e97]: Turn any AI into yourmost experienced employee.
+        - paragraph [ref=f8e98]: On day one, even the smartest AI is a brilliant stranger — it doesn't know your definitions, your history, or how your team actually works. BinarBase gives it years of institutional memory.
+      - generic [ref=f8e99]:
+        - paragraph [ref=f8e100]: The same word, three different numbers
+        - generic [ref=f8e101]:
+          - generic [ref=f8e102]:
+            - generic [ref=f8e103]: E-shop
+            - generic [ref=f8e104]: revenue = all orders
+          - generic [ref=f8e108]:
+            - generic [ref=f8e109]: Accounting
+            - generic [ref=f8e110]: revenue = invoices issued
+          - generic [ref=f8e114]:
+            - generic [ref=f8e115]: CRM
+            - generic [ref=f8e116]: revenue = signed contracts
+        - generic [ref=f8e120]:
+          - strong [ref=f8e121]: Which one will your AI pick? Whichever one it likes.
+          - text: "And it happens inside a single system too: average your margin percentages and you get a number that isn't your margin. Count your rows and you've counted order lines, not orders. Both look right. Both are wrong."
+      - generic [ref=f8e122]:
+        - generic [ref=f8e123]:
+          - generic [ref=f8e125]: Any AI on day one
+          - generic [ref=f8e126]: The same AI, with BinarBase
+        - generic [ref=f8e127]:
+          - generic [ref=f8e128]: Your definitions
+          - generic [ref=f8e129]: Guesses what "revenue" means
+          - generic [ref=f8e134]: Knows your confirmed definition
+        - generic [ref=f8e139]:
+          - generic [ref=f8e140]: Your history
+          - generic [ref=f8e141]: Starts from zero every chat
+          - generic [ref=f8e146]: Remembers decisions & corrections
+        - generic [ref=f8e151]:
+          - generic [ref=f8e152]: Your flows
+          - generic [ref=f8e153]: Generic best practice
+          - generic [ref=f8e158]: Follows how your team actually works
+        - generic [ref=f8e163]:
+          - generic [ref=f8e164]: When it's unsure
+          - generic [ref=f8e165]: Answers anyway
+          - generic [ref=f8e170]: Asks — like a good employee would
+        - generic [ref=f8e175]:
+          - generic [ref=f8e176]: Where numbers come from
+          - generic [ref=f8e177]: Black box
+          - generic [ref=f8e182]: Shows its work — source & definition
+      - paragraph [ref=f8e187]: The difference isn't a smarter model — it's context. And because a wrong number in a board meeting is a disaster, every answer shows its work.
+    - generic [ref=f8e189]:
+      - generic [ref=f8e190]:
+        - generic [ref=f8e191]:
+          - generic [ref=f8e192]: 02·
+          - generic [ref=f8e193]: Connectors & MCP
+        - heading "Everything connected. One meaning." [level=2] [ref=f8e194]
+        - paragraph [ref=f8e195]: 200+ connectors bring your systems together and map them onto your definitions. One MCP endpoint serves the result to any agent you already use.
+      - generic [ref=f8e196]:
+        - generic [ref=f8e197]:
+          - heading "Connecting tools is easy. Meaning is the hard part." [level=3] [ref=f8e198]
+          - paragraph [ref=f8e199]: "Every vendor can connect your tools — that's table stakes. The hard part is meaning: knowing that your \"active customer\" is someone who bought in the last 90 days, that your fiscal month starts on the 1st, and that averaging your margin percentages doesn't give you your margin. BinarBase maps every connected source onto definitions your team confirmed, and keeps them in sync."
+          - list [ref=f8e200]:
+            - listitem [ref=f8e201]:
+              - generic [ref=f8e205]:
+                - strong [ref=f8e206]: 200+ connectors
+                - generic [ref=f8e207]: Stripe, Shopify, QuickBooks, Xero, HubSpot, Salesforce and more — connected once, kept in sync
+            - listitem [ref=f8e208]:
+              - generic [ref=f8e212]:
+                - strong [ref=f8e213]: Mapped to your definitions
+                - generic [ref=f8e214]: Every field lands on a metric you confirmed, so a number means the same thing everywhere
+            - listitem [ref=f8e215]:
+              - generic [ref=f8e219]:
+                - strong [ref=f8e220]: One MCP endpoint out
+                - generic [ref=f8e221]: Add BinarBase to Claude, ChatGPT or Cursor and they read your brain live, with your permissions
+            - listitem [ref=f8e222]:
+              - generic [ref=f8e226]:
+                - strong [ref=f8e227]: Governed and audited
+                - generic [ref=f8e228]: Access follows your roles, every call is logged, data encrypted, GDPR ready
+          - link "Connect Now" [ref=f8e230] [cursor=pointer]:
+            - /url: https://app.binarbase.com/signup
+        - generic [ref=f8e235]:
+          - generic [ref=f8e239] [cursor=pointer]
+          - generic:
+            - generic: 📊
+            - generic: 💳
+            - generic: 📈
+            - generic: 🔗
+            - generic: ⚡
+            - generic: 🎯
+    - generic [ref=f8e247]:
+      - generic [ref=f8e248]:
+        - generic [ref=f8e249]:
+          - generic [ref=f8e250]: 03·
+          - generic [ref=f8e251]: How the context works
+        - heading "A self-improving engine — not a database someone has to maintain." [level=2] [ref=f8e252]: A self-improving engine —not a database someone has to maintain.
+        - paragraph [ref=f8e253]: "Most \"AI knowledge bases\" are folders that rot: someone has to keep them current, and they go stale within months. Your BinarBase context is different — it's an engine. A private AI runs on your company's knowledge, continuously organising it, catching gaps, and turning every correction into a permanent improvement."
+      - generic [ref=f8e254]:
+        - generic [ref=f8e255]:
+          - heading "Capture" [level=4] [ref=f8e256]
+          - paragraph [ref=f8e257]: Data, documents and corrections become a structured, governed model
+        - generic [ref=f8e261]:
+          - generic [ref=f8e262]: private AI
+          - heading "Curate" [level=4] [ref=f8e263]
+          - paragraph [ref=f8e264]: An internal AI promotes corrections into definitions, spots gaps, and keeps one source of truth
+        - generic [ref=f8e268]:
+          - heading "Serve" [level=4] [ref=f8e269]
+          - paragraph [ref=f8e270]: Correct, traceable answers for dashboards, agents and your own AI
+      - generic [ref=f8e271]:
+        - generic [aria-hidden] [ref=f8e272]: ↺
+        - generic [ref=f8e273]: Every use and every correction feeds back — the engine restructures and improves itself
+      - generic [ref=f8e274]:
+        - generic [ref=f8e275]:
+          - heading "A private AI curates it" [level=4] [ref=f8e276]
+          - paragraph [ref=f8e277]: An internal AI keeps your context consistent — it turns corrections into definitions, flags the ones that are missing, and enforces one source of truth across every team.
+        - generic [ref=f8e278]:
+          - heading "Self-improving by design" [level=4] [ref=f8e279]
+          - paragraph [ref=f8e280]: Every use and correction feeds back. The engine compounds — no manual upkeep, no rot. Sharper every week, on its own.
+        - generic [ref=f8e281]:
+          - heading "Governed & private" [level=4] [ref=f8e282]
+          - paragraph [ref=f8e283]: It runs on your context, with your permissions. Every change is auditable, roles are enforced, and nothing leaks out.
+    - generic [ref=f8e285]:
+      - generic [ref=f8e286]:
+        - generic [ref=f8e287]:
+          - generic [ref=f8e288]: 04·
+          - generic [ref=f8e289]: Two ways to work with it
+        - heading "Manage it in BinarBase — or from your own tools over MCP." [level=2] [ref=f8e290]: Manage it in BinarBase —or from your own tools over MCP.
+        - paragraph [ref=f8e291]: "Run your brain whichever way suits you: a console for editing definitions and sources by hand, and an MCP endpoint so Claude, ChatGPT or Cursor can read and work with the same context directly."
+      - generic [ref=f8e292]:
+        - generic [ref=f8e293]:
+          - generic [ref=f8e294]: Manage · the BinarBase console
+          - heading "Your context and data, in one place" [level=3] [ref=f8e295]
+          - paragraph [ref=f8e296]: Edit definitions in plain language, connect sources, review what the engine learned, and set who sees what. No code.
+          - generic [ref=f8e297]:
+            - generic [ref=f8e298]: BinarBase · Context console
+            - generic [ref=f8e303]:
+              - generic [ref=f8e304]: Context
+              - generic [ref=f8e305]: Data sources
+              - generic [ref=f8e306]: Definitions
+              - generic [ref=f8e307]: Corrections
+              - generic [ref=f8e308]: Roles
+            - generic [ref=f8e309]:
+              - generic [ref=f8e310]:
+                - generic [ref=f8e311]:
+                  - generic [ref=f8e312]: Gross margin
+                  - generic [ref=f8e313]: confirmed
+                - code [ref=f8e314]: total profit ÷ total revenue — weighted, not an average of percentages
+              - generic [ref=f8e315]:
+                - generic [ref=f8e316]:
+                  - generic [ref=f8e317]: Order count
+                  - generic [ref=f8e318]: needs review
+                - code [ref=f8e319]: distinct orders — not order lines
+          - paragraph [ref=f8e320]: Write the definition in plain language — the engine applies it everywhere
+        - generic [ref=f8e321]:
+          - generic [ref=f8e322]: Connect · your own tools over MCP
+          - heading "Your context, inside the tools you already use" [level=3] [ref=f8e323]
+          - paragraph [ref=f8e324]: One endpoint. Add it to Claude, ChatGPT or Cursor and they read your context live, with your permissions — no export, no rebuild.
+          - generic [ref=f8e325]:
+            - generic [ref=f8e326]: A direct line to your company brain
+            - generic [ref=f8e327]: One brain. Every tool you use.
+          - list [ref=f8e328]:
+            - listitem [ref=f8e329]:
+              - generic [ref=f8e330]: "1"
+              - generic [ref=f8e331]: Add BinarBase as an MCP server in your agent
+            - listitem [ref=f8e332]:
+              - generic [ref=f8e333]: "2"
+              - generic [ref=f8e334]: Paste your endpoint and sign in
+            - listitem [ref=f8e335]:
+              - generic [ref=f8e336]: "3"
+              - generic [ref=f8e337]: Your agent now knows your business — live
+          - paragraph [ref=f8e338]: Works with Claude, ChatGPT, Cursor and any MCP-ready agent. Access follows your roles; every call is logged.
+      - generic [ref=f8e339]:
+        - paragraph [ref=f8e340]: Works with the AI you already use
+        - generic [ref=f8e341]:
+          - generic [ref=f8e342]:
+            - generic [aria-hidden] [ref=f8e343]: ✦
+            - text: Claude
+          - generic [ref=f8e344]:
+            - generic [aria-hidden] [ref=f8e345]: ◎
+            - text: ChatGPT
+          - generic [ref=f8e346]:
+            - generic [aria-hidden] [ref=f8e347]: ✧
+            - text: Gemini
+          - generic [ref=f8e348]:
+            - generic [aria-hidden] [ref=f8e349]: ▶
+            - text: Cursor
+          - generic [ref=f8e350]:
+            - generic [aria-hidden] [ref=f8e351]: ◆
+            - text: Copilot
+        - paragraph [ref=f8e352]: Works with Claude, ChatGPT, Cursor and any MCP-ready agent
+      - generic [ref=f8e353]:
+        - generic [ref=f8e354]:
+          - heading "Yours to take" [level=4] [ref=f8e355]
+          - paragraph [ref=f8e356]: Your definitions, knowledge and history are yours to export — whenever you want them
+        - generic [ref=f8e357]:
+          - heading "One brain, every surface" [level=4] [ref=f8e358]
+          - paragraph [ref=f8e359]: Dashboards, BinarBase agents and your favourite chat AI — always in sync
+    - generic [ref=f8e360]:
+      - generic [ref=f8e361]:
+        - generic [ref=f8e362]:
+          - generic [ref=f8e363]: 05·
+          - generic [ref=f8e364]: What your brain does for you
+        - heading "One context. Every output." [level=2] [ref=f8e365]
+        - paragraph [ref=f8e366]: None of this is a separate product. Each one is the same Company Context, put to work — which is why they all use your definitions, your voice and your rules without being told twice.
+      - generic [ref=f8e367]:
+        - generic [ref=f8e368]:
+          - generic [ref=f8e370] [cursor=pointer]:
+            - generic [ref=f8e371]:
+              - generic [ref=f8e372]: AI Agents
+              - generic [ref=f8e379]:
+                - generic [ref=f8e384]:
+                  - generic [ref=f8e385]:
+                    - text: AI Agent
+                    - generic [ref=f8e386]: Just now
+                  - paragraph [ref=f8e387]: "Net revenue is 12% below plan this quarter — using your definition: orders − refunds − shipping. Two drivers explain most of it:"
+                  - generic [ref=f8e388]:
+                    - button "Show the breakdown" [ref=f8e389]
+                    - button "Compare to last year" [ref=f8e390]
+                    - button "Draft board note" [ref=f8e391]
+                - generic [ref=f8e392]:
+                  - generic [ref=f8e393]: ⚠️
+                  - generic [ref=f8e394]:
+                    - strong [ref=f8e395]: Definition needed
+                    - paragraph [ref=f8e396]: "\"Active customer\" isn't confirmed yet — confirm it and I'll rerun this"
+                - generic [ref=f8e397]:
+                  - textbox "Ask your company anything..." [disabled] [ref=f8e398]
+                  - button [ref=f8e399]
+            - generic [ref=f8e402]:
+              - generic [ref=f8e403]: Always on
+              - heading "Work that arrives already done" [level=3] [ref=f8e404]
+              - paragraph [ref=f8e405]: Board summaries, account briefs, proposals — drafted by agents that already know your definitions, your processes and your voice. When a definition is missing they ask instead of guessing, so nothing lands on your desk quietly wrong.
+              - list [ref=f8e406]:
+                - listitem [ref=f8e407]:
+                  - generic [ref=f8e408]: ✓
+                  - text: Board summaries in your format
+                - listitem [ref=f8e409]:
+                  - generic [ref=f8e410]: ✓
+                  - text: Answers grounded in confirmed definitions
+                - listitem [ref=f8e411]:
+                  - generic [ref=f8e412]: ✓
+                  - text: Asks you when a definition is missing
+          - generic [ref=f8e414] [cursor=pointer]:
+            - generic [ref=f8e415]:
+              - generic [ref=f8e416]: Revenue Forecast
+              - generic [ref=f8e422]:
+                - generic [ref=f8e423]:
+                  - generic [ref=f8e424]:
+                    - generic [ref=f8e425]: Revenue Projection
+                    - generic [ref=f8e426]:
+                      - generic [ref=f8e427]: Actual
+                      - generic [ref=f8e429]: Predicted
+                      - generic [ref=f8e431]: Confidence
+                  - generic [ref=f8e438]:
+                    - generic [ref=f8e439]:
+                      - generic [ref=f8e440]: Q4 Forecast
+                      - text: €2.4M
+                    - generic [ref=f8e441]:
+                      - generic [ref=f8e442]: Confidence
+                      - text: 89%
+                    - generic [ref=f8e443]:
+                      - generic [ref=f8e444]: YoY Growth
+                      - text: +34%
+                - generic [ref=f8e445]:
+                  - button "Base Case" [ref=f8e446]
+                  - button "Best Case" [ref=f8e447]
+                  - button "Worst Case" [ref=f8e448]
+            - generic [ref=f8e449]:
+              - generic [ref=f8e450]: Your fiscal calendar
+              - heading "Forecasts you can defend" [level=3] [ref=f8e451]
+              - paragraph [ref=f8e452]: Runway, cash flow and revenue projected on the metrics your team confirmed and the fiscal calendar you actually use — with the source behind every line, so the first question in the room doesn't derail the meeting.
+              - list [ref=f8e453]:
+                - listitem [ref=f8e454]:
+                  - generic [ref=f8e455]: ✓
+                  - text: 30/60/90 day projections
+                - listitem [ref=f8e456]:
+                  - generic [ref=f8e457]: ✓
+                  - text: What-if scenarios on your own drivers
+                - listitem [ref=f8e458]:
+                  - generic [ref=f8e459]: ✓
+                  - text: Runway on your burn definition
+          - generic [ref=f8e461] [cursor=pointer]:
+            - generic [ref=f8e462]:
+              - generic [ref=f8e463]: Reports & Dashboards
+              - generic [ref=f8e470]:
+                - generic [ref=f8e471]:
+                  - generic [ref=f8e472]:
+                    - generic [ref=f8e473]: MRR
+                    - generic [ref=f8e474]: €847K
+                    - generic [ref=f8e475]: ↑ 12%
+                  - generic [ref=f8e476]:
+                    - generic [ref=f8e477]: Gross Margin
+                    - generic [ref=f8e478]: 67.2%
+                    - generic [ref=f8e479]: ↑ 2.2%
+                - generic [ref=f8e489]:
+                  - generic [ref=f8e490]:
+                    - generic [ref=f8e491]: 📊
+                    - generic [ref=f8e492]: Q4 Board Report
+                    - generic [ref=f8e493]: Ready
+                  - generic [ref=f8e494]:
+                    - generic [ref=f8e495]: Revenue +23%
+                    - generic [ref=f8e496]: Margin 67%
+                    - generic [ref=f8e497]: CAC +8%
+                - generic [ref=f8e498]: Live data • Updated 2s ago
+            - generic [ref=f8e501]:
+              - generic [ref=f8e502]: Traceable
+              - heading "The end of arguing about whose number is right" [level=3] [ref=f8e503]
+              - paragraph [ref=f8e504]: Live dashboards and board-ready reports where every metric traces back to a definition your team confirmed. One number, the same everywhere, with its origin one click away.
+              - list [ref=f8e505]:
+                - listitem [ref=f8e506]:
+                  - generic [ref=f8e507]: ✓
+                  - text: Every metric traceable to its definition
+                - listitem [ref=f8e508]:
+                  - generic [ref=f8e509]: ✓
+                  - text: Board-ready reports in seconds
+                - listitem [ref=f8e510]:
+                  - generic [ref=f8e511]: ✓
+                  - text: One number — the same everywhere
+          - generic [ref=f8e513] [cursor=pointer]:
+            - generic [ref=f8e514]:
+              - generic [ref=f8e515]: Connected Apps
+              - generic [ref=f8e521]:
+                - generic [ref=f8e522]:
+                  - generic [ref=f8e523]:
+                    - generic [ref=f8e524]: 💳
+                    - generic [ref=f8e525]: Stripe
+                    - generic [ref=f8e526]: ✓
+                  - generic [ref=f8e527]:
+                    - generic [ref=f8e528]: 📊
+                    - generic [ref=f8e529]: QuickBooks
+                    - generic [ref=f8e530]: ✓
+                  - generic [ref=f8e531]:
+                    - generic [ref=f8e532]: 🛒
+                    - generic [ref=f8e533]: Shopify
+                    - generic [ref=f8e534]: ✓
+                  - generic [ref=f8e535]:
+                    - generic [ref=f8e536]: ☁️
+                    - generic [ref=f8e537]: Salesforce
+                    - generic [ref=f8e538]: +
+                - generic [ref=f8e539]: Mapping your data onto your definitions...
+            - generic [ref=f8e545]:
+              - generic [ref=f8e546]: 200+ connectors
+              - heading "Your systems, finally speaking one language" [level=3] [ref=f8e547]
+              - paragraph [ref=f8e548]: Accounting, CRM, payments and e-commerce connected in minutes, then mapped onto the definitions you confirmed. Connecting tools is the easy part — this is the part that makes the data mean something.
+              - list [ref=f8e549]:
+                - listitem [ref=f8e550]:
+                  - generic [ref=f8e551]: ✓
+                  - text: 200+ native connectors
+                - listitem [ref=f8e552]:
+                  - generic [ref=f8e553]: ✓
+                  - text: Mapped onto your confirmed metrics
+                - listitem [ref=f8e554]:
+                  - generic [ref=f8e555]: ✓
+                  - text: Kept fresh automatically
+          - generic [ref=f8e557] [cursor=pointer]:
+            - generic [ref=f8e558]:
+              - generic [ref=f8e559]: Voice Assistant
+              - generic [ref=f8e566]:
+                - generic [ref=f8e575]: Listening...
+                - generic [ref=f8e576]:
+                  - generic [ref=f8e577]: "\"What's our net revenue this month?\""
+                  - generic [ref=f8e578]:
+                    - generic [ref=f8e579]: 🤖
+                    - generic [ref=f8e580]: €847K net revenue — orders minus refunds and shipping, your definition. Up 12% on last month; Product X leads with €312K.
+                - generic [ref=f8e581]:
+                  - button "Show the source" [ref=f8e582]
+                  - button "Compare periods" [ref=f8e583]
+            - generic [ref=f8e584]:
+              - generic [ref=f8e585]: Coming soon
+              - heading "And whatever you build next" [level=3] [ref=f8e586]
+              - paragraph [ref=f8e587]: The context is yours to build on. Ask out loud from your phone, wire it into your own tools over MCP, or build something we haven't thought of — it all reads the same brain.
+              - list [ref=f8e588]:
+                - listitem [ref=f8e589]:
+                  - generic [ref=f8e590]: ✓
+                  - text: Ask in plain language, anywhere
+                - listitem [ref=f8e591]:
+                  - generic [ref=f8e592]: ✓
+                  - text: Answers on your own definitions
+                - listitem [ref=f8e593]:
+                  - generic [ref=f8e594]: ✓
+                  - text: Your own apps over MCP
+        - generic [ref=f8e595]:
+          - button [disabled] [ref=f8e596]
+          - generic [ref=f8e599]:
+            - button [ref=f8e600] [cursor=pointer]
+            - button [ref=f8e601] [cursor=pointer]
+            - button [ref=f8e602] [cursor=pointer]
+            - button [ref=f8e603] [cursor=pointer]
+            - button [ref=f8e604] [cursor=pointer]
+          - button [ref=f8e605] [cursor=pointer]
+    - generic [ref=f8e609]:
+      - generic [ref=f8e610]:
+        - generic [ref=f8e611]:
+          - generic [ref=f8e612]: 06·
+          - generic [ref=f8e613]: Where it runs
+        - heading "One brain. Runs where you decide." [level=2] [ref=f8e614]: One brain.Runs where you decide.
+        - paragraph [ref=f8e615]: "Your Company Context is the same everywhere: your definitions, knowledge and memory. You only choose where it runs: in our EU cloud, in your own cloud, or on your own servers with local AI models."
+      - radiogroup "Where it runs" [ref=f8e616]:
+        - radio "BinarBase Cloud" [checked] [ref=f8e617] [cursor=pointer]
+        - radio "Private cloud" [ref=f8e618] [cursor=pointer]
+        - radio "On-premise · local AI" [ref=f8e619] [cursor=pointer]
+      - 'img "Diagram: where your data and the AI models run in the selected setup: BinarBase Cloud" [ref=f8e620]':
+        - generic: Your network
+        - generic [ref=f8e621]:
+          - paragraph [ref=f8e622]: Your systems
+          - list [ref=f8e623]:
+            - listitem [ref=f8e624]: ERP & accounting
+            - listitem [ref=f8e625]: CRM
+            - listitem [ref=f8e626]: E-shop
+            - listitem [ref=f8e627]: Documents
+        - generic [ref=f8e628]: leaves your network
+        - generic [ref=f8e631]:
+          - generic [ref=f8e632]: BinarBase EU cloud
+          - paragraph [ref=f8e637]: Company Context
+          - paragraph [ref=f8e638]: definitions · knowledge · memory
+        - generic [ref=f8e639]: leaves your network
+        - generic [ref=f8e642]:
+          - paragraph [ref=f8e643]: AI models
+          - generic [ref=f8e644]:
+            - paragraph [ref=f8e645]: Claude · ChatGPT · Gemini
+            - paragraph [ref=f8e646]: leading cloud models
+      - paragraph [ref=f8e647]:
+        - strong [ref=f8e648]: BinarBase Cloud
+        - text: "We host and run everything. The fastest way to start: live the same day."
+      - generic [ref=f8e649]:
+        - table "The three setups side by side" [ref=f8e650]:
+          - row [ref=f8e651]:
+            - columnheader [ref=f8e652]
+            - columnheader "Available now BinarBase Cloud" [ref=f8e653] [cursor=pointer]:
+              - generic [ref=f8e654]: Available now
+              - text: BinarBase Cloud
+            - columnheader "Available now Private cloud" [ref=f8e655] [cursor=pointer]:
+              - generic [ref=f8e656]: Available now
+              - text: Private cloud
+            - columnheader "Available now On-premise · local AI" [ref=f8e657] [cursor=pointer]:
+              - generic [ref=f8e658]: Available now
+              - text: On-premise · local AI
+          - row [ref=f8e659]:
+            - rowheader "What leaves your network?" [ref=f8e660]
+          - row [ref=f8e661]:
+            - rowheader "Your data and documents" [ref=f8e662]
+            - cell "Stored in our EU cloud" [ref=f8e663]
+            - cell "Stays in your cloud account" [ref=f8e667]
+            - cell "Stays on your servers" [ref=f8e671]
+          - row [ref=f8e675]:
+            - rowheader "Company Context (definitions, memory)" [ref=f8e676]
+            - cell "Stored in our EU cloud" [ref=f8e677]
+            - cell "Stays in your cloud account" [ref=f8e681]
+            - cell "Stays on your servers" [ref=f8e685]
+          - row [ref=f8e689]:
+            - rowheader "Questions and answers" [ref=f8e690]
+            - cell "Processed by our AI provider" [ref=f8e691]
+            - cell "Only if you choose a cloud model" [ref=f8e695]
+            - cell "Stay on your servers" [ref=f8e698]
+          - row [ref=f8e702]:
+            - rowheader "Running it" [ref=f8e703]
+          - row [ref=f8e704]:
+            - rowheader "Who runs it" [ref=f8e705]
+            - cell "BinarBase" [ref=f8e706]
+            - cell "BinarBase together with your IT" [ref=f8e707]
+            - cell "Your IT, with our support" [ref=f8e708]
+          - row [ref=f8e709]:
+            - rowheader "Works offline" [ref=f8e710]
+            - cell "No" [ref=f8e711]
+            - cell "No" [ref=f8e712]
+            - cell "Yes, fully offline is possible" [ref=f8e713]
+          - row [ref=f8e714]:
+            - rowheader "Best for" [ref=f8e715]
+            - cell "Most companies that want to start now" [ref=f8e716]
+            - cell "Companies with their own cloud and strict security rules" [ref=f8e717]
+            - cell "Banks, insurance, healthcare, manufacturing, public sector" [ref=f8e718]
+          - row [ref=f8e719]:
+            - rowheader [ref=f8e720]
+            - cell [ref=f8e721]:
+              - link "Book a call BinarBase Cloud" [ref=f8e722] [cursor=pointer]:
+                - /url: mailto:info@binarbase.com?subject=BinarBase%20deployment%3A%20BinarBase%20Cloud
+                - text: Book a call
+                - generic [ref=f8e723]: BinarBase Cloud
+            - cell [ref=f8e726]:
+              - link "Book a call Private cloud" [ref=f8e727] [cursor=pointer]:
+                - /url: mailto:info@binarbase.com?subject=BinarBase%20deployment%3A%20Private%20cloud
+                - text: Book a call
+                - generic [ref=f8e728]: Private cloud
+            - cell [ref=f8e731]:
+              - link "Book a call On-premise · local AI" [ref=f8e732] [cursor=pointer]:
+                - /url: mailto:info@binarbase.com?subject=BinarBase%20deployment%3A%20On-premise%20%C2%B7%20local%20AI
+                - text: Book a call
+                - generic [ref=f8e733]: On-premise · local AI
+        - paragraph [ref=f8e736]:
+          - text: "Connecting an outside AI such as ChatGPT or Claude over MCP shares what it reads with that provider, in any setup. For a fully local setup, use local models. Details on our AI providers:"
+          - link "Sub-processors" [ref=f8e737] [cursor=pointer]:
+            - /url: /subprocessors
+      - generic [ref=f8e738]:
+        - heading "Why a smaller local model is enough" [level=3] [ref=f8e739]
+        - paragraph [ref=f8e740]: "Local models are smaller than the big cloud ones. With your Company Context they don't have to guess what revenue means: they answer from your confirmed definitions and show where every number comes from."
+    - generic [ref=f8e742]:
+      - generic [ref=f8e743]:
+        - generic [ref=f8e744]:
+          - generic [ref=f8e745]: 07·
+          - generic [ref=f8e746]: From our clients
+        - heading "Already working in companies like yours." [level=2] [ref=f8e747]: Already workingin companies like yours.
+        - paragraph [ref=f8e748]: Read how companies across Slovakia and the CEE region use BinarBase.
+      - generic [ref=f8e749]:
+        - paragraph [ref=f8e750]: Building their company brain across Slovakia & CEE
+        - generic [ref=f8e751]:
+          - generic:
+            - img "Applifting"
+          - generic:
+            - img "Impact Hub"
+          - generic:
+            - img "eConsulting"
+          - generic:
+            - img "Delia"
+          - generic:
+            - img "J&T Wine Fund"
+          - generic:
+            - img "Highgate Group"
+          - generic:
+            - img "Wflow"
+          - generic:
+            - img "Malcom"
+          - generic:
+            - img "This One"
+          - generic:
+            - img "Realitní Advokáti"
+          - generic:
+            - img "BWD"
+      - generic [ref=f8e752]:
+        - article [ref=f8e753]:
+          - generic [ref=f8e754]:
+            - generic [ref=f8e755]: Success Story
+            - 'heading "Transforming Wine Distribution: How BWD Achieved Real-Time Sales Intelligence" [level=3] [ref=f8e756]'
+            - paragraph [ref=f8e757]: How BWD eliminated hours of daily Excel reporting and empowered their sales team with real-time analytics and inventory planning.
+            - generic [ref=f8e758]:
+              - generic [ref=f8e759]: February 2026
+              - generic [ref=f8e760]: 5 min read
+            - link "Read the story" [ref=f8e761] [cursor=pointer]:
+              - /url: /insights/bwd-case-study
+        - article [ref=f8e764]:
+          - generic [ref=f8e765]:
+            - generic [ref=f8e766]: Success Story
+            - heading "How BinarBase Enhanced Voxberg's Analytics" [level=3] [ref=f8e767]
+            - paragraph [ref=f8e768]: Discover how BinarBase helped Voxberg transform data chaos into strategic clarity, enabling smarter business decisions through unified analytics and real-time reporting.
+            - generic [ref=f8e769]:
+              - generic [ref=f8e770]: December 2024
+              - generic [ref=f8e771]: 5 min read
+            - link "Read the story" [ref=f8e772] [cursor=pointer]:
+              - /url: /insights/voxberg-case-study
+        - article [ref=f8e775]:
+          - generic [ref=f8e776]:
+            - generic [ref=f8e777]: Success Story
+            - heading "Automating Financial Workflows at Applifting" [level=3] [ref=f8e778]
+            - paragraph [ref=f8e779]: How Applifting boosted efficiency and control by automating financial processes through BinarBase, saving over 46 hours of work every month.
+            - generic [ref=f8e780]:
+              - generic [ref=f8e781]: November 2024
+              - generic [ref=f8e782]: 4 min read
+            - link "Read the story" [ref=f8e783] [cursor=pointer]:
+              - /url: /insights/applifting-case-study
+      - link "All stories & insights" [ref=f8e787] [cursor=pointer]:
+        - /url: /insights
+    - generic [ref=f8e790]:
+      - generic [ref=f8e791]:
+        - generic [ref=f8e792]:
+          - generic [ref=f8e793]: 08·
+          - generic [ref=f8e794]: ⚡
+          - generic [ref=f8e795]: For teams
+        - heading "Start where it hurts most. Then let it spread." [level=2] [ref=f8e796]
+        - paragraph [ref=f8e797]: Most companies start with finance, because that is where a wrong number costs the most. The same brain then serves every other department without being rebuilt — it already knows the business.
+      - generic [ref=f8e798]:
+        - generic [ref=f8e799]:
+          - 'img "Context tree: BinarBase at the centre, the shared core, and each department''s own use cases" [ref=f8e801]':
+            - generic [ref=f8e838]: Invoice capture
+            - generic [ref=f8e841]: Live margin
+            - generic [ref=f8e844]: Cash flow forecast
+            - generic [ref=f8e847]: Month-end close
+            - generic [ref=f8e850]: ROI tracking
+            - generic [ref=f8e853]: RFM segments
+            - generic [ref=f8e856]: B2B attribution
+            - generic [ref=f8e859]: Measurement
+            - generic [ref=f8e862]: SEO & content
+            - generic [ref=f8e865]: Campaign history
+            - generic [ref=f8e868]: Enquiry → quote
+            - generic [ref=f8e871]: Code matching
+            - generic [ref=f8e874]: Duplicates
+            - generic [ref=f8e877]: Loss reasons
+            - generic [ref=f8e880]: Public tenders
+            - generic [ref=f8e883]: Min–max limits
+            - generic [ref=f8e886]: Live stock
+            - generic [ref=f8e889]: Order proposals
+            - generic [ref=f8e892]: Internal transfers
+            - generic [ref=f8e895]: Product data
+            - generic [ref=f8e898]: Definitions
+            - generic [ref=f8e901]: Knowledge
+            - generic [ref=f8e904]: Memory
+            - generic [ref=f8e907]: Connectors
+            - button "Finance" [ref=f8e910] [cursor=pointer]
+            - button "Marketing" [ref=f8e914] [cursor=pointer]
+            - button "Sales" [ref=f8e918] [cursor=pointer]
+            - button "Operations" [ref=f8e922] [cursor=pointer]
+            - generic [ref=f8e926]: Your Company Context
+          - complementary [ref=f8e930]:
+            - generic [ref=f8e931]:
+              - heading "Finance" [level=3] [ref=f8e935]
+              - generic [ref=f8e936]: Start here
+            - paragraph [ref=f8e937]: Invoices, margin and cash flow without the manual month
+            - generic [ref=f8e938]:
+              - generic [ref=f8e939]: "Today:"
+              - paragraph [ref=f8e940]: Thousands of supplier invoices keyed in by hand, margin visible only after the fact, and forecasts rebuilt in spreadsheets every cycle.
+            - generic [ref=f8e941]: "With BinarBase:"
+            - list [ref=f8e942]:
+              - listitem [ref=f8e943]:
+                - generic [ref=f8e945]: Supplier invoices read, matched and posted automatically
+              - listitem [ref=f8e946]:
+                - generic [ref=f8e948]: Live margin per order, product and customer
+              - listitem [ref=f8e949]:
+                - generic [ref=f8e951]: Cash flow and demand forecast on your own definitions
+              - listitem [ref=f8e952]:
+                - generic [ref=f8e954]: Month-end that doesn't depend on one person's spreadsheet
+              - listitem [ref=f8e955]:
+                - generic [ref=f8e957]: Every automation measured against real return
+        - paragraph [ref=f8e958]: Hover a department to see what it inherits from the core — and what it adds on top.
+      - heading "Trust isn't a feature. It's the whole point." [level=3] [ref=f8e960]
+      - generic [ref=f8e961]:
+        - generic [ref=f8e962]:
+          - generic [ref=f8e963]: 🧠
+          - generic [ref=f8e965]:
+            - heading "Every number shows its work" [level=4] [ref=f8e966]
+            - paragraph [ref=f8e967]: Definition, source and period — on demand, for any figure
+        - generic [ref=f8e968]:
+          - generic [ref=f8e969]: ⚡
+          - generic [ref=f8e971]:
+            - heading "It asks instead of guessing" [level=4] [ref=f8e972]
+            - paragraph [ref=f8e973]: No confirmed definition? It asks you rather than faking a confident answer
+        - generic [ref=f8e974]:
+          - generic [ref=f8e975]: 🔮
+          - generic [ref=f8e977]:
+            - heading "Role-based by design" [level=4] [ref=f8e978]
+            - paragraph [ref=f8e979]: People see only what they should, and every access is logged
+        - generic [ref=f8e980]:
+          - generic [ref=f8e981]: 🛡️
+          - generic [ref=f8e983]:
+            - heading "Enterprise security" [level=4] [ref=f8e984]
+            - paragraph [ref=f8e985]: Data encrypted in transit and at rest, GDPR ready
+    - generic [ref=f8e987]:
+      - generic [ref=f8e988]:
+        - generic [ref=f8e989]:
+          - generic [ref=f8e990]: 09·
+          - generic [ref=f8e991]: Pricing
+        - heading "Built for you. Owned by you." [level=2] [ref=f8e992]
+      - paragraph [ref=f8e993]: Every company is a different size, runs different systems and needs different things from a brain. So we price each one individually — you get everything below, scoped to what you actually need.
+      - generic [ref=f8e994]:
+        - generic [ref=f8e995]: Get started · yourself or with us
+        - heading "Connect your tools, confirm your definitions — live the same day." [level=3] [ref=f8e996]
+        - paragraph [ref=f8e997]: "Standing up your brain takes an afternoon, not a data project: connect your sources, confirm what your metrics mean, and your first dashboards and agents go live. Do it yourself, or have us set it up with you."
+      - generic [ref=f8e998]:
+        - generic [ref=f8e999]:
+          - generic [ref=f8e1000]: One platform, no tiers
+          - generic [ref=f8e1001]: On request
+          - paragraph [ref=f8e1002]: One platform, nothing held back behind a higher tier. We size the engagement around your business, not around a plan name.
+        - list [ref=f8e1003]:
+          - listitem [ref=f8e1004]:
+            - generic [ref=f8e1007]: Company Context — your confirmed definitions
+          - listitem [ref=f8e1008]:
+            - generic [ref=f8e1011]: Connectors to your systems — 200+ available
+          - listitem [ref=f8e1012]:
+            - generic [ref=f8e1015]: Custom dashboards built on your definitions
+          - listitem [ref=f8e1016]:
+            - generic [ref=f8e1019]: Agent library — board summaries, briefs, proposals
+          - listitem [ref=f8e1020]:
+            - generic [ref=f8e1023]: MCP endpoint for Claude, ChatGPT and Cursor
+          - listitem [ref=f8e1024]:
+            - generic [ref=f8e1027]: The learning loop — corrections become definitions
+          - listitem [ref=f8e1028]:
+            - generic [ref=f8e1031]: Definitions versioned and audited
+          - listitem [ref=f8e1032]:
+            - generic [ref=f8e1035]: Roles, permissions and full access logging
+          - listitem [ref=f8e1036]:
+            - generic [ref=f8e1039]: Unlimited users
+          - listitem [ref=f8e1040]:
+            - generic [ref=f8e1043]: We run ingestion and keep sources fresh
+          - listitem [ref=f8e1044]:
+            - generic [ref=f8e1047]: Custom agents built for your processes
+          - listitem [ref=f8e1048]:
+            - generic [ref=f8e1051]: Dedicated success manager
+          - listitem [ref=f8e1052]:
+            - generic [ref=f8e1055]: Priority support and SLA
+          - listitem [ref=f8e1056]:
+            - generic [ref=f8e1059]: Data encryption, role-based access, GDPR ready
+          - listitem [ref=f8e1060]:
+            - generic [ref=f8e1063]: Deploy in our EU cloud, your private cloud or on-premise
+        - generic [ref=f8e1064]:
+          - link "Get a quote" [ref=f8e1065] [cursor=pointer]:
+            - /url: https://app.binarbase.com/signup
+          - paragraph [ref=f8e1069]: We scope the price to the size of your business and the use cases you start with — no tiers to outgrow.
+      - paragraph [ref=f8e1070]: Every engagement is done when your twin correctly answers the 20 questions your team actually asks. We call it the 20-Question Test.
+    - generic [ref=f8e1073]:
+      - heading "Stop prompting a stranger. Start working with a brain that knows you." [level=2] [ref=f8e1074]: Stop prompting a stranger.Start working with a brain that knows you.
+      - paragraph [ref=f8e1075]: Give your company an AI brain — live the same day, smarter every week.
+      - generic [ref=f8e1076]:
+        - link "Start Free Trial" [ref=f8e1077] [cursor=pointer]:
+          - /url: https://app.binarbase.com/signup
+        - button "Schedule Demo" [ref=f8e1080] [cursor=pointer]
+    - contentinfo [ref=f8e1084]:
+      - generic [ref=f8e1086]:
+        - generic [ref=f8e1087]:
+          - img "BinarBase" [ref=f8e1089]
+          - paragraph [ref=f8e1090]: You built your company — you shouldn't need a data science degree to understand it. Give it a brain that knows your business, answers in plain language, and belongs to you.
+          - generic [ref=f8e1091]:
+            - link "LinkedIn" [ref=f8e1092] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/binarbase
+            - link "Facebook" [ref=f8e1095] [cursor=pointer]:
+              - /url: https://www.facebook.com/binarbase
+            - link "Instagram" [ref=f8e1098] [cursor=pointer]:
+              - /url: https://www.instagram.com/binarbase
+        - generic [ref=f8e1101]:
+          - heading "Product" [level=4] [ref=f8e1102]
+          - list [ref=f8e1103]:
+            - listitem [ref=f8e1104]:
+              - link "Features" [ref=f8e1105] [cursor=pointer]:
+                - /url: "#product"
+            - listitem [ref=f8e1106]:
+              - link "Pricing" [ref=f8e1107] [cursor=pointer]:
+                - /url: "#pricing"
+            - listitem [ref=f8e1108]:
+              - link "Start Free Trial" [ref=f8e1109] [cursor=pointer]:
+                - /url: https://app.binarbase.com/signup
+            - listitem [ref=f8e1110]:
+              - link "Blog" [ref=f8e1111] [cursor=pointer]:
+                - /url: https://www.binarbase.com/blog-en
+        - generic [ref=f8e1112]:
+          - heading "Contact" [level=4] [ref=f8e1113]
+          - list [ref=f8e1114]:
+            - listitem [ref=f8e1115]:
+              - link "info@binarbase.com" [ref=f8e1118] [cursor=pointer]:
+                - /url: mailto:info@binarbase.com
+            - listitem [ref=f8e1119]:
+              - link "+421 915 261 658" [ref=f8e1122] [cursor=pointer]:
+                - /url: tel:+421915261658
+            - listitem [ref=f8e1123]:
+              - generic [ref=f8e1127]: Staré Grunty 18, 841 04 Bratislava
+      - generic [ref=f8e1129]:
+        - paragraph [ref=f8e1131]: © 2026 BinarBase, s.r.o. All rights reserved.
+        - generic [ref=f8e1132]:
+          - link "Terms & Conditions" [ref=f8e1133] [cursor=pointer]:
+            - /url: /terms-conditions
+          - generic [ref=f8e1134]: "|"
+          - link "Privacy Policy" [ref=f8e1135] [cursor=pointer]:
+            - /url: /privacy-policy
+          - generic [ref=f8e1136]: "|"
+          - link "Cookies Policy" [ref=f8e1137] [cursor=pointer]:
+            - /url: /cookies-policy
+          - generic [ref=f8e1138]: "|"
+          - link "Sub-processors" [ref=f8e1139] [cursor=pointer]:
+            - /url: /subprocessors
+  - dialog "We use cookies" [ref=f8e1140]:
+    - generic [ref=f8e1141]:
+      - generic [ref=f8e1142]:
+        - paragraph [ref=f8e1143]: We use cookies
+        - paragraph [ref=f8e1144]:
+          - text: Strictly necessary cookies keep this site running. We would also like to measure how the site is used, and to measure our advertising. Neither happens unless you agree, and you can change your mind at any time.
+          - link "Read our Cookies Policy" [ref=f8e1145] [cursor=pointer]:
+            - /url: /cookies-policy
+      - generic [ref=f8e1146]:
+        - button "Necessary only" [ref=f8e1147] [cursor=pointer]
+        - button "Allow measurement" [ref=f8e1148] [cursor=pointer]
+        - button "Allow all" [ref=f8e1149] [cursor=pointer]

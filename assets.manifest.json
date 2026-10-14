@@ -1,0 +1,38 @@
+{
+  "source": "https://binarbase.com/",
+  "measuredOn": "2026-10-14",
+  "fonts": {
+    "note": "The homepage loads NO web fonts (document.fonts is empty, no font requests in the network log). All text uses the system stack. The 3D intro declares --mono: \"JetBrains Mono\", ui-monospace, Menlo, Consolas, monospace but JetBrains Mono is never loaded, so it renders in ui-monospace/Menlo. Nothing to download; public/assets/fonts/ intentionally not created.",
+    "bodyStack": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica Neue, sans-serif",
+    "monoStack": "\"JetBrains Mono\", ui-monospace, Menlo, Consolas, monospace",
+    "codeStack": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace"
+  },
+  "images": [
+    { "url": "https://binarbase.com/logo.svg", "local": "public/assets/logo.svg", "format": "svg", "intrinsic": "655x140", "rendered": "nav 150x32 (h 32px); footer 131x28 (h 28px)", "inSavedFiles": true },
+    { "url": "https://binarbase.com/logos/applifting.png", "local": "public/assets/applifting.png", "format": "png", "intrinsic": "826x286", "rendered@1440": "87x30", "class": "client-logo", "inSavedFiles": true },
+    { "url": "https://binarbase.com/logos/impactHub.png", "local": "public/assets/impactHub.png", "format": "png", "intrinsic": "225x225", "rendered@1440": "30x30", "class": "client-logo", "inSavedFiles": true },
+    { "url": "https://binarbase.com/logos/e-consulting-logo.png", "local": "public/assets/e-consulting-logo.png", "format": "png", "intrinsic": "1080x418", "rendered@1440": "78x30", "class": "client-logo", "inSavedFiles": true },
+    { "url": "https://binarbase.com/logos/delia.png", "local": "public/assets/delia.png", "format": "png", "intrinsic": "635x292", "rendered@1440": "65x30", "class": "client-logo", "inSavedFiles": true },
+    { "url": "https://binarbase.com/logos/jt-wine-fund.png", "local": "public/assets/jt-wine-fund.png", "format": "png", "intrinsic": "734x198", "rendered@1440": "111x30", "class": "client-logo logo-dark", "inSavedFiles": true },
+    { "url": "https://binarbase.com/logos/highgate.png", "local": "public/assets/highgate.png", "format": "png", "intrinsic": "1028x761", "rendered@1440": "61x45", "class": "client-logo logo-dark logo-large", "inSavedFiles": true },
+    { "url": "https://binarbase.com/logos/wflow.png", "local": "public/assets/wflow.png", "format": "png", "intrinsic": "560x300", "rendered@1440": "56x30", "class": "client-logo", "inSavedFiles": true },
+    { "url": "https://binarbase.com/logos/malcom.png", "local": "public/assets/malcom.png", "format": "png", "intrinsic": "560x300", "rendered@1440": "56x30", "class": "client-logo", "inSavedFiles": true },
+    { "url": "https://binarbase.com/logos/this_one_sro_logo.jpeg", "local": "public/assets/this_one_sro_logo.jpeg", "format": "jpeg", "intrinsic": "200x200", "rendered@1440": "30x30", "class": "client-logo", "inSavedFiles": true },
+    { "url": "https://binarbase.com/logos/realitni_advokati.png", "local": "public/assets/realitni_advokati.png", "format": "png", "intrinsic": "900x500", "rendered@1440": "81x45", "class": "client-logo logo-large", "inSavedFiles": true },
+    { "url": "https://binarbase.com/logos/bwd.png", "local": "public/assets/bwd.png", "format": "png", "intrinsic": "269x187", "rendered@1440": "43x30", "class": "client-logo", "inSavedFiles": true }
+  ],
+  "downloadedByRecon": [
+    { "url": "https://binarbase.com/favicon.svg", "local": "public/assets/favicon.svg", "format": "svg", "intrinsic": "32x32 viewBox", "use": "<link rel=icon href=favicon.svg>" },
+    { "url": "https://binarbase.com/favicon.png", "local": "public/assets/favicon.png", "format": "png", "intrinsic": "32x32", "use": "<link rel=icon href=favicon.png>" },
+    { "url": "https://binarbase.com/apple-touch-icon.png", "local": "public/assets/apple-touch-icon.png", "format": "png", "intrinsic": "256x256", "use": "<link rel=apple-touch-icon>" },
+    { "url": "https://binarbase.com/og/default.png", "local": "public/assets/og/default.png", "format": "png", "intrinsic": "1200x630", "use": "og:image / twitter:image" }
+  ],
+  "inlineSvg": "83 inline <svg> elements (icons, brain mark, context-tree graph, deployment orb, chart). Copy verbatim from recon/dom-1440-clean.html.",
+  "emoji": "Several 'icons' are literal emoji text (📊 💳 📈 🔗 ⚡ 🎯 🧠 🔮 🛡️ ⚠️ 🤖 🛒 ☁️ 🇬🇧 🇸🇰 🇨🇿) — no image assets.",
+  "video": [],
+  "lottie": [],
+  "canvas3d": {
+    "note": "Intro (.sbi) is a WebGL canvas built with three.js r186 inside the site's own chunk _nuxt/_BDyuz0e.js (export createSecondBrainScene). Saved for reference only at recon/js/_BDyuz0e.js — it is not an image asset.",
+    "reference": "recon/js/_BDyuz0e.js"
+  }
+}

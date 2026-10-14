@@ -1,0 +1,305 @@
+{
+  "id": "intro.scroll-chapters-3d",
+  "kind": "section",
+  "contractVersion": "1.0.0",
+  "category": "intro",
+  "pageOrder": 2,
+  "purpose": "Full-viewport WebGL \"second brain\" story told in 7 wheel/key/swipe-stepped chapters before normal scrolling begins; sets the product mental model.",
+  "anchorId": null,
+  "surface": "intro-dark",
+  "variants": [
+    "default"
+  ],
+  "implementedBy": "src/components/Intro/Intro.jsx",
+  "measuredFrom": [
+    {
+      "cite": "src/components/Intro/Intro.jsx:7",
+      "quote": "const WHEEL_STEP_PX = 30"
+    },
+    {
+      "cite": "src/components/Intro/strings.js:4",
+      "quote": "export const CHAPTERS = ["
+    },
+    {
+      "cite": "src/components/Intro/Intro.jsx:191",
+      "quote": "import('./scene.js')"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1",
+      "quote": ".sbi[data-v-00d3a672]{--ink:#070c1f"
+    },
+    {
+      "cite": "recon/js/DC-ke6xp.js:1",
+      "quote": "ref:G,class:m([\"sbi-story\",{out:j.value}])"
+    },
+    {
+      "file": "recon/screens/00-intro-ch1-1440.png"
+    },
+    {
+      "file": "recon/screens/00-intro-ch7-1440.png"
+    },
+    {
+      "cite": "CLONE_SPEC.md:203",
+      "quote": "## 4. Section 0"
+    }
+  ],
+  "constraints": {
+    "onePerPage": true,
+    "homeRouteOnly": true,
+    "mustFollow": "shell.nav",
+    "mustPrecede": "hero.centered-gradient-art"
+  },
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "chapters",
+      "sceneLabels",
+      "scene",
+      "primaryCta",
+      "exploreLabel",
+      "hint",
+      "skipLabel",
+      "cueLabel"
+    ],
+    "properties": {
+      "chapters": {
+        "type": "array",
+        "minItems": 7,
+        "maxItems": 7,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "body"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 9
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 34
+            },
+            "extra": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 3
+            }
+          }
+        }
+      },
+      "sceneLabels": {
+        "type": "array",
+        "minItems": 14,
+        "maxItems": 14,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "sub"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 5
+            },
+            "sub": {
+              "type": "string",
+              "minLength": 1,
+              "x-maxWords": 5
+            }
+          }
+        }
+      },
+      "scene": {
+        "$ref": "#/definitions/assetRef"
+      },
+      "primaryCta": {
+        "$ref": "#/definitions/link"
+      },
+      "exploreLabel": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 4
+      },
+      "hint": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 12
+      },
+      "skipLabel": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 4
+      },
+      "cueLabel": {
+        "type": "string",
+        "minLength": 1,
+        "x-maxWords": 3
+      }
+    }
+  },
+  "copyBudgets": {
+    ".chapters[].title": {
+      "realMaxWords": 7,
+      "maxWords": 9
+    },
+    ".chapters[].body": {
+      "realMaxWords": 27,
+      "maxWords": 34
+    },
+    ".chapters[].extra": {
+      "realMaxWords": 1,
+      "maxWords": 3
+    },
+    ".sceneLabels[].title": {
+      "realMaxWords": 4,
+      "maxWords": 5
+    },
+    ".sceneLabels[].sub": {
+      "realMaxWords": 4,
+      "maxWords": 5
+    },
+    ".exploreLabel": {
+      "realMaxWords": 2,
+      "maxWords": 4
+    },
+    ".hint": {
+      "realMaxWords": 9,
+      "maxWords": 12
+    },
+    ".skipLabel": {
+      "realMaxWords": 2,
+      "maxWords": 4
+    },
+    ".cueLabel": {
+      "realMaxWords": 1,
+      "maxWords": 3
+    }
+  },
+  "assetFields": {
+    ".scene": [
+      "scene.intro-3d"
+    ]
+  },
+  "motion": {
+    "patterns": [
+      "chapter-stepping-wheel-lock"
+    ],
+    "loops": [
+      "scroll-cue-drip",
+      "webgl-scene-render"
+    ],
+    "interactions": [
+      "wheel-accumulate-30px-lock-650ms",
+      "swipe-45px",
+      "keyboard-arrows",
+      "node-click-card",
+      "drag-orbit"
+    ],
+    "reducedMotionFallback": "instant-chapter-swap",
+    "fallbackGrounding": "source",
+    "fallbackNote": "CSS 69-71 removes story/progress transitions and the drip; Intro.jsx sets the swap delay to 0 and scene.js skips the fly-in when reduce is true.",
+    "fallbackEvidence": [
+      {
+        "cite": "recon/css/index.AtHXy8dp.css:69-71",
+        "quote": "@media(prefers-reduced-motion:reduce)"
+      },
+      {
+        "cite": "src/components/Intro/Intro.jsx:57",
+        "quote": "const delay = reduceRef.current ? 0 : initial ? 1600 : 420"
+      },
+      {
+        "cite": "src/components/Intro/scene.js:433",
+        "quote": "if (!reduce) camPos.set(0, 1.5, 22)"
+      }
+    ]
+  },
+  "motionSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "pattern",
+      "reducedMotionFallback"
+    ],
+    "properties": {
+      "pattern": {
+        "type": "string",
+        "enum": [
+          "chapter-stepping-wheel-lock"
+        ]
+      },
+      "reducedMotionFallback": {
+        "const": "instant-chapter-swap"
+      },
+      "loops": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "enum": [
+            "scroll-cue-drip",
+            "webgl-scene-render"
+          ]
+        }
+      },
+      "interactions": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "enum": [
+            "wheel-accumulate-30px-lock-650ms",
+            "swipe-45px",
+            "keyboard-arrows",
+            "node-click-card",
+            "drag-orbit"
+          ]
+        }
+      }
+    }
+  },
+  "responsive": [
+    {
+      "breakpoint": "breakpoint.portrait-intro",
+      "target": ".sbi-story",
+      "change": "bottom:96px; right:var(--pad); width:auto; scrim becomes linear",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:57",
+          "quote": ".sbi-story[data-v-00d3a672]{bottom:96px;right:var(--pad);width:auto}"
+        }
+      ]
+    },
+    {
+      "breakpoint": "breakpoint.max-1100",
+      "target": ".sbi-hint",
+      "change": "display:none",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:67",
+          "quote": "@media(max-width:1100px){.sbi-hint[data-v-00d3a672]{display:none}"
+        }
+      ]
+    },
+    {
+      "breakpoint": "breakpoint.max-640",
+      "target": ".sbi-skip, .sbi-count, .sbi-cue",
+      "change": "hidden; segments 20px wide; round buttons 46px",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:61",
+          "quote": "@media(max-width:640px){.sbi-skip[data-v-00d3a672]{display:none}"
+        }
+      ]
+    }
+  ],
+  "accessibility": "Story block is aria-live=polite; progress is a nav with aria-label \"Intro chapters\"; keys ignored inside inputs and when scrollY>2; WebGL failure hides the section (.sbi--failed)."
+}

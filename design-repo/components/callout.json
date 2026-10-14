@@ -1,0 +1,28 @@
+{
+  "id": "component.callout",
+  "purpose": "Tinted note block: left-border callout (mismatch callout, dp-local) or dashed box (engine loop, setup banner).",
+  "composes": [],
+  "cssClasses": [
+    "mismatch-callout",
+    "dp-local",
+    "engine-loop",
+    "setup-banner"
+  ],
+  "tokens": [
+    "color.brand.tint-05",
+    "color.brand.tint-04",
+    "color.brand.primary"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:140",
+      "quote": ".dp-local[data-v-a75c984f]{background:#6042f90d;border-left:3px solid var(--color-primary)"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1454",
+      "quote": ".setup-banner{background:#6042f90a;border:1px dashed rgba(96,66,249,.4)"
+    }
+  ],
+  "kind": "component",
+  "contractVersion": "1.0.0"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "component.card-base",
+  "purpose": "White bordered card with small shadow and hover lift (engine/mcp cards, engine steps, superpower items).",
+  "composes": [
+    "primitive.icon"
+  ],
+  "cssClasses": [
+    "engine-card",
+    "mcp-card",
+    "engine-step",
+    "superpower-item"
+  ],
+  "tokens": [
+    "color.surface.white",
+    "color.line.default",
+    "radius.2xl",
+    "elevation.card",
+    "elevation.card-hover",
+    "motion.distance.hover-lift"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1421",
+      "quote": ".engine-card{background:#fff"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1422",
+      "quote": ".engine-card:hover{border-color:var(--color-primary)"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:598",
+      "quote": ".superpower-item{align-items:center;background:#fff"
+    }
+  ],
+  "kind": "component",
+  "contractVersion": "1.0.0"
+}

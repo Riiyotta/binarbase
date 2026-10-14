@@ -1,0 +1,386 @@
+{
+  "version": "1.0.0",
+  "generationPolicies": [
+    "may-generate-new",
+    "must-reuse-exact",
+    "must-not-fabricate",
+    "must-not-reproduce-in-generated-output",
+    "must-not-reuse-live-endpoint",
+    "must-not-link-as-existing"
+  ],
+  "policyMeaning": {
+    "may-generate-new": "A generator may create a new asset/value for this role.",
+    "must-reuse-exact": "Only the exact registered asset may be used (no role currently uses this; kept because the closed vocabulary is shared with link roles).",
+    "must-not-fabricate": "Real-world evidence (customers). Never invent stand-ins; never reproduce the real ones in generated output.",
+    "must-not-reproduce-in-generated-output": "Real brand/proprietary asset. Allowed only in purpose=reference-reconstruction at route \"/\".",
+    "must-not-reuse-live-endpoint": "Real live endpoint. Generated pages must use placeholder.generated hrefs instead.",
+    "must-not-link-as-existing": "Real route of the live site that is NOT part of this repo. Linking warns; generated pages should not present it as an existing page."
+  },
+  "assetRoles": {
+    "brand.logo": {
+      "generationPolicy": "must-not-reproduce-in-generated-output",
+      "realEntity": true,
+      "reproduceInGeneratedOutput": false,
+      "files": [
+        "public/assets/logo.svg"
+      ],
+      "licensing": "BinarBase, s.r.o. trademark/wordmark. Reference reconstruction only; generated pages must use their own brand asset.",
+      "usedBy": [
+        {
+          "cite": "src/components/Nav.jsx:92",
+          "quote": "<img src=\"/assets/logo.svg\" alt=\"BinarBase\" className=\"brand-logo\" />"
+        },
+        {
+          "cite": "src/components/Nav.jsx:139",
+          "quote": "<img src=\"/assets/logo.svg\" alt=\"BinarBase\" className=\"brand-logo\" />"
+        },
+        {
+          "cite": "src/components/Footer.jsx:10",
+          "quote": "<img src=\"/assets/logo.svg\" alt=\"BinarBase\" className=\"brand-logo\" />"
+        }
+      ]
+    },
+    "brand.mark": {
+      "generationPolicy": "must-not-reproduce-in-generated-output",
+      "realEntity": true,
+      "reproduceInGeneratedOutput": false,
+      "files": [],
+      "refs": [
+        "inline-svg:brain-center-mark"
+      ],
+      "licensing": "The BinarBase mark drawn inline inside the Connectors brain core (same geometry as the logo mark). Do not redraw or trace it.",
+      "usedBy": [
+        {
+          "cite": "src/components/Connectors.jsx:97",
+          "quote": "<div className=\"brain-center\">"
+        }
+      ]
+    },
+    "customer.logo": {
+      "generationPolicy": "must-not-fabricate",
+      "realEntity": true,
+      "reproduceInGeneratedOutput": false,
+      "files": [
+        "public/assets/applifting.png",
+        "public/assets/impactHub.png",
+        "public/assets/e-consulting-logo.png",
+        "public/assets/delia.png",
+        "public/assets/jt-wine-fund.png",
+        "public/assets/highgate.png",
+        "public/assets/wflow.png",
+        "public/assets/malcom.png",
+        "public/assets/this_one_sro_logo.jpeg",
+        "public/assets/realitni_advokati.png",
+        "public/assets/bwd.png"
+      ],
+      "licensing": "Real third-party customer trademarks. Never reproduce in generated output, never invent look-alike or placeholder \"customer\" logos; a generated proof section needs real, licensed evidence supplied by a human.",
+      "usedBy": [
+        {
+          "cite": "src/components/Proof.jsx:23",
+          "quote": "<img src=\"/assets/applifting.png\""
+        },
+        {
+          "cite": "src/components/Proof.jsx:26",
+          "quote": "<img src=\"/assets/impactHub.png\""
+        },
+        {
+          "cite": "src/components/Proof.jsx:29",
+          "quote": "<img src=\"/assets/e-consulting-logo.png\""
+        },
+        {
+          "cite": "src/components/Proof.jsx:32",
+          "quote": "<img src=\"/assets/delia.png\""
+        },
+        {
+          "cite": "src/components/Proof.jsx:35",
+          "quote": "<img src=\"/assets/jt-wine-fund.png\""
+        },
+        {
+          "cite": "src/components/Proof.jsx:38",
+          "quote": "<img src=\"/assets/highgate.png\""
+        },
+        {
+          "cite": "src/components/Proof.jsx:41",
+          "quote": "<img src=\"/assets/wflow.png\""
+        },
+        {
+          "cite": "src/components/Proof.jsx:44",
+          "quote": "<img src=\"/assets/malcom.png\""
+        },
+        {
+          "cite": "src/components/Proof.jsx:47",
+          "quote": "<img src=\"/assets/this_one_sro_logo.jpeg\""
+        },
+        {
+          "cite": "src/components/Proof.jsx:50",
+          "quote": "<img src=\"/assets/realitni_advokati.png\""
+        },
+        {
+          "cite": "src/components/Proof.jsx:53",
+          "quote": "<img src=\"/assets/bwd.png\""
+        }
+      ]
+    },
+    "meta.og-image": {
+      "generationPolicy": "must-not-reproduce-in-generated-output",
+      "realEntity": true,
+      "reproduceInGeneratedOutput": false,
+      "files": [
+        "public/assets/og/default.png"
+      ],
+      "licensing": "BinarBase-branded 1200x630 share image (wordmark + \"Your company's second brain.\"). Reference only.",
+      "usedBy": [
+        {
+          "cite": "index.html:14",
+          "quote": "<meta property=\"og:image\" content=\"/assets/og/default.png\" />"
+        }
+      ]
+    },
+    "meta.favicon": {
+      "generationPolicy": "must-not-reproduce-in-generated-output",
+      "realEntity": true,
+      "reproduceInGeneratedOutput": false,
+      "files": [
+        "public/assets/favicon.svg",
+        "public/assets/favicon.png",
+        "public/assets/apple-touch-icon.png"
+      ],
+      "licensing": "BinarBase brand icons. Reference only.",
+      "usedBy": [
+        {
+          "cite": "index.html:8",
+          "quote": "<link rel=\"icon\" type=\"image/svg+xml\" href=\"/assets/favicon.svg\" />"
+        },
+        {
+          "cite": "index.html:10",
+          "quote": "<link rel=\"apple-touch-icon\" href=\"/assets/apple-touch-icon.png\" />"
+        }
+      ]
+    },
+    "scene.intro-3d": {
+      "generationPolicy": "must-not-reproduce-in-generated-output",
+      "realEntity": true,
+      "reproduceInGeneratedOutput": false,
+      "files": [
+        "src/components/Intro/scene.js"
+      ],
+      "licensing": "Port of the original site's own WebGL scene (createSecondBrainScene from _nuxt/_BDyuz0e.js, three r186; clone runs three 0.169). Proprietary visual; reference reconstruction at / only.",
+      "usedBy": [
+        {
+          "cite": "src/components/Intro/Intro.jsx:191",
+          "quote": "import('./scene.js')"
+        },
+        {
+          "cite": "src/components/Intro/scene.js:72",
+          "quote": "export function createSecondBrainScene(canvas, labelsEl, strings, { reduce, compact })"
+        }
+      ]
+    },
+    "brand.placeholder": {
+      "generationPolicy": "may-generate-new",
+      "realEntity": false,
+      "reproduceInGeneratedOutput": true,
+      "files": [],
+      "refs": [
+        "{{BRAND_LOGO}}",
+        "{{BRAND_MARK}}"
+      ],
+      "designRepoIntroduced": true,
+      "licensing": "Design-repo-introduced stand-in (NOT observed on the site): where brand.logo / brand.mark sit in the reference page, a generated page puts {{BRAND_LOGO}} / {{BRAND_MARK}} for its own brand asset.",
+      "usedBy": []
+    },
+    "mock.ui-illustration": {
+      "generationPolicy": "may-generate-new",
+      "realEntity": false,
+      "reproduceInGeneratedOutput": true,
+      "files": [],
+      "refs": [
+        "mock:context-console",
+        "mock:agent-chat",
+        "mock:forecast-chart",
+        "mock:dashboard",
+        "mock:connected-apps",
+        "mock:voice-assistant"
+      ],
+      "licensing": "HTML/CSS illustrative product mocks built from tokens. New mocks may be generated; they must not show real customer names, real figures presented as a real customer's data, or the BinarBase mark.",
+      "usedBy": [
+        {
+          "cite": "src/components/Console.jsx:24",
+          "quote": "<div className=\"console-mock\">"
+        },
+        {
+          "cite": "src/components/Showcase.jsx:49",
+          "quote": "<div className=\"screen-title\">AI Agents</div>"
+        }
+      ]
+    },
+    "icon.emoji": {
+      "generationPolicy": "may-generate-new",
+      "realEntity": false,
+      "reproduceInGeneratedOutput": true,
+      "files": [],
+      "refs": [
+        "<single emoji grapheme>"
+      ],
+      "licensing": "Literal Unicode emoji used as icons (floating tiles, trust items, badge icon). Any emoji may be chosen.",
+      "usedBy": [
+        {
+          "cite": "src/components/Connectors.jsx:104",
+          "quote": "<div className=\"floating-icon fi-1\">📊</div>"
+        },
+        {
+          "cite": "src/components/Teams.jsx:66",
+          "quote": "<div className=\"badge-icon-small\">⚡</div>"
+        }
+      ]
+    }
+  },
+  "linkRoles": {
+    "anchor.in-page": {
+      "generationPolicy": "may-generate-new",
+      "hrefPattern": "^#[a-z][a-z0-9-]*$",
+      "note": "Must resolve to the anchorId of a section present on the page (IN_PAGE_ANCHORS_RESOLVE).",
+      "usedBy": [
+        {
+          "cite": "src/components/Nav.jsx:95",
+          "quote": "<a href=\"#how-it-works\" className=\"nav-link\">How it works</a>"
+        }
+      ]
+    },
+    "route.out-of-scope": {
+      "generationPolicy": "must-not-link-as-existing",
+      "hrefs": [
+        "/insights",
+        "/insights/bwd-case-study",
+        "/insights/voxberg-case-study",
+        "/insights/applifting-case-study",
+        "/privacy-policy",
+        "/terms-conditions",
+        "/cookies-policy",
+        "/subprocessors"
+      ],
+      "note": "Real routes of the live site that were NOT cloned. Linking to them is allowed only in reference reconstruction and always raises a warning.",
+      "usedBy": [
+        {
+          "cite": "src/components/Nav.jsx:99",
+          "quote": "<a href=\"/insights\" className=\"nav-link\">Insights</a>"
+        },
+        {
+          "cite": "src/components/Footer.jsx:80",
+          "quote": "<a href=\"/terms-conditions\" className=\"\">Terms & Conditions</a>"
+        }
+      ]
+    },
+    "live.app-signup": {
+      "generationPolicy": "must-not-reuse-live-endpoint",
+      "hrefs": [
+        "https://app.binarbase.com/signup"
+      ],
+      "note": "Live BinarBase app signup.",
+      "usedBy": [
+        {
+          "cite": "src/components/Hero.jsx:32",
+          "quote": "<a href=\"https://app.binarbase.com/signup\" className=\"cta-primary\">"
+        }
+      ]
+    },
+    "live.app-login": {
+      "generationPolicy": "must-not-reuse-live-endpoint",
+      "hrefs": [
+        "https://app.binarbase.com/login"
+      ],
+      "note": "Live BinarBase app login.",
+      "usedBy": [
+        {
+          "cite": "src/components/Nav.jsx:121",
+          "quote": "<a href=\"https://app.binarbase.com/login\" className=\"nav-signin\">Sign In</a>"
+        }
+      ]
+    },
+    "live.contact-email": {
+      "generationPolicy": "must-not-reuse-live-endpoint",
+      "hrefPrefixes": [
+        "mailto:info@binarbase.com"
+      ],
+      "note": "Real sales mailbox (footer + deployment \"Book a call\" subjects).",
+      "usedBy": [
+        {
+          "cite": "src/components/Footer.jsx:55",
+          "quote": "<a href=\"mailto:info@binarbase.com\">info@binarbase.com</a>"
+        },
+        {
+          "cite": "src/components/Deployment.jsx:17",
+          "quote": "mail: 'mailto:info@binarbase.com?subject=BinarBase%20deployment%3A%20BinarBase%20Cloud'"
+        }
+      ]
+    },
+    "live.contact-phone": {
+      "generationPolicy": "must-not-reuse-live-endpoint",
+      "hrefs": [
+        "tel:+421915261658"
+      ],
+      "note": "Real company phone number.",
+      "usedBy": [
+        {
+          "cite": "src/components/Footer.jsx:61",
+          "quote": "<a href=\"tel:+421915261658\">+421 915 261 658</a>"
+        }
+      ]
+    },
+    "live.social": {
+      "generationPolicy": "must-not-reuse-live-endpoint",
+      "hrefs": [
+        "https://www.linkedin.com/company/binarbase",
+        "https://www.facebook.com/binarbase",
+        "https://www.instagram.com/binarbase"
+      ],
+      "note": "Real company social profiles.",
+      "usedBy": [
+        {
+          "cite": "src/components/Footer.jsx:14",
+          "quote": "<a href=\"https://www.linkedin.com/company/binarbase\""
+        }
+      ]
+    },
+    "live.blog-external": {
+      "generationPolicy": "must-not-reuse-live-endpoint",
+      "hrefs": [
+        "https://www.binarbase.com/blog-en"
+      ],
+      "note": "Real external blog.",
+      "usedBy": [
+        {
+          "cite": "src/components/Footer.jsx:44",
+          "quote": "<a href=\"https://www.binarbase.com/blog-en\" target=\"_blank\">Blog</a>"
+        }
+      ]
+    },
+    "placeholder.generated": {
+      "generationPolicy": "may-generate-new",
+      "hrefPattern": "^\\{\\{[A-Z0-9_]+\\}\\}$",
+      "note": "Generated pages put every outbound/conversion endpoint behind a placeholder such as {{SIGNUP_URL}} for a human to fill.",
+      "usedBy": []
+    }
+  },
+  "protectedNames": [
+    "BinarBase",
+    "binarbase.com",
+    "BWD",
+    "Voxberg",
+    "Applifting",
+    "Impact Hub",
+    "eConsulting",
+    "Delia",
+    "J&T Wine Fund",
+    "Highgate",
+    "Wflow",
+    "Malcom",
+    "This One",
+    "Realitní Advokáti",
+    "Staré Grunty",
+    "+421 915 261 658",
+    "info@binarbase.com"
+  ],
+  "protectedNamesNote": "Real company, customer and case-study identifiers. Any occurrence in a purpose=generated PageSpec is an error (GENERATED_NO_PROTECTED_NAMES). Third-party AI/SaaS product names (Claude, ChatGPT, Cursor, Gemini, Copilot, Stripe, Shopify, QuickBooks, Xero, HubSpot, Salesforce) are used nominatively and are not protected here.",
+  "pinnedValuesNote": "Pinned policy values for compliance-critical roles are enforced in extraction/verify_all.py (PINNED_ROLES), NOT read from this file, so editing this file alone cannot relax them."
+}

@@ -1,0 +1,1388 @@
+{
+  "version": "1.0.0",
+  "evidenceRoot": "..",
+  "evidenceRootNote": "All cite paths are relative to the project folder that CONTAINS design-repo/. When that sibling tree is absent (standalone delivery), verify_all.py downgrades citation checks to WARN instead of failing.",
+  "citationFormat": "{\"cite\": \"path:line[-line]\", \"quote\": \"substring that must appear inside the cited lines\"} or {\"file\": \"path\"} (existence only). The quote makes in-range-but-wrong citations machine-detectable.",
+  "evidenceSources": [
+    {
+      "path": "CLONE_SPEC.md",
+      "kind": "recon spec",
+      "note": "Measured 2026-10-14 at 1440x900/1280x800/768x1024/390x844. Strong first draft; 5 claims corrected below."
+    },
+    {
+      "path": "recon/css/index.AtHXy8dp.css",
+      "kind": "original stylesheet, one rule per line",
+      "note": "Primary citation source."
+    },
+    {
+      "path": "recon/css/entry.qOVbJ9mW.css",
+      "kind": "original reset + cookie banner CSS"
+    },
+    {
+      "path": "recon/dom-1440-clean.html",
+      "kind": "rendered DOM (single line)"
+    },
+    {
+      "path": "recon/js/DC-ke6xp.js",
+      "kind": "original page chunk (single line): intro logic, deployment IO/autocycle"
+    },
+    {
+      "path": "recon/measure-{1440,1280,768,390}.json",
+      "kind": "computed-style measurements"
+    },
+    {
+      "path": "recon/audit/*.json",
+      "kind": "partial, interrupted orig-vs-clone pixel audit",
+      "note": "Usable as measured corrections only; it was never completed (no summary file, intro chapter/state captures only)."
+    },
+    {
+      "path": "src/components/*.jsx, src/App.jsx, src/styles/site.css",
+      "kind": "clone source (React 18.3.1 + Vite 5.4.21 + Tailwind 3.4.19, preflight off; three 0.169.0)"
+    },
+    {
+      "path": "recon/screens/*.png",
+      "kind": "reference screenshots"
+    }
+  ],
+  "histograms": {
+    "method": "Counted over the live original CSS (index.AtHXy8dp.css minus dead .pulse/.icp/.testimonial/.deck/.dashboard/.hero-stat/.data-flow/.hero-visual/.pricing-card/.pricing-grid rules, plus entry.css lines 1-22).",
+    "hexTop30": [
+      [
+        "#fff",
+        61
+      ],
+      [
+        "#6042f91a",
+        12
+      ],
+      [
+        "#10b981",
+        12
+      ],
+      [
+        "#6042f9",
+        8
+      ],
+      [
+        "#6042f959",
+        7
+      ],
+      [
+        "#06b6d4",
+        7
+      ],
+      [
+        "#8e64fa",
+        6
+      ],
+      [
+        "#3f34fe",
+        6
+      ],
+      [
+        "#8b5cf6",
+        6
+      ],
+      [
+        "#00a67d",
+        5
+      ],
+      [
+        "#6042f914",
+        5
+      ],
+      [
+        "#059669",
+        5
+      ],
+      [
+        "#0000000a",
+        5
+      ],
+      [
+        "#0a25400d",
+        4
+      ],
+      [
+        "#6042f94d",
+        4
+      ],
+      [
+        "#f59e0b",
+        4
+      ],
+      [
+        "#6042f966",
+        4
+      ],
+      [
+        "#b45309",
+        4
+      ],
+      [
+        "#0000000f",
+        4
+      ],
+      [
+        "#f4f2ff",
+        3
+      ],
+      [
+        "#6042f90a",
+        3
+      ],
+      [
+        "#6042f90d",
+        3
+      ],
+      [
+        "#00000014",
+        3
+      ],
+      [
+        "#6042f926",
+        3
+      ],
+      [
+        "#f59e0b1a",
+        3
+      ],
+      [
+        "#10b9811a",
+        3
+      ],
+      [
+        "#bdb9de",
+        2
+      ],
+      [
+        "#070c1f00",
+        2
+      ],
+      [
+        "#0e1a3a99",
+        2
+      ],
+      [
+        "#c4b8ff38",
+        2
+      ]
+    ],
+    "colorVarRefs": [
+      [
+        "--color-primary",
+        62
+      ],
+      [
+        "--color-border",
+        57
+      ],
+      [
+        "--color-text",
+        57
+      ],
+      [
+        "--color-text-secondary",
+        49
+      ],
+      [
+        "--color-text-tertiary",
+        39
+      ],
+      [
+        "--color-bg-secondary",
+        21
+      ],
+      [
+        "--color-success",
+        6
+      ],
+      [
+        "--color-primary-dark",
+        4
+      ],
+      [
+        "--color-gradient-start",
+        3
+      ],
+      [
+        "--color-gradient-end",
+        3
+      ],
+      [
+        "--color-bg-tertiary",
+        2
+      ],
+      [
+        "--color-bg",
+        1
+      ],
+      [
+        "--color-surface",
+        1
+      ]
+    ],
+    "borderRadius": [
+      [
+        "50%",
+        25
+      ],
+      [
+        "100px",
+        16
+      ],
+      [
+        "10px",
+        16
+      ],
+      [
+        "8px",
+        11
+      ],
+      [
+        "12px",
+        9
+      ],
+      [
+        "20px",
+        8
+      ],
+      [
+        "999px",
+        6
+      ],
+      [
+        "16px",
+        6
+      ],
+      [
+        "14px",
+        5
+      ],
+      [
+        "24px",
+        4
+      ],
+      [
+        "2px",
+        3
+      ],
+      [
+        "4px",
+        2
+      ],
+      [
+        "18px",
+        1
+      ],
+      [
+        "0 16px 16px 0",
+        1
+      ],
+      [
+        "9px",
+        1
+      ]
+    ],
+    "fontSize": [
+      [
+        "1rem",
+        28
+      ],
+      [
+        ".9rem",
+        26
+      ],
+      [
+        ".85rem",
+        25
+      ],
+      [
+        ".7rem",
+        22
+      ],
+      [
+        ".95rem",
+        22
+      ],
+      [
+        ".8rem",
+        19
+      ],
+      [
+        ".75rem",
+        18
+      ],
+      [
+        "1.25rem",
+        11
+      ],
+      [
+        "1.1rem",
+        9
+      ],
+      [
+        ".92rem",
+        8
+      ],
+      [
+        "1.5rem",
+        7
+      ],
+      [
+        ".875rem",
+        7
+      ],
+      [
+        "1.2rem",
+        6
+      ],
+      [
+        ".72rem",
+        5
+      ],
+      [
+        "1.05rem",
+        5
+      ],
+      [
+        "1.15rem",
+        5
+      ],
+      [
+        "1.375rem",
+        5
+      ],
+      [
+        ".68rem",
+        4
+      ],
+      [
+        "1.75rem",
+        4
+      ],
+      [
+        "14px",
+        3
+      ],
+      [
+        "17px",
+        3
+      ],
+      [
+        "1.3rem",
+        3
+      ],
+      [
+        "19px",
+        3
+      ],
+      [
+        "1.125rem",
+        3
+      ],
+      [
+        "clamp(2.5rem,5vw,3.5rem)",
+        3
+      ]
+    ],
+    "fontWeight": [
+      [
+        "600",
+        46
+      ],
+      [
+        "700",
+        39
+      ],
+      [
+        "500",
+        14
+      ],
+      [
+        "800",
+        9
+      ],
+      [
+        "400",
+        1
+      ]
+    ],
+    "boxShadow": [
+      [
+        "0 2px 8px #0000000a",
+        5
+      ],
+      [
+        "0 4px 16px #0a25400d",
+        4
+      ],
+      [
+        "0 8px 20px #6042f91a",
+        3
+      ],
+      [
+        "0 0 #6042f959",
+        2
+      ],
+      [
+        "none",
+        2
+      ],
+      [
+        "0 2px 8px #0000000f",
+        2
+      ],
+      [
+        "0 0 0 22px #6042f900",
+        1
+      ],
+      [
+        "0 10px 34px #0a254012",
+        1
+      ],
+      [
+        "0 10px 40px #0000001f",
+        1
+      ],
+      [
+        "0 4px 12px #6042f959",
+        1
+      ],
+      [
+        "-4px 0 24px #00000026",
+        1
+      ],
+      [
+        "0 8px 20px #6042f959",
+        1
+      ]
+    ],
+    "computed1440": {
+      "note": "recon/measure-1440.json, 143 measured selectors",
+      "fontWeight": {
+        "400": 104,
+        "700": 13,
+        "600": 11,
+        "500": 6,
+        "800": 4
+      },
+      "borderRadius": {
+        "20px": 7,
+        "100px": 6,
+        "8px": 4,
+        "16px": 4,
+        "24px": 4,
+        "999px": 3,
+        "14px": 3
+      }
+    }
+  },
+  "specCorrections": [
+    {
+      "claim": "CLONE_SPEC 10: Connected Apps badge is purple and Voice Assistant badge is amber.",
+      "specCite": {
+        "cite": "CLONE_SPEC.md:533",
+        "quote": "4. **Connected Apps** / purple"
+      },
+      "correctedTo": "Connected Apps = amber \"200+ connectors\"; Voice Assistant = purple \"Coming soon\" (DOM and clone agree).",
+      "evidence": [
+        {
+          "cite": "recon/dom-1440-clean.html:1",
+          "quote": "card-badge amber\">200+ connectors"
+        },
+        {
+          "cite": "recon/dom-1440-clean.html:1",
+          "quote": "card-badge purple\">Coming soon"
+        }
+      ]
+    },
+    {
+      "claim": "CLONE_SPEC 7/14: Connect Now is a plain a.cta-primary and the quote CTA is a.cta-primary.cta-wide.quote-cta.",
+      "specCite": {
+        "cite": "CLONE_SPEC.md:748",
+        "quote": "`a.cta-primary.cta-wide.quote-cta` \"Get a quote\""
+      },
+      "correctedTo": "Connect Now = cta-primary cta-wide; Get a quote = cta-primary quote-cta.",
+      "evidence": [
+        {
+          "cite": "recon/dom-1440-clean.html:1",
+          "quote": "class=\"cta-primary cta-wide\""
+        },
+        {
+          "cite": "recon/dom-1440-clean.html:1",
+          "quote": "class=\"cta-primary quote-cta\""
+        }
+      ]
+    },
+    {
+      "claim": "CLONE_SPEC 11/16: the deployment auto-cycle IntersectionObserver watches the diagram.",
+      "specCite": {
+        "cite": "CLONE_SPEC.md:564",
+        "quote": "an IntersectionObserver (threshold .35) on the diagram"
+      },
+      "correctedTo": "It observes the section root (ref \"root\" on section#deployment) - the clone matches the original JS.",
+      "evidence": [
+        {
+          "cite": "recon/js/DC-ke6xp.js:1",
+          "quote": "l(\"section\",{id:\"deployment\",ref_key:\"root\",ref:G"
+        },
+        {
+          "cite": "src/components/Deployment.jsx:137",
+          "quote": "IO threshold .35 on the section root"
+        }
+      ]
+    },
+    {
+      "claim": "CLONE_SPEC 13: the stage pill reads \"START HERE\" for Finance and \"EXPAND\" for the other departments.",
+      "specCite": {
+        "cite": "CLONE_SPEC.md:679",
+        "quote": "The pill is \"START HERE\" for Finance and \"EXPAND\" for the others"
+      },
+      "correctedTo": "Only Finance renders a stage pill (\"Start here\"); no \"Expand\" pill exists in the rendered DOM.",
+      "evidence": [
+        {
+          "cite": "recon/dom-1440-clean.html:1",
+          "quote": "ct-detail-stage\">Start here"
+        }
+      ]
+    },
+    {
+      "claim": "assets.manifest / CLONE_SPEC 4: the intro is three.js r186.",
+      "specCite": {
+        "cite": "CLONE_SPEC.md:205",
+        "quote": "WebGL (three.js r186)"
+      },
+      "correctedTo": "True for the ORIGINAL chunk; the clone installs three 0.169.0 (r169). Both facts recorded; not a defect, a version difference.",
+      "evidence": [
+        {
+          "cite": "package.json:14",
+          "quote": "\"three\": \"^0.169.0\""
+        }
+      ]
+    }
+  ],
+  "auditNotes": [
+    {
+      "note": "Partial audit tops at 390: original proof section height 1756px vs clone 1842px (+86px); CLONE_SPEC/measure-390 (also the original) record 1842. Unresolved - most likely lazy-loaded client logos not yet loaded during the audit capture. Treated as approximate.",
+      "evidence": [
+        {
+          "cite": "recon/audit/tops-orig-390.json:1",
+          "quote": "\\\"9:SECTION.blog-section\\\":[14522,1756]"
+        },
+        {
+          "cite": "recon/audit/tops-clone-390.json:1",
+          "quote": "\\\"9:SECTION.blog-section\\\":[14522,1842]"
+        },
+        {
+          "cite": "recon/measure-390.json:16",
+          "quote": "\"proof:14522+1842\""
+        }
+      ]
+    },
+    {
+      "note": "Intro chapter captures match orig vs clone at 1440 for story geometry/typography (63.36px h2, 18.72px body).",
+      "evidence": [
+        {
+          "cite": "recon/audit/ch-orig-1440.json:1",
+          "quote": "63.36px,64.6272px"
+        }
+      ]
+    },
+    {
+      "note": "22 [data-aos] elements on both original and clone.",
+      "evidence": [
+        {
+          "cite": "recon/audit/tops-orig-390.json:1",
+          "quote": "\\\"aosCount\\\":22"
+        }
+      ]
+    }
+  ],
+  "copyBudgets": {
+    "rule": "maxWords = ceil(real * 1.25) when the longest real string has >= 4 words, else real + 2. realMaxWords is the longest real instance at that content path.",
+    "linkLabelMaxWords": 10,
+    "bySection": {
+      "shell.aurora-background": {},
+      "shell.nav": {},
+      "intro.scroll-chapters-3d": {
+        ".chapters[].title": {
+          "realMaxWords": 7,
+          "maxWords": 9
+        },
+        ".chapters[].body": {
+          "realMaxWords": 27,
+          "maxWords": 34
+        },
+        ".chapters[].extra": {
+          "realMaxWords": 1,
+          "maxWords": 3
+        },
+        ".sceneLabels[].title": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".sceneLabels[].sub": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".exploreLabel": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".hint": {
+          "realMaxWords": 9,
+          "maxWords": 12
+        },
+        ".skipLabel": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".cueLabel": {
+          "realMaxWords": 1,
+          "maxWords": 3
+        }
+      },
+      "hero.centered-gradient-art": {
+        ".badge": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".titleLine": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".titleGradient": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".subtitle": {
+          "realMaxWords": 26,
+          "maxWords": 33
+        },
+        ".subtitleStrong": {
+          "realMaxWords": 5,
+          "maxWords": 7
+        },
+        ".secondaryCta.label": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".secondaryCta.comingSoonLabel": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".trustItems[].label": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        }
+      },
+      "content.problem-compare": {
+        ".header.badge": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".header.title": {
+          "realMaxWords": 5,
+          "maxWords": 7
+        },
+        ".header.titleGradient": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".header.subtitle": {
+          "realMaxWords": 32,
+          "maxWords": 40
+        },
+        ".mismatchLabel": {
+          "realMaxWords": 6,
+          "maxWords": 8
+        },
+        ".mismatchRows[].source": {
+          "realMaxWords": 1,
+          "maxWords": 3
+        },
+        ".mismatchRows[].definition": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".callout.strong": {
+          "realMaxWords": 10,
+          "maxWords": 13
+        },
+        ".callout.body": {
+          "realMaxWords": 37,
+          "maxWords": 47
+        },
+        ".compareHeads.generic": {
+          "realMaxWords": 5,
+          "maxWords": 7
+        },
+        ".compareHeads.binarbase": {
+          "realMaxWords": 5,
+          "maxWords": 7
+        },
+        ".compareRows[].label": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".compareRows[].generic": {
+          "realMaxWords": 5,
+          "maxWords": 7
+        },
+        ".compareRows[].binarbase": {
+          "realMaxWords": 7,
+          "maxWords": 9
+        },
+        ".closing": {
+          "realMaxWords": 26,
+          "maxWords": 33
+        }
+      },
+      "feature.split-visual-brain": {
+        ".header.badge": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".header.title": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".header.titleGradient": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".header.subtitle": {
+          "realMaxWords": 24,
+          "maxWords": 30
+        },
+        ".headline": {
+          "realMaxWords": 9,
+          "maxWords": 12
+        },
+        ".description": {
+          "realMaxWords": 63,
+          "maxWords": 79
+        },
+        ".features[].title": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".features[].body": {
+          "realMaxWords": 16,
+          "maxWords": 20
+        }
+      },
+      "process.engine-flow": {
+        ".header.badge": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".header.title": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".header.titleGradient": {
+          "realMaxWords": 7,
+          "maxWords": 9
+        },
+        ".header.subtitle": {
+          "realMaxWords": 50,
+          "maxWords": 63
+        },
+        ".steps[].title": {
+          "realMaxWords": 1,
+          "maxWords": 3
+        },
+        ".steps[].description": {
+          "realMaxWords": 15,
+          "maxWords": 19
+        },
+        ".steps[].badge": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".loopNote": {
+          "realMaxWords": 14,
+          "maxWords": 18
+        },
+        ".cards[].title": {
+          "realMaxWords": 5,
+          "maxWords": 7
+        },
+        ".cards[].body": {
+          "realMaxWords": 28,
+          "maxWords": 35
+        }
+      },
+      "feature.dual-pane-console": {
+        ".header.badge": {
+          "realMaxWords": 6,
+          "maxWords": 8
+        },
+        ".header.title": {
+          "realMaxWords": 5,
+          "maxWords": 7
+        },
+        ".header.titleGradient": {
+          "realMaxWords": 7,
+          "maxWords": 9
+        },
+        ".header.subtitle": {
+          "realMaxWords": 34,
+          "maxWords": 43
+        },
+        ".managePane.label": {
+          "realMaxWords": 5,
+          "maxWords": 7
+        },
+        ".managePane.title": {
+          "realMaxWords": 7,
+          "maxWords": 9
+        },
+        ".managePane.description": {
+          "realMaxWords": 19,
+          "maxWords": 24
+        },
+        ".managePane.mockAppName": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".managePane.mockNav[]": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".managePane.definitions[].name": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".managePane.definitions[].formula": {
+          "realMaxWords": 12,
+          "maxWords": 15
+        },
+        ".managePane.note": {
+          "realMaxWords": 12,
+          "maxWords": 15
+        },
+        ".connectPane.label": {
+          "realMaxWords": 7,
+          "maxWords": 9
+        },
+        ".connectPane.title": {
+          "realMaxWords": 8,
+          "maxWords": 10
+        },
+        ".connectPane.description": {
+          "realMaxWords": 23,
+          "maxWords": 29
+        },
+        ".connectPane.endpointLabel": {
+          "realMaxWords": 7,
+          "maxWords": 9
+        },
+        ".connectPane.endpointValue": {
+          "realMaxWords": 6,
+          "maxWords": 8
+        },
+        ".connectPane.steps[]": {
+          "realMaxWords": 9,
+          "maxWords": 12
+        },
+        ".connectPane.note": {
+          "realMaxWords": 17,
+          "maxWords": 22
+        },
+        ".agentsLabel": {
+          "realMaxWords": 7,
+          "maxWords": 9
+        },
+        ".agents[].name": {
+          "realMaxWords": 1,
+          "maxWords": 3
+        },
+        ".agentsNote": {
+          "realMaxWords": 9,
+          "maxWords": 12
+        },
+        ".cards[].title": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".cards[].body": {
+          "realMaxWords": 14,
+          "maxWords": 18
+        }
+      },
+      "showcase.card-carousel": {
+        ".header.badge": {
+          "realMaxWords": 6,
+          "maxWords": 8
+        },
+        ".header.title": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".header.titleGradient": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".header.subtitle": {
+          "realMaxWords": 35,
+          "maxWords": 44
+        },
+        ".cards[].screenTitle": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".cards[].badge": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".cards[].title": {
+          "realMaxWords": 9,
+          "maxWords": 12
+        },
+        ".cards[].description": {
+          "realMaxWords": 37,
+          "maxWords": 47
+        },
+        ".cards[].features[]": {
+          "realMaxWords": 7,
+          "maxWords": 9
+        }
+      },
+      "interactive.deployment-switcher": {
+        ".header.badge": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".header.title": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".header.titleGradient": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".header.subtitle": {
+          "realMaxWords": 35,
+          "maxWords": 44
+        },
+        ".switchLabel": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".modes[].name": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".modes[].boundaryLabel": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".modes[].location": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".modes[].models": {
+          "realMaxWords": 5,
+          "maxWords": 7
+        },
+        ".modes[].modelsSub": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".modes[].caption": {
+          "realMaxWords": 22,
+          "maxWords": 28
+        },
+        ".systems.title": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".systems.chips[]": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".brain.title": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".brain.sub": {
+          "realMaxWords": 5,
+          "maxWords": 7
+        },
+        ".modelsTitle": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".tableLabel": {
+          "realMaxWords": 6,
+          "maxWords": 8
+        },
+        ".availableLabel": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".dataGroupTitle": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".dataRows[].label": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".dataRows[].cloud.text": {
+          "realMaxWords": 5,
+          "maxWords": 7
+        },
+        ".dataRows[].private.text": {
+          "realMaxWords": 7,
+          "maxWords": 9
+        },
+        ".dataRows[].onprem.text": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".runGroupTitle": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".runRows[].label": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".runRows[].cloud": {
+          "realMaxWords": 7,
+          "maxWords": 9
+        },
+        ".runRows[].private": {
+          "realMaxWords": 9,
+          "maxWords": 12
+        },
+        ".runRows[].onprem": {
+          "realMaxWords": 6,
+          "maxWords": 8
+        },
+        ".note": {
+          "realMaxWords": 34,
+          "maxWords": 43
+        },
+        ".local.title": {
+          "realMaxWords": 7,
+          "maxWords": 9
+        },
+        ".local.body": {
+          "realMaxWords": 34,
+          "maxWords": 43
+        }
+      },
+      "proof.logos-and-stories": {
+        ".header.badge": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".header.title": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".header.titleGradient": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".header.subtitle": {
+          "realMaxWords": 11,
+          "maxWords": 14
+        },
+        ".logosLabel": {
+          "realMaxWords": 8,
+          "maxWords": 10
+        },
+        ".stories[].category": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".stories[].title": {
+          "realMaxWords": 9,
+          "maxWords": 12
+        },
+        ".stories[].excerpt": {
+          "realMaxWords": 21,
+          "maxWords": 27
+        },
+        ".stories[].date": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".stories[].readTime": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        }
+      },
+      "interactive.context-tree": {
+        ".header.badge": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".header.title": {
+          "realMaxWords": 5,
+          "maxWords": 7
+        },
+        ".header.titleGradient": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".header.subtitle": {
+          "realMaxWords": 32,
+          "maxWords": 40
+        },
+        ".rootLabel": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".coreNodes[]": {
+          "realMaxWords": 1,
+          "maxWords": 3
+        },
+        ".departments[].role": {
+          "realMaxWords": 1,
+          "maxWords": 3
+        },
+        ".departments[].tagline": {
+          "realMaxWords": 13,
+          "maxWords": 17
+        },
+        ".departments[].pain": {
+          "realMaxWords": 22,
+          "maxWords": 28
+        },
+        ".departments[].gains[]": {
+          "realMaxWords": 9,
+          "maxWords": 12
+        },
+        ".departments[].leaves[]": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".departments[].stage": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".todayLabel": {
+          "realMaxWords": 1,
+          "maxWords": 3
+        },
+        ".withLabel": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".note": {
+          "realMaxWords": 18,
+          "maxWords": 23
+        },
+        ".trustHeading.title": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".trustHeading.titleGradient": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".trustItems[].title": {
+          "realMaxWords": 5,
+          "maxWords": 7
+        },
+        ".trustItems[].body": {
+          "realMaxWords": 12,
+          "maxWords": 15
+        }
+      },
+      "pricing.on-request-quote": {
+        ".header.badge": {
+          "realMaxWords": 1,
+          "maxWords": 3
+        },
+        ".header.title": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".header.titleGradient": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".lede": {
+          "realMaxWords": 33,
+          "maxWords": 42
+        },
+        ".setup.label": {
+          "realMaxWords": 7,
+          "maxWords": 9
+        },
+        ".setup.title": {
+          "realMaxWords": 11,
+          "maxWords": 14
+        },
+        ".setup.body": {
+          "realMaxWords": 38,
+          "maxWords": 48
+        },
+        ".quote.label": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".quote.price": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".quote.description": {
+          "realMaxWords": 21,
+          "maxWords": 27
+        },
+        ".quote.features[]": {
+          "realMaxWords": 10,
+          "maxWords": 13
+        },
+        ".quote.note": {
+          "realMaxWords": 22,
+          "maxWords": 28
+        },
+        ".guarantee": {
+          "realMaxWords": 22,
+          "maxWords": 28
+        }
+      },
+      "conversion.final-cta": {
+        ".title": {
+          "realMaxWords": 4,
+          "maxWords": 5
+        },
+        ".titleGradient": {
+          "realMaxWords": 8,
+          "maxWords": 10
+        },
+        ".subtitle": {
+          "realMaxWords": 14,
+          "maxWords": 18
+        },
+        ".secondaryLabel": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        }
+      },
+      "shell.footer": {
+        ".tagline": {
+          "realMaxWords": 31,
+          "maxWords": 39
+        },
+        ".productHeading": {
+          "realMaxWords": 1,
+          "maxWords": 3
+        },
+        ".contactHeading": {
+          "realMaxWords": 1,
+          "maxWords": 3
+        },
+        ".contact.address": {
+          "realMaxWords": 6,
+          "maxWords": 8
+        },
+        ".copyright": {
+          "realMaxWords": 7,
+          "maxWords": 9
+        }
+      },
+      "overlay.cookie-consent": {
+        ".title": {
+          "realMaxWords": 3,
+          "maxWords": 5
+        },
+        ".body": {
+          "realMaxWords": 37,
+          "maxWords": 47
+        },
+        ".buttons.necessary": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".buttons.measurement": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        },
+        ".buttons.all": {
+          "realMaxWords": 2,
+          "maxWords": 4
+        }
+      },
+      "meta": {
+        "meta.title": {
+          "realMaxWords": 8,
+          "maxWords": 10
+        },
+        "meta.description": {
+          "realMaxWords": 27,
+          "maxWords": 34
+        }
+      }
+    }
+  },
+  "decisions": [
+    {
+      "topic": "Reduced-motion fallbacks",
+      "decision": "Sections whose fallback is grounded in source (intro, deployment, static sections) carry fallbackGrounding \"source\". Sections where the ORIGINAL ignores prefers-reduced-motion (AOS fade, brain loops, blobs, carousel pulses, tree transitions, nav) carry fallbackGrounding \"policy\": the fallback is a design-repo requirement for generated pages, not a measured behaviour.",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:69-71",
+          "quote": "@media(prefers-reduced-motion:reduce)"
+        },
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:168-170",
+          "quote": "@media(prefers-reduced-motion:reduce)"
+        }
+      ]
+    },
+    {
+      "topic": "AOS quirk on engine/mcp cards",
+      "decision": "Encoded as motion pattern aos-fade-up-cards-snap-quirk (rule order makes card opacity snap and delays inert).",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1421",
+          "quote": ".engine-card{background:#fff"
+        }
+      ]
+    },
+    {
+      "topic": "Cookie banner analytics",
+      "decision": "Clone stores bb_cookie_consent and loads NO analytics; content contract pins loadsThirdPartyScripts:false. The original loads GA/GTM/PostHog after consent (per the clone source comment; not independently re-captured here).",
+      "evidence": [
+        {
+          "cite": "src/components/CookieBanner.jsx:4",
+          "quote": "The original loads GA/GTM/PostHog"
+        }
+      ]
+    },
+    {
+      "topic": "Styling approach of the clone",
+      "decision": "Original CSS ported verbatim into src/styles/site.css (class names kept), Tailwind preflight disabled and @tailwind base omitted.",
+      "evidence": [
+        {
+          "cite": "src/index.css:2",
+          "quote": "@import './styles/site.css';"
+        },
+        {
+          "cite": "tailwind.config.js:6",
+          "quote": "corePlugins: { preflight: false }"
+        }
+      ]
+    }
+  ],
+  "ungroundedOrApproximate": [
+    "Copy budgets (x-maxWords) are a +25% headroom policy over real copy, not a measured limit.",
+    "fallbackGrounding:\"policy\" reduced-motion fallbacks (9 of 16 sections) are requirements, not observed behaviour.",
+    "MOTION_LOOP_BUDGET (5) and NO_ADJACENT_SECTION_ALT are rhythm heuristics derived from the single measured page.",
+    "Array minItems for optional variability (e.g. showcase 3-5 cards, compare rows 3-6) are judgement calls; maxItems equal the real counts.",
+    "Template required/optional split: only shell, hero, final CTA and footer are required; the rest are optional by judgement (the real page has all of them).",
+    "3D intro geometry/camera paths are WebGL and unmeasurable from the DOM (CLONE_SPEC 19).",
+    "Deployment private/on-prem states were verified by DOM class only, not screenshotted (CLONE_SPEC 19).",
+    "Desktop language dropdown open state was never opened during recon (CLONE_SPEC 19)."
+  ]
+}

@@ -1,0 +1,9 @@
+/* Original binarbase.com stylesheet (reset, tokens, all section rules) — the source of truth. */
+@import './styles/site.css';
+
+/* Tailwind is kept for anything added on top. Preflight is disabled in tailwind.config.js, and
+   `@tailwind base` is deliberately omitted: with preflight off it would only emit the --tw-* defaults
+   (no utilities here need them), and leaving it out guarantees the original reset in site.css wins
+   even if a long-running dev server still has an older Tailwind config cached. */
+@tailwind components;
+@tailwind utilities;

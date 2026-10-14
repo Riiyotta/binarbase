@@ -1,0 +1,41 @@
+{
+  "id": "primitive.check-mark",
+  "purpose": "Check / cross marks in lists and comparison cells.",
+  "cssClasses": [
+    "mark-check",
+    "mark-x",
+    "mismatch-mark",
+    "quote-features svg",
+    "check"
+  ],
+  "variants": {
+    "check": "#00d4aa",
+    "x-generic": "#c3cad6",
+    "x-alert": "#e2506b"
+  },
+  "tokens": [
+    "color.signal.success",
+    "color.accent.grey-mark",
+    "color.accent.red-mark",
+    "iconSize.inline"
+  ],
+  "props": [
+    "kind"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1392",
+      "quote": ".mark-x{color:#c3cad6}"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1373",
+      "quote": ".mismatch-mark{color:#e2506b"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1467",
+      "quote": ".quote-features svg{color:var(--color-success)"
+    }
+  ],
+  "kind": "primitive",
+  "contractVersion": "1.0.0"
+}

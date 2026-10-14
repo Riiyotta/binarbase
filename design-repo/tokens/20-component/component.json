@@ -1,0 +1,149 @@
+{
+  "component": {
+    "nav": {
+      "height": {
+        "value": "71px",
+        "evidence": [
+          {
+            "cite": "recon/measure-1440.json:4",
+            "quote": "\"headerH\": \"71px\""
+          }
+        ],
+        "description": "70px + 1px border at 1440/1280 (77 @768, 88 @390)."
+      },
+      "background": {
+        "ref": "{surface.nav}"
+      },
+      "background-over-intro": {
+        "ref": "{color.intro.nav-dark-bg}"
+      },
+      "blur": {
+        "ref": "{elevation.blur-nav}"
+      },
+      "theme-transition": {
+        "ref": "{motion.duration.nav-theme}"
+      }
+    },
+    "button-primary": {
+      "background": {
+        "ref": "{action.primary.bg}"
+      },
+      "background-hover": {
+        "ref": "{action.primary.bg-hover}"
+      },
+      "text": {
+        "ref": "{action.primary.text}"
+      },
+      "radius": {
+        "ref": "{radius.sm}"
+      },
+      "shadow-hover": {
+        "ref": "{elevation.button-hover}"
+      },
+      "font-weight": {
+        "ref": "{typography.fontWeight.semibold}"
+      }
+    },
+    "section-badge": {
+      "background": {
+        "ref": "{surface.badge}"
+      },
+      "text": {
+        "ref": "{text.brand}"
+      },
+      "radius": {
+        "ref": "{radius.pill}"
+      }
+    },
+    "card": {
+      "background": {
+        "ref": "{surface.card}"
+      },
+      "border": {
+        "ref": "{border.default}"
+      },
+      "radius": {
+        "ref": "{radius.2xl}"
+      },
+      "shadow": {
+        "ref": "{elevation.card}"
+      },
+      "shadow-hover": {
+        "ref": "{elevation.card-hover}"
+      }
+    },
+    "panel": {
+      "radius": {
+        "ref": "{radius.panel}"
+      },
+      "shadow": {
+        "ref": "{elevation.panel}"
+      }
+    },
+    "showcase-card": {
+      "radius": {
+        "ref": "{radius.card-lg}"
+      },
+      "shadow": {
+        "ref": "{elevation.showcase}"
+      },
+      "shadow-active": {
+        "ref": "{elevation.showcase-active}"
+      },
+      "transition": {
+        "ref": "{motion.duration.carousel}"
+      }
+    },
+    "deploy": {
+      "inside": {
+        "ref": "{deploy.inside}"
+      },
+      "outside": {
+        "ref": "{deploy.outside}"
+      },
+      "optional": {
+        "ref": "{deploy.optional}"
+      },
+      "orb": {
+        "ref": "{gradient.deploy-orb}"
+      }
+    },
+    "intro": {
+      "surface": {
+        "ref": "{intro.surface}"
+      },
+      "text": {
+        "ref": "{intro.text}"
+      },
+      "muted": {
+        "ref": "{intro.text-muted}"
+      },
+      "accent": {
+        "ref": "{intro.accent}"
+      },
+      "control": {
+        "ref": "{intro.control}"
+      },
+      "font-mono": {
+        "ref": "{typography.fontFamily.mono-intro}"
+      },
+      "display-size": {
+        "ref": "{typography.fontSize.display-intro}"
+      }
+    },
+    "cookie": {
+      "title": {
+        "ref": "{color.cookie.title}"
+      },
+      "body": {
+        "ref": "{color.cookie.body}"
+      },
+      "shadow": {
+        "ref": "{elevation.cookie}"
+      },
+      "button-radius": {
+        "ref": "{radius.md}"
+      }
+    }
+  }
+}

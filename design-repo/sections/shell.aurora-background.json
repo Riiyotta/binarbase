@@ -1,0 +1,103 @@
+{
+  "id": "shell.aurora-background",
+  "kind": "section",
+  "contractVersion": "1.0.0",
+  "category": "shell",
+  "pageOrder": 0,
+  "purpose": "Fixed, full-viewport brand atmosphere behind every transparent section (z-index 0); gives the page its soft violet wash.",
+  "anchorId": null,
+  "surface": "fixed-gradient",
+  "variants": [
+    "default"
+  ],
+  "implementedBy": "src/components/Aurora.jsx",
+  "measuredFrom": [
+    {
+      "cite": "src/components/Aurora.jsx:5-11",
+      "quote": "<div className=\"aurora-bg\">"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:229",
+      "quote": ".aurora-bg{background:linear-gradient(180deg,#fff,#f8f6ff 40%,#f3f0ff)"
+    },
+    {
+      "cite": "CLONE_SPEC.md:56",
+      "quote": "* Page background (`.aurora-bg`"
+    }
+  ],
+  "constraints": {
+    "onePerPage": true,
+    "mustBeFirst": true
+  },
+  "contentSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [],
+    "properties": {}
+  },
+  "copyBudgets": {},
+  "assetFields": {},
+  "motion": {
+    "patterns": [
+      "static-fixed-background"
+    ],
+    "reducedMotionFallback": "static",
+    "fallbackGrounding": "source",
+    "fallbackNote": "No animation exists on the aurora layers in the original CSS."
+  },
+  "motionSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "pattern",
+      "reducedMotionFallback"
+    ],
+    "properties": {
+      "pattern": {
+        "type": "string",
+        "enum": [
+          "static-fixed-background"
+        ]
+      },
+      "reducedMotionFallback": {
+        "const": "static"
+      }
+    }
+  },
+  "responsive": [
+    {
+      "breakpoint": "breakpoint.min-1400",
+      "target": ".aurora-1",
+      "change": "grows to 1100px",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:728",
+          "quote": ".aurora-1{height:1100px;width:1100px}"
+        }
+      ]
+    },
+    {
+      "breakpoint": "breakpoint.max-768",
+      "target": ".aurora-1",
+      "change": "500px, left -25%, top -15%",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1145",
+          "quote": ".aurora-1{height:500px;left:-25%;top:-15%;width:500px}"
+        }
+      ]
+    },
+    {
+      "breakpoint": "breakpoint.max-768",
+      "target": ".noise-overlay",
+      "change": "grid 40px at opacity .5",
+      "evidence": [
+        {
+          "cite": "recon/css/index.AtHXy8dp.css:1148",
+          "quote": ".noise-overlay{background-size:40px 40px;opacity:.5}"
+        }
+      ]
+    }
+  ],
+  "accessibility": "Decorative; aria-hidden by construction (no content)."
+}

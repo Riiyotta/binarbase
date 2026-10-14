@@ -1,0 +1,57 @@
+{
+  "id": "primitive.button-primary",
+  "purpose": "Solid violet action (trial, connect, quote, nav Get Started).",
+  "cssClasses": [
+    "cta-primary",
+    "cta-primary.large",
+    "cta-primary.cta-wide",
+    "quote-cta",
+    "nav-cta",
+    "sbi-btn--primary",
+    "mobile-cta"
+  ],
+  "variants": {
+    "default": "14px 24px, 1rem/600, radius 8",
+    "large": "1rem 2rem, 1.05rem (final CTA)",
+    "wide": ".875rem 2.5rem (Connect Now)",
+    "nav": ".65rem 1.25rem, .9rem (nav)"
+  },
+  "tokens": [
+    "color.brand.primary",
+    "color.brand.primary-dark",
+    "radius.sm",
+    "elevation.button-hover",
+    "typography.fontWeight.semibold",
+    "motion.duration.fast"
+  ],
+  "props": [
+    "label",
+    "href",
+    "linkRole",
+    "variant"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:331",
+      "quote": ".cta-primary{align-items:center;background:var(--color-primary);border-radius:8px"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:333",
+      "quote": ".cta-primary.large{font-size:1.05rem;padding:1rem 2rem"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:334",
+      "quote": ".cta-primary.cta-wide{padding:.875rem 2.5rem"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:278",
+      "quote": ".nav-cta{background:var(--color-primary);border-radius:8px"
+    },
+    {
+      "cite": "recon/dom-1440-clean.html:1",
+      "quote": "class=\"cta-primary cta-wide\""
+    }
+  ],
+  "kind": "primitive",
+  "contractVersion": "1.0.0"
+}

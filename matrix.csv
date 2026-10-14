@@ -1,0 +1,18 @@
+section,category,templates,routes,Homepage
+shell.aurora-background,SHELL,1,1,x
+shell.navbar,SHELL,1,1,x
+intro.second-brain-3d,INTRO,1,1,x
+hero.headline,HERO,1,1,x
+features.upgraded,FEATURES,1,1,x
+features.connectors-mcp,FEATURES,1,1,x
+features.engine,FEATURES,1,1,x
+features.console,FEATURES,1,1,x
+features.product-showcase,FEATURES,1,1,x
+features.deployment-modes,FEATURES,1,1,x
+proof.customer-stories,PROOF,1,1,x
+solutions.teams-tree,SOLUTIONS,1,1,x
+conversion.pricing-quote,CONVERSION,1,1,x
+conversion.final-cta,CONVERSION,1,1,x
+shell.footer,SHELL,1,1,x
+shell.cookie-consent,SHELL,1,1,x
+ROUTE COUNT,,,1,1

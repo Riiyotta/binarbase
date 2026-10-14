@@ -1,0 +1,140 @@
+{
+  "version": "1.0.0",
+  "routes": [
+    {
+      "path": "/",
+      "template": "template.home",
+      "evidenceLevel": "measured",
+      "evidence": [
+        {
+          "cite": "src/App.jsx:39",
+          "quote": "export default function App()"
+        },
+        {
+          "cite": "CLONE_SPEC.md:1",
+          "quote": "Source: https://binarbase.com/"
+        }
+      ]
+    }
+  ],
+  "outOfScopeRoutes": [
+    {
+      "path": "/insights",
+      "reason": "Blog / insights index (live). Linked from nav, proof \"All stories\", mobile menu.",
+      "evidence": [
+        {
+          "cite": "src/components/Nav.jsx:99",
+          "quote": "<a href=\"/insights\" className=\"nav-link\">Insights</a>"
+        }
+      ],
+      "template": null
+    },
+    {
+      "path": "/insights/bwd-case-study",
+      "reason": "Case study (live).",
+      "evidence": [
+        {
+          "cite": "src/components/Proof.jsx:67",
+          "quote": "<a href=\"/insights/bwd-case-study\" className=\"blog-link\">"
+        }
+      ],
+      "template": null
+    },
+    {
+      "path": "/insights/voxberg-case-study",
+      "reason": "Case study (live).",
+      "evidence": [
+        {
+          "cite": "src/components/Proof.jsx:85",
+          "quote": "<a href=\"/insights/voxberg-case-study\" className=\"blog-link\">"
+        }
+      ],
+      "template": null
+    },
+    {
+      "path": "/insights/applifting-case-study",
+      "reason": "Case study (live).",
+      "evidence": [
+        {
+          "cite": "src/components/Proof.jsx:103",
+          "quote": "<a href=\"/insights/applifting-case-study\" className=\"blog-link\">"
+        }
+      ],
+      "template": null
+    },
+    {
+      "path": "/privacy-policy",
+      "reason": "Legal page (live; recon downloaded its LegalLayout chunk CSS but the page was not measured).",
+      "evidence": [
+        {
+          "cite": "src/components/Footer.jsx:82",
+          "quote": "<a href=\"/privacy-policy\" className=\"\">Privacy Policy</a>"
+        },
+        {
+          "file": "recon/css/LegalLayout.TqUv2vMe.css"
+        }
+      ],
+      "template": null
+    },
+    {
+      "path": "/terms-conditions",
+      "reason": "Legal page (live).",
+      "evidence": [
+        {
+          "cite": "src/components/Footer.jsx:80",
+          "quote": "<a href=\"/terms-conditions\" className=\"\">Terms & Conditions</a>"
+        }
+      ],
+      "template": null
+    },
+    {
+      "path": "/cookies-policy",
+      "reason": "Legal page (live). Also linked from the cookie banner.",
+      "evidence": [
+        {
+          "cite": "src/components/Footer.jsx:84",
+          "quote": "<a href=\"/cookies-policy\" className=\"\">Cookies Policy</a>"
+        },
+        {
+          "cite": "src/components/CookieBanner.jsx:38",
+          "quote": "<a href=\"/cookies-policy\">Read our Cookies Policy</a>"
+        }
+      ],
+      "template": null
+    },
+    {
+      "path": "/subprocessors",
+      "reason": "Legal page (live). Linked from the deployment note.",
+      "evidence": [
+        {
+          "cite": "src/components/Footer.jsx:86",
+          "quote": "<a href=\"/subprocessors\" className=\"\">Sub-processors</a>"
+        }
+      ],
+      "template": null
+    },
+    {
+      "path": "/cs/",
+      "reason": "Czech locale of the site (live). Clone keeps the language selector but only English copy exists.",
+      "evidence": [
+        {
+          "cite": "src/components/Nav.jsx:8",
+          "quote": "{ code: 'cs', name: 'Cesky', flag: '🇨🇿' }"
+        }
+      ],
+      "template": null
+    },
+    {
+      "path": "/sk/",
+      "reason": "Slovak locale of the site (live).",
+      "evidence": [
+        {
+          "cite": "src/components/Nav.jsx:7",
+          "quote": "{ code: 'sk', name: 'Slovensky', flag: '🇸🇰' }"
+        }
+      ],
+      "template": null
+    }
+  ],
+  "scopeNote": "Deliberate scope reduction: only the English home page \"/\" was cloned. The live site also has /insights (+3 case studies), 4 legal pages and /cs/ + /sk/ locales. They are recorded here so nothing pretends they were measured; no template exists for them."
+}

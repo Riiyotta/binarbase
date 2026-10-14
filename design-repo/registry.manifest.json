@@ -1,0 +1,77 @@
+{
+  "repositoryId": "binarbase-home-design-repo",
+  "repositoryVersion": "1.0.0",
+  "pageSpecVersion": "1.0.0",
+  "allowlistVersion": "1.0.0",
+  "versionFieldNote": "allowlistVersion is MACHINE-CHECKED (extraction/verify_all.py ALLOWLIST_VERSION fails if it differs from tokens/llm/component-allowlist.json version). repositoryVersion is documentation-only and hand-maintained; nothing checks it. pageSpecVersion is documentation-only here, except that schema/pagespec.schema.json pins PageSpec.pageSpecVersion with a const.",
+  "status": "design-review-pending",
+  "productionApproved": false,
+  "builtOn": "2026-10-14",
+  "source": {
+    "url": "https://binarbase.com/",
+    "liveRealCompany": true,
+    "clonedRoutes": [
+      "/"
+    ],
+    "outOfScopeRoutes": "templates/routes.json#outOfScopeRoutes",
+    "cloneStack": {
+      "react": "18.3.1",
+      "vite": "5.4.21",
+      "tailwindcss": "3.4.19 (preflight off, @tailwind base omitted)",
+      "three": "0.169.0 (original: r186)"
+    },
+    "cloneStyling": "Original CSS ported verbatim into src/styles/site.css with original class names.",
+    "isGitRepository": false
+  },
+  "defaultTheme": "light",
+  "schemaValidatedThemes": [
+    "light"
+  ],
+  "scopedThemes": [
+    "intro-dark"
+  ],
+  "pageSpecPurposes": [
+    "reference-reconstruction",
+    "generated"
+  ],
+  "counts": {
+    "sections": 16,
+    "primitives": 12,
+    "components": 9,
+    "templates": 1,
+    "routes": 1,
+    "outOfScopeRoutes": 10,
+    "foundationTokens": 188,
+    "semanticTokens": 32,
+    "componentTokens": 40,
+    "layoutTokens": 16,
+    "themes": 2,
+    "graphRules": 25,
+    "assetRoles": 9,
+    "linkRoles": 9,
+    "citations": 477,
+    "files": 68
+  },
+  "entryPoints": {
+    "readme": "README.md",
+    "changelog": "CHANGELOG.md",
+    "schema": "schema/pagespec.schema.json",
+    "example": "schema/example.pagespec.json",
+    "validator": "schema/semantic_validate.py",
+    "adversarialTests": "schema/tests/adversarial_test.py",
+    "templates": "templates/templates.json",
+    "routes": "templates/routes.json",
+    "graph": "compatibility/graph.json",
+    "allowlist": "tokens/llm/component-allowlist.json",
+    "tokenCatalog": "tokens/llm/token-catalog.json",
+    "tokenPolicy": "tokens/llm/token-policy.json",
+    "assetRoles": "assets/asset-roles.json",
+    "themeLight": "tokens/themes/light.json",
+    "themeIntroDark": "tokens/themes/intro-dark.json",
+    "measuredValues": "extraction/measured-values.json",
+    "verify": "extraction/verify_all.py",
+    "driftProof": "extraction/prove_drift.py"
+  },
+  "entryPointsNote": "Every entry point is inside design-repo/. External evidence (CLONE_SPEC.md, recon/, src/) is cited only from extraction/measured-values.json and contract \"cite\" fields, which degrade to WARN when absent.",
+  "packaging": "design-repo.zip (sibling) is regenerated with the CLI zip, last, after verification. Not a git repo today; if put under git, gitignore design-repo.zip by name."
+}

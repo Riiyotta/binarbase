@@ -1,0 +1,27 @@
+{
+  "id": "component.segmented-switch",
+  "purpose": "Pill radiogroup selecting one of N modes (deployment switch); active option filled violet.",
+  "composes": [],
+  "cssClasses": [
+    "dp-switch",
+    "dp-switch-btn",
+    "dp-switch-btn.active"
+  ],
+  "tokens": [
+    "radius.pill-alt",
+    "color.brand.primary",
+    "motion.duration.tree"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:73",
+      "quote": ".dp-switch[data-v-a75c984f]{background:#fff"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:76",
+      "quote": ".dp-switch-btn.active[data-v-a75c984f]{background:var(--color-primary);color:#fff}"
+    }
+  ],
+  "kind": "component",
+  "contractVersion": "1.0.0"
+}

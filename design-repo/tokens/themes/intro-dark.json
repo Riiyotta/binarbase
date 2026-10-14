@@ -1,0 +1,57 @@
+{
+  "theme": "intro-dark",
+  "default": false,
+  "scope": "Scoped theme: inside section.sbi (intro) and for .nav-glass while html.sbi-dark is set. Not a page-wide dark mode; the original has no dark mode.",
+  "overrides": {
+    "text.primary": "{color.intro.paper}",
+    "text.secondary": "{color.intro.muted}",
+    "text.tertiary": "{color.intro.muted}",
+    "surface.page": "{color.intro.ink}",
+    "surface.nav": "{color.intro.nav-dark-bg}",
+    "border.default": "{color.intro.nav-dark-line}"
+  },
+  "resolved": {
+    "text.primary": "#f4f2ff",
+    "text.secondary": "#bdb9de",
+    "text.tertiary": "#bdb9de",
+    "text.brand": "#6042f9",
+    "text.on-brand": "#ffffff",
+    "text.success": "#10b981",
+    "surface.page": "#070c1f",
+    "surface.section-alt": "#f6f9fc",
+    "surface.card": "#ffffff",
+    "surface.chip": "#f0f3f7",
+    "surface.nav": "#070c1f8c",
+    "surface.badge": "#6042f914",
+    "surface.callout": "#6042f90d",
+    "surface.active-column": "#6042f90a",
+    "border.default": "#c4b8ff24",
+    "border.accent": "#6042f959",
+    "action.primary.bg": "#6042f9",
+    "action.primary.bg-hover": "#4d35c7",
+    "action.primary.text": "#ffffff",
+    "feedback.success": "#00d4aa",
+    "feedback.error-mark": "#e2506b",
+    "feedback.neutral-mark": "#c3cad6",
+    "deploy.inside": "#00a67d",
+    "deploy.outside": "#6042f9",
+    "deploy.optional": "#d68a00",
+    "intro.surface": "#070c1f",
+    "intro.text": "#f4f2ff",
+    "intro.text-muted": "#bdb9de",
+    "intro.accent": "#c4b8ff",
+    "intro.control": "#0e1a3a99",
+    "gradient.brand": "linear-gradient(135deg,#3f34fe,#8e64fa)",
+    "gradient.page": "linear-gradient(180deg,#fff,#f8f6ff 40%,#f3f0ff)"
+  },
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1",
+      "quote": ".sbi[data-v-00d3a672]{--ink:#070c1f"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:250",
+      "quote": ".sbi-dark .nav-glass{background:#070c1f8c"
+    }
+  ]
+}

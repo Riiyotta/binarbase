@@ -1,0 +1,43 @@
+{
+  "id": "primitive.icon",
+  "purpose": "Glyphs: inline stroke SVG icons (arrows, checks, X, server, lock) and literal emoji tiles. Emoji are assetRole icon.emoji.",
+  "cssClasses": [
+    "cta-arrow",
+    "trust-icon",
+    "feature-icon",
+    "floating-icon",
+    "superpower-icon",
+    "dp-mark"
+  ],
+  "variants": {
+    "svg-inline": "currentColor stroke 2",
+    "emoji-tile": "48px white tile radius 14"
+  },
+  "tokens": [
+    "iconSize.inline",
+    "iconSize.mark",
+    "iconSize.emoji-tile",
+    "radius.xl"
+  ],
+  "props": [
+    "assetRole",
+    "assetRef",
+    "name"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:335",
+      "quote": ".cta-arrow{height:18px"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:657",
+      "quote": ".floating-icon{"
+    },
+    {
+      "cite": "src/components/Connectors.jsx:104",
+      "quote": "<div className=\"floating-icon fi-1\">"
+    }
+  ],
+  "kind": "primitive",
+  "contractVersion": "1.0.0"
+}

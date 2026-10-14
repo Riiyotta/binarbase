@@ -1,0 +1,35 @@
+{
+  "id": "primitive.brand-logo",
+  "purpose": "BinarBase logo image (nav 32px, footer 28px). assetRole brand.logo — reference reconstruction only.",
+  "cssClasses": [
+    "brand-logo"
+  ],
+  "variants": {
+    "nav": "height 32px; white via filter in html.sbi-dark",
+    "footer": "height 28px"
+  },
+  "tokens": [
+    "typography.fontFamily.sans"
+  ],
+  "props": [
+    "assetRole",
+    "assetRef",
+    "alt"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:260",
+      "quote": ".brand-logo{height:32px;width:auto}"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:251",
+      "quote": ".sbi-dark .nav-glass .brand-logo{filter:brightness(0) invert(1)}"
+    },
+    {
+      "cite": "src/components/Nav.jsx:92",
+      "quote": "<img src=\"/assets/logo.svg\" alt=\"BinarBase\" className=\"brand-logo\" />"
+    }
+  ],
+  "kind": "primitive",
+  "contractVersion": "1.0.0"
+}

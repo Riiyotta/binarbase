@@ -1,0 +1,45 @@
+{
+  "id": "primitive.pill-badge",
+  "purpose": "Small status/eyebrow pills (hero badge, showcase card badge, success-story, quote label, Available now, Start here, PRIVATE AI).",
+  "cssClasses": [
+    "hero-badge",
+    "card-badge",
+    "blog-category",
+    "quote-label",
+    "dp-available",
+    "ct-detail-stage",
+    "engine-step-badge"
+  ],
+  "variants": {
+    "brand": "violet tint",
+    "tone": "blue/cyan/emerald/amber/purple card tints",
+    "success": "green tint",
+    "gradient": "brand gradient, white text"
+  },
+  "tokens": [
+    "color.brand.tint-08",
+    "color.accent.green",
+    "radius.pill",
+    "gradient.brand"
+  ],
+  "props": [
+    "label",
+    "tone"
+  ],
+  "evidence": [
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:316",
+      "quote": ".hero-badge{align-items:center;background:#6042f914"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1290",
+      "quote": ".blog-category.success-story{"
+    },
+    {
+      "cite": "recon/css/index.AtHXy8dp.css:1413",
+      "quote": ".engine-step-badge{"
+    }
+  ],
+  "kind": "primitive",
+  "contractVersion": "1.0.0"
+}
